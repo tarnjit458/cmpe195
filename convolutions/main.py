@@ -1,5 +1,46 @@
 from PIL import Image
+import math
 
+
+class LeNet5:
+    # Python3 PIL image object
+    input_img = None
+
+    # Image pixel data, as an array
+    input_img_data = []
+
+    # First layer: Convolutions. 6 feature maps at 28x28
+    c1_feature_maps = []
+    # Second layer: Max Pooling. 6 feature maps at 14x14
+    s2_feature_maps = []
+    # Third layer: Convolutions. 16 feature maps at 10x10. NOT fully connected to s2
+    c3_feature_maps = []
+    # Fourth layer: Max pooling: 16 feature maps at 5x5
+    s4_feature_maps = []
+    # Fifth layer: Convolutions. 120 feature maps of 1x1
+    c5_feature_maps = []
+    # 6th layer: Fully connected layer. 84 sigmoid neurons
+    f6_connected_layer = []
+    # 7th layer: Output. 10 sigmoid nuerons
+    o7_output_layer = []
+
+    # Final verdict for the fed in image
+    verdict = 0
+
+    # All the weights for all the layers
+    weight = []
+    # All the biases for all the layers
+    bias = []
+
+    def __init__(self):
+        pass
+
+    def feed_forward(self):
+        """
+        Take the image in the network, feed it through the network, and set the final verdict
+        :return:
+        """
+        pass
 
 
 def img_to_arr(img):
