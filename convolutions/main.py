@@ -1,7 +1,6 @@
 from PIL import Image
 import math
 
-
 class LeNet5:
     # Python3 PIL image object
     input_img = None
@@ -64,10 +63,7 @@ def conv_layer(arr, height, width, kernel):
     :return: PIL Image object: The convolved image
     """
 
-    ksize = len(kernel)
-    # Make sure the kernel is a square. Not a rigorous check but it's enough
-    if(len(kernel[0]) != ksize):
-        raise Exception("Kernel must be a square")
+    ksize = int(math.sqrt(len(kernel)))
     conv = []
     # Perform the convolution
     for p_y in range(0, height - ksize):
@@ -76,7 +72,7 @@ def conv_layer(arr, height, width, kernel):
             conv_pix = 0
             for k_y in range(0, ksize):
                 for k_x in range(0, ksize):
-                    conv_pix += arr[((p_x + k_x) + (p_y + k_y)*width)] * kernel[k_y][k_x]
+                    conv_pix += arr[((p_x + k_x) + (p_y + k_y)*width)] * kernel[(k_y * ksize) + k_x]
             conv.append(conv_pix)
     return conv
 
@@ -106,12 +102,12 @@ def sigmoid(z):
     :param z: The number to perform sigmoid on
     :return: The result of the sigmoid function
     """
-    return 1.0/(1.0+(2.71828**(-z)))
+    return 1.0/(1.0+(math.e**(-z)))
 
 
 def main():
     # Basic edge detection kernel. Populate this with different values and see what happens!
-    kernel = [[-1, -1, -1], [-1, 8, -1], [-1, -1, -1]]
+    kernel = [-1, -1, -1, -1, 8, -1, -1, -1, -1]
 
     # Open an image and perform a convolution
     with Image.open("kitten.jpg") as raw_img:
