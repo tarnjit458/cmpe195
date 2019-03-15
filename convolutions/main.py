@@ -1,5 +1,13 @@
 from PIL import Image
 import math
+import random
+
+#S2 is not fully connected to C3, it is connected based on this mapping
+c3_connection_map = [[1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1],
+                     [1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1],
+                     [1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1],
+                     [0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1],
+                     [0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1]]
 
 class LeNet5:
     # Python3 PIL image object
@@ -20,27 +28,137 @@ class LeNet5:
     c5_feature_maps = []
     # 6th layer: Fully connected layer. 84 sigmoid neurons
     f6_connected_layer = []
-    # 7th layer: Output. 10 sigmoid nuerons
+    # 7th layer: Output. 10 sigmoid neurons
     o7_output_layer = []
 
     # Final verdict for the fed in image
     verdict = 0
 
-    # All the weights for all the layers
-    weight = []
-    # All the biases for all the layers
-    bias = []
+    def __init__(self, img):
+        # Take in an image for analysis
+        self.input_img = img
+        # Convert the image into black and white 8 bit data
+        self.input_img_data = img_to_arr(self.input_img)
+        # Initialize all the layers with random weights
+        # Initialize the C1 layer
+        for i in range(0, 6):
+            self.c1_feature_maps.append(ConvLayer(self.input_img.height,
+                                                  self.input_img.width,
+                                                  4))
+        # Initialize the S2 Layer
+        s2_height = self.input_img.height - self.c1_feature_maps[0].get_kernel_size()
+        s2_width = self.input_img.width - self.c1_feature_maps[0].get_kernel_size()
+        for i in range(0, 6):
+            self.s2_feature_maps.append(MaxPoolLayer(2,
+                                                     s2_height,
+                                                     s2_width))
 
-    def __init__(self):
-        pass
+        # Initialize the C3 Layer
+        c3_height = math.floor(s2_height/self.s2_feature_maps[0].get_poolsize())
+        c3_width = math.floor(s2_width/self.s2_feature_maps[0].get_poolsize())
+        for i in range(0, 16):
+            self.c3_feature_maps.append(ConvLayer(c3_height,
+                                                  c3_width,
+                                                  4))
+        # Initialize the S4 Layer
+        s4_height = c3_height - self.c3_feature_maps[0].get_kernel_size()
+        s4_width = c3_width - self.c3_feature_maps[0].get_kernel_size()
+        for i in range(0, 16):
+            self.s4_feature_maps.append(MaxPoolLayer(2,
+                                                     s4_height,
+                                                     s4_width))
+
+        self.c5_feature_maps = [[] for i in range(120)]
+        self.f6_connected_layer = [[] for i in range(84)]
+        self.o7_output_layer = [[] for i in range(10)]
 
     def feed_forward(self):
         """
         Take the image in the network, feed it through the network, and set the final verdict
         :return:
         """
-        pass
 
+
+class ConvLayer:
+    # The kernel for the convolutional layer
+    kernel = []
+    # The height of the input data
+    height = 0
+    # The width of the input data
+    width = 0
+    # The height/width of the square kernel
+    ksize = 0
+
+    def __init__(self, height, width, ksize):
+        self.height = height
+        self.width = width
+        self.ksize = ksize
+        # Initialize a random square kernel
+        for i in range(0, ksize**2):
+            self.kernel.append(random.gauss(0, 1))
+
+    def convolve(self, data):
+        """
+        Convolve an image around a kernel
+        :return: array: The convolved data
+        """
+        conv = []
+        # Perform the convolution
+        for p_y in range(0, self.height - self.ksize):
+            for p_x in range(0, self.width - self.ksize):
+                # Compute the convolution product of the kernel and the image
+                conv_pix = 0
+                for k_y in range(0, self.ksize):
+                    for k_x in range(0, self.ksize):
+                        conv_pix += data[((p_x + k_x) + (p_y + k_y) * self.width)] * self.kernel[(k_y * self.ksize) + k_x]
+                conv.append(conv_pix)
+        return conv
+
+    def get_kernel(self):
+        """
+        Get the kernel (weight) used
+        :return: array: The Kernel
+        """
+        return self.kernel
+
+    def get_kernel_size(self):
+        return self.ksize
+
+    def set_kernel(self, kernel):
+        """
+        Set the kernel after back propogation has been performed
+        :return: nothing
+        """
+        self.kernel = kernel
+
+class MaxPoolLayer:
+    # The amount that pooling will downsample the image
+    pool_size = 0
+    # The height of the input data
+    height = 0
+    # The width of the input data
+    width = 0
+
+    def __init__(self, pool_size, height, width):
+        self.pool_size = pool_size
+        self.height = height
+        self.width = width
+
+    def max_pool(self, data):
+        pool = []
+        for p_y in range(0, self.height - self.pool_size, self.pool_size):
+            for p_x in range(0, self.width - self.pool_size, self.pool_size):
+                # Compute the convolution product of the kernel and the image
+                largest = 0
+                for k_y in range(0, self.pool_size):
+                    for k_x in range(0, self.pool_size):
+                        if data[((p_x + k_x) + (p_y + k_y) * self.width)] > largest:
+                            largest = data[(p_x + k_x + (p_y + k_y) * self.width)]
+                pool.append(largest)
+        return pool
+
+    def get_pool_size(self):
+        return self.pool_size
 
 def img_to_arr(img):
     # Convert image to black and white with 8 bit pixel values
@@ -53,48 +171,6 @@ def arr_to_img(arr, height, width):
     img = Image.new("L", (int(width), int(height)))
     img.putdata(arr)
     return img
-
-
-def conv_layer(arr, height, width, kernel):
-    """
-    Convolve an image around a kernel
-    :param img: PIL Image object: The image to convolve
-    :param kernel: 2D array: The kernel to convolve the image around
-    :return: PIL Image object: The convolved image
-    """
-
-    ksize = int(math.sqrt(len(kernel)))
-    conv = []
-    # Perform the convolution
-    for p_y in range(0, height - ksize):
-        for p_x in range(0, width - ksize):
-            # Compute the convolution product of the kernel and the image
-            conv_pix = 0
-            for k_y in range(0, ksize):
-                for k_x in range(0, ksize):
-                    conv_pix += arr[((p_x + k_x) + (p_y + k_y)*width)] * kernel[(k_y * ksize) + k_x]
-            conv.append(conv_pix)
-    return conv
-
-
-def pool_layer(arr, height, width, poolsize):
-    """
-    Perform max pooling on an image to downsample it
-    :param img: The image to pool
-    :param size: The scale factor
-    :return: PIL Image object: The pooled image.
-    """
-    pool = []
-    for p_y in range(0, height - poolsize, poolsize):
-        for p_x in range(0, width - poolsize, poolsize):
-            # Compute the convolution product of the kernel and the image
-            largest = 0
-            for k_y in range(0, poolsize):
-                for k_x in range(0, poolsize):
-                    if arr[((p_x + k_x) + (p_y + k_y)*width)] > largest:
-                        largest = arr[(p_x + k_x + (p_y + k_y)*width)]
-            pool.append(largest)
-    return pool
 
 def sigmoid(z):
     """
@@ -112,11 +188,13 @@ def main():
     # Open an image and perform a convolution
     with Image.open("kitten.jpg") as raw_img:
         img_arr = img_to_arr(raw_img)
-        conv_arr = conv_layer(img_arr, raw_img.height, raw_img.width, kernel)
-        arr_to_img(conv_arr, raw_img.height - 3, raw_img.width - 3).show()
-        pool_arr = pool_layer(conv_arr, raw_img.height - 3, raw_img.width - 3, 4)
-        arr_to_img(pool_arr, 119, 79).show()
-
+        conv_layer = ConvLayer(raw_img.height, raw_img.width, 3)
+        arr_to_img(conv_layer.convolve(img_arr), raw_img.height - 3, raw_img.width - 3).show()
+        conv_layer.set_kernel(kernel)
+        convolved = conv_layer.convolve(img_arr)
+        arr_to_img(convolved, raw_img.height - 3, raw_img.width - 3).show()
+        pool_layer = MaxPoolLayer(4, raw_img.height - 3, raw_img.width - 3)
+        arr_to_img(pool_layer.max_pool(convolved), 119, 79).show()
 
 if __name__ == '__main__':
    main()
