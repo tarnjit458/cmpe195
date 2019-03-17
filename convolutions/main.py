@@ -160,6 +160,50 @@ class MaxPoolLayer:
     def get_pool_size(self):
         return self.pool_size
 
+class FullyConnectedLayer:
+    # The weights for the fully connected layer. The total amount of weights is input_size * output_size
+    weights = []
+    # The biases for the fully connected layer. The amount of biases is the same as output_size
+    biases = []
+    # The amount of input neurons
+    input_size = 0
+    # The amount of output neurons
+    output_size = 0
+
+    def __init__(self, input_size, output_size):
+        self.input_size = input_size
+        self.output_size = output_size
+        for i in range(0, self.output_size):
+            tmp = []
+            for j in range(0, self.input_size):
+                tmp.append(random.gauss(0, 1))
+            self.weights.append(tmp)
+            self.biases.append(random.gauss(0, 1))
+
+    def dot_product(self, a, b):
+        if len(a) is not len(b):
+            print("ERROR: Cannot dot product arrays of different sizes")
+            return
+        tmp = 0
+        for i in range(0, len(a)):
+            tmp += (a[i] * b[i])
+        return tmp
+
+    def feed_forward(self, data):
+        outs = []
+        for i in range(0, self.output_size):
+            outs.append(sigmoid(self.dot_product(data, self.weights[i]) + self.biases[i]))
+        return outs
+
+    def get_weights(self):
+        return self.weights
+
+    def get_biases(self):
+        return self.biases
+
+
+
+
 def img_to_arr(img):
     # Convert image to black and white with 8 bit pixel values
     img = img.convert("L")
@@ -195,6 +239,13 @@ def main():
         arr_to_img(convolved, raw_img.height - 3, raw_img.width - 3).show()
         pool_layer = MaxPoolLayer(4, raw_img.height - 3, raw_img.width - 3)
         arr_to_img(pool_layer.max_pool(convolved), 119, 79).show()
+        fc_layer = FullyConnectedLayer(10, 15)
+        print(fc_layer.get_weights())
+        print(fc_layer.get_biases())
+        ff_data = []
+        for i in range(0, 10):
+            ff_data.append(random.gauss(0, 1))
+        print(fc_layer.feed_forward(ff_data))
 
 if __name__ == '__main__':
    main()
