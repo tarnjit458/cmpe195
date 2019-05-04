@@ -20,6 +20,7 @@
  /home/ghaack/school/cmpe195/thermal_cam/build/esp_https_server/libesp_https_server.a.sections_info
  /home/ghaack/school/cmpe195/thermal_cam/build/esp_ringbuf/libesp_ringbuf.a.sections_info
  /home/ghaack/school/cmpe195/thermal_cam/build/esp_rom/libesp_rom.a.sections_info
+ /home/ghaack/school/cmpe195/thermal_cam/build/esp_wifi/libesp_wifi.a.sections_info
  /home/ghaack/school/cmpe195/thermal_cam/build/espcoredump/libespcoredump.a.sections_info
  /home/ghaack/school/cmpe195/thermal_cam/build/ethernet/libethernet.a.sections_info
  /home/ghaack/school/cmpe195/thermal_cam/build/expat/libexpat.a.sections_info
@@ -36,7 +37,6 @@
  /home/ghaack/school/cmpe195/thermal_cam/build/main/libmain.a.sections_info
  /home/ghaack/school/cmpe195/thermal_cam/build/mbedtls/libmbedtls.a.sections_info
  /home/ghaack/school/cmpe195/thermal_cam/build/mdns/libmdns.a.sections_info
- /home/ghaack/school/cmpe195/thermal_cam/build/micro-ecc/libmicro-ecc.a.sections_info
  /home/ghaack/school/cmpe195/thermal_cam/build/mqtt/libmqtt.a.sections_info
  /home/ghaack/school/cmpe195/thermal_cam/build/newlib/libnewlib.a.sections_info
  /home/ghaack/school/cmpe195/thermal_cam/build/nghttp/libnghttp.a.sections_info

@@ -72,10 +72,9 @@ bt.o: /home/ghaack/esp/esp-idf/components/bt/bt.c \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/task.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/limits.h \
@@ -87,14 +86,14 @@ bt.o: /home/ghaack/esp/esp-idf/components/bt/bt.c \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/core-macros.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_task.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_phy_init.h \
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_phy_init.h \
  /home/ghaack/esp/esp-idf/components/bt/include/esp_bt.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_pm.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp32/pm.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_ipc.h \
+ /home/ghaack/esp/esp-idf/components/esp_common/include/esp_ipc.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/periph_ctrl.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
@@ -103,8 +102,8 @@ bt.o: /home/ghaack/esp/esp-idf/components/bt/bt.c \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp32/clk.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_coexist_internal.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_coexist_adapter.h
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_coexist_internal.h \
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_coexist_adapter.h
 
 /home/ghaack/esp/esp-idf/components/newlib/include/stdlib.h:
 
@@ -252,13 +251,11 @@ bt.o: /home/ghaack/esp/esp-idf/components/bt/bt.c \
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
+
 /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
 
 /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h:
-
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
-
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
@@ -282,7 +279,7 @@ bt.o: /home/ghaack/esp/esp-idf/components/bt/bt.c \
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_phy_init.h:
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_phy_init.h:
 
 /home/ghaack/esp/esp-idf/components/bt/include/esp_bt.h:
 
@@ -296,7 +293,7 @@ bt.o: /home/ghaack/esp/esp-idf/components/bt/bt.c \
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_ipc.h:
+/home/ghaack/esp/esp-idf/components/esp_common/include/esp_ipc.h:
 
 /home/ghaack/esp/esp-idf/components/driver/include/driver/periph_ctrl.h:
 
@@ -314,7 +311,7 @@ bt.o: /home/ghaack/esp/esp-idf/components/bt/bt.c \
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp32/clk.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_coexist_internal.h:
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_coexist_internal.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_coexist_adapter.h:
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_coexist_adapter.h:
 /home/ghaack/esp/esp-idf/components/bt/./bt.c:

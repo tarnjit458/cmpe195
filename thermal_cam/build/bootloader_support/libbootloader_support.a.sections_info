@@ -127,72 +127,163 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA
  29 .debug_frame  00000130  00000000  00000000  000006cc  2**2
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 30 .debug_info   00002b25  00000000  00000000  000007fc  2**0
+ 30 .debug_info   00002b29  00000000  00000000  000007fc  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 31 .debug_abbrev 00000399  00000000  00000000  00003321  2**0
+ 31 .debug_abbrev 0000039b  00000000  00000000  00003325  2**0
                   CONTENTS, READONLY, DEBUGGING
- 32 .debug_loc    00000232  00000000  00000000  000036ba  2**0
+ 32 .debug_loc    00000232  00000000  00000000  000036c0  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 33 .debug_aranges 00000078  00000000  00000000  000038ec  2**0
+ 33 .debug_aranges 00000078  00000000  00000000  000038f2  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 34 .debug_ranges 00000068  00000000  00000000  00003964  2**0
+ 34 .debug_ranges 00000068  00000000  00000000  0000396a  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 35 .debug_line   00000527  00000000  00000000  000039cc  2**0
+ 35 .debug_line   00000527  00000000  00000000  000039d2  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 36 .debug_str    00001bc0  00000000  00000000  00003ef3  2**0
+ 36 .debug_str    00001bca  00000000  00000000  00003ef9  2**0
                   CONTENTS, READONLY, DEBUGGING
- 37 .comment      0000003b  00000000  00000000  00005ab3  2**0
+ 37 .comment      0000003b  00000000  00000000  00005ac3  2**0
                   CONTENTS, READONLY
- 38 .xtensa.info  00000038  00000000  00000000  00005aee  2**0
+ 38 .xtensa.info  00000038  00000000  00000000  00005afe  2**0
                   CONTENTS, READONLY
- 39 .xt.lit       00000060  00000000  00000000  00005b26  2**0
+ 39 .xt.lit       00000060  00000000  00000000  00005b36  2**0
                   CONTENTS, RELOC, READONLY
- 40 .xt.prop      00000300  00000000  00000000  00005b86  2**0
+ 40 .xt.prop      00000300  00000000  00000000  00005b96  2**0
                   CONTENTS, RELOC, READONLY
 
 secure_boot_signatures.o:     file format elf32-xtensa-le
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .literal.esp_secure_boot_verify_signature_block 00000030  00000000  00000000  00000034  2**2
+  0 .literal.esp_secure_boot_verify_signature_block 00000088  00000000  00000000  00000034  2**2
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  1 .literal.esp_secure_boot_verify_signature 00000020  00000000  00000000  00000064  2**2
+  1 .literal.esp_secure_boot_verify_signature 00000020  00000000  00000000  000000bc  2**2
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  2 .text         00000000  00000000  00000000  00000084  2**0
+  2 .text         00000000  00000000  00000000  000000dc  2**0
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  3 .data         00000000  00000000  00000000  00000084  2**0
+  3 .data         00000000  00000000  00000000  000000dc  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  4 .bss          00000000  00000000  00000000  00000084  2**0
+  4 .bss          00000000  00000000  00000000  000000dc  2**0
                   ALLOC
-  5 .rodata.str1.4 000000da  00000000  00000000  00000084  2**2
+  5 .rodata.str1.4 0000019a  00000000  00000000  000000dc  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  6 .text.esp_secure_boot_verify_signature_block 00000075  00000000  00000000  00000160  2**2
+  6 .text.esp_secure_boot_verify_signature_block 00000191  00000000  00000000  00000278  2**2
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  7 .text.esp_secure_boot_verify_signature 0000005c  00000000  00000000  000001d8  2**2
+  7 .text.esp_secure_boot_verify_signature 0000005c  00000000  00000000  0000040c  2**2
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  8 .debug_frame  00000040  00000000  00000000  00000234  2**2
+  8 .debug_frame  00000040  00000000  00000000  00000468  2**2
                   CONTENTS, RELOC, READONLY, DEBUGGING
-  9 .debug_info   00000415  00000000  00000000  00000274  2**0
+  9 .debug_info   000008ee  00000000  00000000  000004a8  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 10 .debug_abbrev 0000015d  00000000  00000000  00000689  2**0
+ 10 .debug_abbrev 000001cc  00000000  00000000  00000d96  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    000000e0  00000000  00000000  000007e6  2**0
+ 11 .debug_loc    00000161  00000000  00000000  00000f62  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 12 .debug_aranges 00000028  00000000  00000000  000008c6  2**0
+ 12 .debug_aranges 00000028  00000000  00000000  000010c3  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 13 .debug_ranges 00000018  00000000  00000000  000008ee  2**0
+ 13 .debug_ranges 00000018  00000000  00000000  000010eb  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 14 .debug_line   000003c9  00000000  00000000  00000906  2**0
+ 14 .debug_line   00000451  00000000  00000000  00001103  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 15 .debug_str    00000405  00000000  00000000  00000ccf  2**0
+ 15 .debug_str    000006b0  00000000  00000000  00001554  2**0
                   CONTENTS, READONLY, DEBUGGING
- 16 .comment      0000003b  00000000  00000000  000010d4  2**0
+ 16 .comment      0000003b  00000000  00000000  00001c04  2**0
                   CONTENTS, READONLY
- 17 .xtensa.info  00000038  00000000  00000000  0000110f  2**0
+ 17 .xtensa.info  00000038  00000000  00000000  00001c3f  2**0
                   CONTENTS, READONLY
- 18 .xt.lit       00000010  00000000  00000000  00001147  2**0
+ 18 .xt.lit       00000010  00000000  00000000  00001c77  2**0
                   CONTENTS, RELOC, READONLY
- 19 .xt.prop      000000c0  00000000  00000000  00001157  2**0
+ 19 .xt.prop      00000114  00000000  00000000  00001c87  2**0
+                  CONTENTS, RELOC, READONLY
+
+bootloader_utility.o:     file format elf32-xtensa-le
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .literal.log_invalid_app_partition 0000002c  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .literal.read_otadata 00000030  00000000  00000000  00000060  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  2 .literal.write_otadata 00000018  00000000  00000000  00000090  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  3 .literal.set_actual_ota_seq 00000024  00000000  00000000  000000a8  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  4 .literal.set_cache_and_start_app 00000070  00000000  00000000  000000cc  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  5 .literal.unpack_load_app 00000034  00000000  00000000  0000013c  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  6 .literal.load_image 00000018  00000000  00000000  00000170  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  7 .literal.bootloader_utility_load_partition_table 00000090  00000000  00000000  00000188  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  8 .literal.bootloader_utility_get_selected_boot_partition 00000050  00000000  00000000  00000218  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  9 .literal.bootloader_reset 00000004  00000000  00000000  00000268  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 10 .literal.bootloader_utility_load_boot_image 00000074  00000000  00000000  0000026c  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 11 .text         00000000  00000000  00000000  000002e0  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 12 .data         00000000  00000000  00000000  000002e0  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+ 13 .bss          00000000  00000000  00000000  000002e0  2**0
+                  ALLOC
+ 14 .text.index_to_partition 00000048  00000000  00000000  000002e0  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 15 .text.check_anti_rollback 00000007  00000000  00000000  00000328  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 16 .text.try_load_partition 00000007  00000000  00000000  00000330  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 17 .rodata.str1.4 00000601  00000000  00000000  00000338  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 18 .text.log_invalid_app_partition 0000006a  00000000  00000000  0000093c  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 19 .text.read_otadata 0000008d  00000000  00000000  000009a8  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 20 .text.write_otadata 00000040  00000000  00000000  00000a38  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 21 .text.set_actual_ota_seq 00000078  00000000  00000000  00000a78  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 22 .text.set_cache_and_start_app 00000139  00000000  00000000  00000af0  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 23 .text.unpack_load_app 000000bc  00000000  00000000  00000c2c  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 24 .text.load_image 0000002a  00000000  00000000  00000ce8  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 25 .text.bootloader_utility_load_partition_table 000001a4  00000000  00000000  00000d14  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 26 .rodata.bootloader_utility_load_partition_table 00000018  00000000  00000000  00000eb8  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA
+ 27 .text.bootloader_utility_get_selected_boot_partition 0000010a  00000000  00000000  00000ed0  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 28 .text.bootloader_reset 00000009  00000000  00000000  00000fdc  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 29 .text.bootloader_utility_load_boot_image 00000133  00000000  00000000  00000fe8  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 30 .bss.ota_has_initial_contents 00000001  00000000  00000000  0000111b  2**0
+                  ALLOC
+ 31 .debug_frame  00000160  00000000  00000000  0000111c  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 32 .debug_info   00001945  00000000  00000000  0000127c  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 33 .debug_abbrev 000003e6  00000000  00000000  00002bc1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 34 .debug_loc    00000a55  00000000  00000000  00002fa7  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 35 .debug_aranges 00000088  00000000  00000000  000039fc  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 36 .debug_ranges 00000090  00000000  00000000  00003a84  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 37 .debug_line   00000ad6  00000000  00000000  00003b14  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 38 .debug_str    000009fc  00000000  00000000  000045ea  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 39 .comment      0000003b  00000000  00000000  00004fe6  2**0
+                  CONTENTS, READONLY
+ 40 .xtensa.info  00000038  00000000  00000000  00005021  2**0
+                  CONTENTS, READONLY
+ 41 .xt.lit       00000058  00000000  00000000  00005059  2**0
+                  CONTENTS, RELOC, READONLY
+ 42 .xt.prop      00000678  00000000  00000000  000050b1  2**0
                   CONTENTS, RELOC, READONLY
 
 bootloader_common.o:     file format elf32-xtensa-le
@@ -333,72 +424,27 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
   6 .debug_frame  00000028  00000000  00000000  00000104  2**2
                   CONTENTS, RELOC, READONLY, DEBUGGING
-  7 .debug_info   00000341  00000000  00000000  0000012c  2**0
+  7 .debug_info   00000345  00000000  00000000  0000012c  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
-  8 .debug_abbrev 0000019f  00000000  00000000  0000046d  2**0
+  8 .debug_abbrev 000001a1  00000000  00000000  00000471  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_loc    00000084  00000000  00000000  0000060c  2**0
+  9 .debug_loc    00000084  00000000  00000000  00000612  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 10 .debug_aranges 00000020  00000000  00000000  00000690  2**0
+ 10 .debug_aranges 00000020  00000000  00000000  00000696  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 11 .debug_ranges 00000010  00000000  00000000  000006b0  2**0
+ 11 .debug_ranges 00000010  00000000  00000000  000006b6  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 12 .debug_line   00000257  00000000  00000000  000006c0  2**0
+ 12 .debug_line   00000257  00000000  00000000  000006c6  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 13 .debug_str    000003d6  00000000  00000000  00000917  2**0
+ 13 .debug_str    000003e7  00000000  00000000  0000091d  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .comment      0000003b  00000000  00000000  00000ced  2**0
+ 14 .comment      0000003b  00000000  00000000  00000d04  2**0
                   CONTENTS, READONLY
- 15 .xtensa.info  00000038  00000000  00000000  00000d28  2**0
+ 15 .xtensa.info  00000038  00000000  00000000  00000d3f  2**0
                   CONTENTS, READONLY
- 16 .xt.lit       00000008  00000000  00000000  00000d60  2**0
+ 16 .xt.lit       00000008  00000000  00000000  00000d77  2**0
                   CONTENTS, RELOC, READONLY
- 17 .xt.prop      00000078  00000000  00000000  00000d68  2**0
-                  CONTENTS, RELOC, READONLY
-
-bootloader_random.o:     file format elf32-xtensa-le
-
-Sections:
-Idx Name          Size      VMA       LMA       File off  Algn
-  0 .literal.bootloader_fill_random 00000004  00000000  00000000  00000034  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  1 .literal.bootloader_random_enable 00000080  00000000  00000000  00000038  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  2 .literal.bootloader_random_disable 00000058  00000000  00000000  000000b8  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  3 .text         00000000  00000000  00000000  00000110  2**0
-                  CONTENTS, ALLOC, LOAD, READONLY, CODE
-  4 .data         00000000  00000000  00000000  00000110  2**0
-                  CONTENTS, ALLOC, LOAD, DATA
-  5 .bss          00000000  00000000  00000000  00000110  2**0
-                  ALLOC
-  6 .text.bootloader_fill_random 0000000f  00000000  00000000  00000110  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  7 .text.bootloader_random_enable 000001dc  00000000  00000000  00000120  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  8 .text.bootloader_random_disable 00000125  00000000  00000000  000002fc  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  9 .debug_frame  00000058  00000000  00000000  00000424  2**2
-                  CONTENTS, RELOC, READONLY, DEBUGGING
- 10 .debug_info   0000025d  00000000  00000000  0000047c  2**0
-                  CONTENTS, RELOC, READONLY, DEBUGGING
- 11 .debug_abbrev 000000fc  00000000  00000000  000006d9  2**0
-                  CONTENTS, READONLY, DEBUGGING
- 12 .debug_aranges 00000030  00000000  00000000  000007d5  2**0
-                  CONTENTS, RELOC, READONLY, DEBUGGING
- 13 .debug_ranges 00000020  00000000  00000000  00000805  2**0
-                  CONTENTS, RELOC, READONLY, DEBUGGING
- 14 .debug_line   000003a4  00000000  00000000  00000825  2**0
-                  CONTENTS, RELOC, READONLY, DEBUGGING
- 15 .debug_str    00000251  00000000  00000000  00000bc9  2**0
-                  CONTENTS, READONLY, DEBUGGING
- 16 .comment      0000003b  00000000  00000000  00000e1a  2**0
-                  CONTENTS, READONLY
- 17 .xtensa.info  00000038  00000000  00000000  00000e55  2**0
-                  CONTENTS, READONLY
- 18 .xt.lit       00000018  00000000  00000000  00000e8d  2**0
-                  CONTENTS, RELOC, READONLY
- 19 .xt.prop      00000090  00000000  00000000  00000ea5  2**0
+ 17 .xt.prop      00000078  00000000  00000000  00000d7f  2**0
                   CONTENTS, RELOC, READONLY
 
 flash_partitions.o:     file format elf32-xtensa-le
@@ -628,124 +674,78 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
  16 .text.encrypt_partition 000000a4  00000000  00000000  00000c68  2**2
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 17 .text.encrypt_flash_contents 000000f0  00000000  00000000  00000d0c  2**2
+ 17 .text.encrypt_flash_contents 000000e0  00000000  00000000  00000d0c  2**2
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 18 .text.esp_flash_encrypt_check_and_update 00000076  00000000  00000000  00000dfc  2**2
+ 18 .text.esp_flash_encrypt_check_and_update 00000076  00000000  00000000  00000dec  2**2
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 19 .text.esp_flash_write_protect_crypt_cnt 00000020  00000000  00000000  00000e74  2**2
+ 19 .text.esp_flash_write_protect_crypt_cnt 00000020  00000000  00000000  00000e64  2**2
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 20 .debug_frame  000000d0  00000000  00000000  00000e94  2**2
+ 20 .debug_frame  000000d0  00000000  00000000  00000e84  2**2
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 21 .debug_info   00000f1f  00000000  00000000  00000f64  2**0
+ 21 .debug_info   00000f1f  00000000  00000000  00000f54  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 22 .debug_abbrev 000002c6  00000000  00000000  00001e83  2**0
+ 22 .debug_abbrev 000002c6  00000000  00000000  00001e73  2**0
                   CONTENTS, READONLY, DEBUGGING
- 23 .debug_loc    00000586  00000000  00000000  00002149  2**0
+ 23 .debug_loc    00000586  00000000  00000000  00002139  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 24 .debug_aranges 00000058  00000000  00000000  000026cf  2**0
+ 24 .debug_aranges 00000058  00000000  00000000  000026bf  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 25 .debug_ranges 00000078  00000000  00000000  00002727  2**0
+ 25 .debug_ranges 00000078  00000000  00000000  00002717  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 26 .debug_line   000007e1  00000000  00000000  0000279f  2**0
+ 26 .debug_line   000007e1  00000000  00000000  0000278f  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 27 .debug_str    000006c7  00000000  00000000  00002f80  2**0
+ 27 .debug_str    000006c7  00000000  00000000  00002f70  2**0
                   CONTENTS, READONLY, DEBUGGING
- 28 .comment      0000003b  00000000  00000000  00003647  2**0
+ 28 .comment      0000003b  00000000  00000000  00003637  2**0
                   CONTENTS, READONLY
- 29 .xtensa.info  00000038  00000000  00000000  00003682  2**0
+ 29 .xtensa.info  00000038  00000000  00000000  00003672  2**0
                   CONTENTS, READONLY
- 30 .xt.lit       00000040  00000000  00000000  000036ba  2**0
+ 30 .xt.lit       00000040  00000000  00000000  000036aa  2**0
                   CONTENTS, RELOC, READONLY
- 31 .xt.prop      000003a8  00000000  00000000  000036fa  2**0
+ 31 .xt.prop      000003a8  00000000  00000000  000036ea  2**0
                   CONTENTS, RELOC, READONLY
 
-bootloader_utility.o:     file format elf32-xtensa-le
+bootloader_random.o:     file format elf32-xtensa-le
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .literal.log_invalid_app_partition 0000002c  00000000  00000000  00000034  2**2
+  0 .literal.bootloader_fill_random 00000004  00000000  00000000  00000034  2**2
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  1 .literal.read_otadata 00000030  00000000  00000000  00000060  2**2
+  1 .literal.bootloader_random_enable 00000080  00000000  00000000  00000038  2**2
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  2 .literal.write_otadata 00000018  00000000  00000000  00000090  2**2
+  2 .literal.bootloader_random_disable 00000058  00000000  00000000  000000b8  2**2
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  3 .literal.set_actual_ota_seq 00000024  00000000  00000000  000000a8  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  4 .literal.set_cache_and_start_app 00000070  00000000  00000000  000000cc  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  5 .literal.unpack_load_app 00000034  00000000  00000000  0000013c  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  6 .literal.load_image 00000018  00000000  00000000  00000170  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  7 .literal.bootloader_utility_load_partition_table 00000090  00000000  00000000  00000188  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  8 .literal.bootloader_utility_get_selected_boot_partition 00000050  00000000  00000000  00000218  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  9 .literal.bootloader_reset 00000004  00000000  00000000  00000268  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 10 .literal.bootloader_utility_load_boot_image 00000074  00000000  00000000  0000026c  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 11 .text         00000000  00000000  00000000  000002e0  2**0
+  3 .text         00000000  00000000  00000000  00000110  2**0
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 12 .data         00000000  00000000  00000000  000002e0  2**0
+  4 .data         00000000  00000000  00000000  00000110  2**0
                   CONTENTS, ALLOC, LOAD, DATA
- 13 .bss          00000000  00000000  00000000  000002e0  2**0
+  5 .bss          00000000  00000000  00000000  00000110  2**0
                   ALLOC
- 14 .text.index_to_partition 00000048  00000000  00000000  000002e0  2**2
+  6 .text.bootloader_fill_random 0000000f  00000000  00000000  00000110  2**2
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 15 .text.check_anti_rollback 00000007  00000000  00000000  00000328  2**2
-                  CONTENTS, ALLOC, LOAD, READONLY, CODE
- 16 .text.try_load_partition 00000007  00000000  00000000  00000330  2**2
-                  CONTENTS, ALLOC, LOAD, READONLY, CODE
- 17 .rodata.str1.4 00000601  00000000  00000000  00000338  2**2
-                  CONTENTS, ALLOC, LOAD, READONLY, DATA
- 18 .text.log_invalid_app_partition 0000006a  00000000  00000000  0000093c  2**2
+  7 .text.bootloader_random_enable 000001dc  00000000  00000000  00000120  2**2
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 19 .text.read_otadata 0000008d  00000000  00000000  000009a8  2**2
+  8 .text.bootloader_random_disable 00000125  00000000  00000000  000002fc  2**2
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 20 .text.write_otadata 00000040  00000000  00000000  00000a38  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 21 .text.set_actual_ota_seq 00000078  00000000  00000000  00000a78  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 22 .text.set_cache_and_start_app 00000139  00000000  00000000  00000af0  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 23 .text.unpack_load_app 000000bc  00000000  00000000  00000c2c  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 24 .text.load_image 0000002a  00000000  00000000  00000ce8  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 25 .text.bootloader_utility_load_partition_table 000001a4  00000000  00000000  00000d14  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 26 .rodata.bootloader_utility_load_partition_table 00000018  00000000  00000000  00000eb8  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA
- 27 .text.bootloader_utility_get_selected_boot_partition 0000010a  00000000  00000000  00000ed0  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 28 .text.bootloader_reset 00000009  00000000  00000000  00000fdc  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 29 .text.bootloader_utility_load_boot_image 00000133  00000000  00000000  00000fe8  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 30 .bss.ota_has_initial_contents 00000001  00000000  00000000  0000111b  2**0
-                  ALLOC
- 31 .debug_frame  00000160  00000000  00000000  0000111c  2**2
+  9 .debug_frame  00000058  00000000  00000000  00000424  2**2
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 32 .debug_info   00001945  00000000  00000000  0000127c  2**0
+ 10 .debug_info   0000025d  00000000  00000000  0000047c  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 33 .debug_abbrev 000003e6  00000000  00000000  00002bc1  2**0
+ 11 .debug_abbrev 000000fc  00000000  00000000  000006d9  2**0
                   CONTENTS, READONLY, DEBUGGING
- 34 .debug_loc    00000a55  00000000  00000000  00002fa7  2**0
+ 12 .debug_aranges 00000030  00000000  00000000  000007d5  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 35 .debug_aranges 00000088  00000000  00000000  000039fc  2**0
+ 13 .debug_ranges 00000020  00000000  00000000  00000805  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 36 .debug_ranges 00000090  00000000  00000000  00003a84  2**0
+ 14 .debug_line   000003a4  00000000  00000000  00000825  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 37 .debug_line   00000ad6  00000000  00000000  00003b14  2**0
-                  CONTENTS, RELOC, READONLY, DEBUGGING
- 38 .debug_str    000009fc  00000000  00000000  000045ea  2**0
+ 15 .debug_str    00000251  00000000  00000000  00000bc9  2**0
                   CONTENTS, READONLY, DEBUGGING
- 39 .comment      0000003b  00000000  00000000  00004fe6  2**0
+ 16 .comment      0000003b  00000000  00000000  00000e1a  2**0
                   CONTENTS, READONLY
- 40 .xtensa.info  00000038  00000000  00000000  00005021  2**0
+ 17 .xtensa.info  00000038  00000000  00000000  00000e55  2**0
                   CONTENTS, READONLY
- 41 .xt.lit       00000058  00000000  00000000  00005059  2**0
+ 18 .xt.lit       00000018  00000000  00000000  00000e8d  2**0
                   CONTENTS, RELOC, READONLY
- 42 .xt.prop      00000678  00000000  00000000  000050b1  2**0
+ 19 .xt.prop      00000090  00000000  00000000  00000ea5  2**0
                   CONTENTS, RELOC, READONLY

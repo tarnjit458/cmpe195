@@ -19,7 +19,7 @@ xtensa_vector_defaults.o: \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_timer.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_rtos.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_panic.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/include/esp_private/panic_reason.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_rtos.h:
@@ -60,7 +60,7 @@ xtensa_vector_defaults.o: \
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_rtos.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_panic.h:
+/home/ghaack/esp/esp-idf/components/xtensa/include/esp_private/panic_reason.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 /home/ghaack/esp/esp-idf/components/freertos/./xtensa_vector_defaults.S:

@@ -4,24 +4,24 @@ Archive member included to satisfy reference by file (symbol)
                               (call_start_cpu0)
 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
                               /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o) (bootloader_init)
-/home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
-                              /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o) (bootloader_clock_configure)
-/home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
-                              /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o) (bootloader_random_enable)
 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                               /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o) (bootloader_utility_load_partition_table)
-/home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
-                              /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o) (bootloader_mmap)
-/home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
-                              /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o) (bootloader_read_flash_id)
 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
                               /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o) (bootloader_common_ota_select_crc)
+/home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
+                              /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o) (bootloader_clock_configure)
 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
                               /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o) (esp_partition_table_verify)
 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                               /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o) (bootloader_load_image)
 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
                               /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o) (bootloader_sha256_start)
+/home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+                              /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o) (bootloader_fill_random)
+/home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                              /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o) (bootloader_mmap)
+/home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
+                              /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o) (bootloader_read_flash_id)
 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/log/liblog.a(log.o)
                               /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o) (esp_log_early_timestamp)
 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
@@ -57,21 +57,76 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
  .xt.lit        0x0000000000000000       0x60 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
  .xt.prop       0x0000000000000000      0x624 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .text          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
- .data          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
- .bss           0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
- .xt.lit        0x0000000000000000        0x8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
- .xt.prop       0x0000000000000000       0x78 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
- .text          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .data          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .bss           0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .xt.lit        0x0000000000000000       0x18 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .xt.prop       0x0000000000000000       0xe4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
  .text          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
  .data          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
  .bss           0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
  .xt.lit        0x0000000000000000       0x60 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
  .xt.prop       0x0000000000000000      0x6c0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .literal.bootloader_common_check_long_hold_gpio
+                0x0000000000000000       0x28 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .literal.bootloader_common_label_search
+                0x0000000000000000       0x18 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .literal.bootloader_common_erase_part_type_data
+                0x0000000000000000       0x60 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .literal.bootloader_common_get_sha256_of_partition
+                0x0000000000000000       0x34 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .literal.bootloader_common_get_partition_description
+                0x0000000000000000       0x20 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .text          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .data          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .bss           0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .text.bootloader_common_check_long_hold_gpio
+                0x0000000000000000       0xac /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .rodata.str1.4
+                0x0000000000000000      0x112 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .text.bootloader_common_label_search
+                0x0000000000000000       0xac /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .text.bootloader_common_erase_part_type_data
+                0x0000000000000000      0x126 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .text.bootloader_common_get_sha256_of_partition
+                0x0000000000000000       0xc7 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .text.bootloader_common_get_partition_description
+                0x0000000000000000       0x75 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .xt.lit        0x0000000000000000       0x40 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .xt.prop       0x0000000000000000      0x564 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .text          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
+ .data          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
+ .bss           0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
+ .xt.lit        0x0000000000000000        0x8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
+ .xt.prop       0x0000000000000000       0x78 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
+ .text          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .data          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .bss           0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .xt.lit        0x0000000000000000        0x8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .xt.prop       0x0000000000000000      0x144 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .literal.esp_image_verify
+                0x0000000000000000        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .literal.esp_image_verify_bootloader_data
+                0x0000000000000000        0x8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .literal.esp_image_verify_bootloader
+                0x0000000000000000        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .text          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .data          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .bss           0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .text.esp_image_verify
+                0x0000000000000000       0x14 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .rodata        0x0000000000000000        0x8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .text.esp_image_verify_bootloader_data
+                0x0000000000000000       0x25 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .text.esp_image_verify_bootloader
+                0x0000000000000000       0x1e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .xt.lit        0x0000000000000000       0x70 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .xt.prop       0x0000000000000000      0x7bc /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .text          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .data          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .bss           0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .xt.lit        0x0000000000000000       0x18 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .xt.prop       0x0000000000000000      0x24c /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .text          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .data          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .bss           0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .xt.lit        0x0000000000000000       0x18 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .xt.prop       0x0000000000000000       0xe4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
  .literal.bootloader_flash_erase_range
                 0x0000000000000000        0xc /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .text          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
@@ -130,61 +185,6 @@ Discarded input sections
                 0x0000000000000000       0x6c /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
  .xt.lit        0x0000000000000000       0x60 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
  .xt.prop       0x0000000000000000      0x300 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
- .literal.bootloader_common_check_long_hold_gpio
-                0x0000000000000000       0x28 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .literal.bootloader_common_label_search
-                0x0000000000000000       0x18 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .literal.bootloader_common_erase_part_type_data
-                0x0000000000000000       0x60 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .literal.bootloader_common_get_sha256_of_partition
-                0x0000000000000000       0x34 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .literal.bootloader_common_get_partition_description
-                0x0000000000000000       0x20 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .text          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .data          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .bss           0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .text.bootloader_common_check_long_hold_gpio
-                0x0000000000000000       0xac /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .rodata.str1.4
-                0x0000000000000000      0x112 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .text.bootloader_common_label_search
-                0x0000000000000000       0xac /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .text.bootloader_common_erase_part_type_data
-                0x0000000000000000      0x126 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .text.bootloader_common_get_sha256_of_partition
-                0x0000000000000000       0xc7 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .text.bootloader_common_get_partition_description
-                0x0000000000000000       0x75 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .xt.lit        0x0000000000000000       0x40 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .xt.prop       0x0000000000000000      0x564 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .text          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .data          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .bss           0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .xt.lit        0x0000000000000000        0x8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .xt.prop       0x0000000000000000      0x144 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .literal.esp_image_verify
-                0x0000000000000000        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .literal.esp_image_verify_bootloader_data
-                0x0000000000000000        0x8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .literal.esp_image_verify_bootloader
-                0x0000000000000000        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .text          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .data          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .bss           0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .text.esp_image_verify
-                0x0000000000000000       0x14 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .rodata        0x0000000000000000        0x8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .text.esp_image_verify_bootloader_data
-                0x0000000000000000       0x25 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .text.esp_image_verify_bootloader
-                0x0000000000000000       0x1e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .xt.lit        0x0000000000000000       0x70 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .xt.prop       0x0000000000000000      0x7bc /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .text          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .data          0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .bss           0x0000000000000000        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .xt.lit        0x0000000000000000       0x18 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .xt.prop       0x0000000000000000      0x24c /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
  .literal.esp_log_buffer_hex_internal
                 0x0000000000000000       0x50 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/log/liblog.a(log.o)
  .literal.esp_log_buffer_char_internal
@@ -945,7 +945,7 @@ END GROUP
  *(.gnu.version)
                 0x000000004007ac29                _loader_text_end = ABSOLUTE (.)
 
-.iram.text      0x0000000040080400     0x1a17
+.iram.text      0x0000000040080400     0x1a2b
                 0x0000000040080400                . = ALIGN (0x10)
  *(.entry.text)
  *(.init.literal)
@@ -1033,278 +1033,278 @@ END GROUP
                 0x00000000400806cc        0x8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x1c (size before relaxing)
  .literal.rtc_clk_32k_enable
-                0x00000000400806d4        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                                          0xc (size before relaxing)
+                0x00000000400806d4        0x8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                                         0x10 (size before relaxing)
  .literal.rtc_clk_8m_enable
-                0x00000000400806d8        0x8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400806dc        0x8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x10 (size before relaxing)
  .literal.rtc_clk_8m_enabled
-                0x00000000400806e0        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400806e4        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x4 (size before relaxing)
  .literal.rtc_clk_8md256_enabled
-                0x00000000400806e0        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400806e4        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x4 (size before relaxing)
  .literal.rtc_clk_slow_freq_set
-                0x00000000400806e0        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400806e4        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0xc (size before relaxing)
  .literal.rtc_clk_slow_freq_get
-                0x00000000400806e4        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400806e8        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x4 (size before relaxing)
  .literal.rtc_clk_slow_freq_get_hz
-                0x00000000400806e4        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400806e8        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x10 (size before relaxing)
  .literal.rtc_clk_fast_freq_set
-                0x00000000400806e4        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400806e8        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0xc (size before relaxing)
  .literal.rtc_clk_fast_freq_get
-                0x00000000400806e4        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400806e8        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x4 (size before relaxing)
  .literal.rtc_clk_bbpll_configure
-                0x00000000400806e4        0x8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400806e8        0x8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x3c (size before relaxing)
  .literal.rtc_clk_xtal_freq_get
-                0x00000000400806ec        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400806f0        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x8 (size before relaxing)
  .literal.rtc_clk_cpu_freq_mhz_to_config
-                0x00000000400806f0        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400806f4        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x4 (size before relaxing)
  .literal.rtc_clk_cpu_freq_get_config
-                0x00000000400806f0        0xc /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400806f4        0xc /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x30 (size before relaxing)
  .literal.rtc_clk_xtal_freq_update
-                0x00000000400806fc        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040080700        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x8 (size before relaxing)
  .literal.rtc_clk_apb_freq_update
-                0x0000000040080700        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040080704        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .literal.rtc_clk_cpu_freq_to_xtal
-                0x0000000040080704        0xc /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040080708        0xc /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x30 (size before relaxing)
  .literal.rtc_clk_cpu_freq_to_pll_mhz
-                0x0000000040080710        0xc /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040080714        0xc /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x40 (size before relaxing)
  .literal.rtc_clk_cpu_freq_to_8m
-                0x000000004008071c        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040080720        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x28 (size before relaxing)
  .literal.rtc_clk_cpu_freq_set_config
-                0x0000000040080720        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040080724        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x30 (size before relaxing)
  .literal.rtc_clk_apb_freq_get
-                0x0000000040080720        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040080724        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x10 (size before relaxing)
  .text.selected_boot_partition
-                0x0000000040080724        0xc /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040080728        0xc /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x10 (size before relaxing)
  .text.select_partition_number
-                0x0000000040080730       0x30 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040080734       0x30 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x34 (size before relaxing)
  .text.call_start_cpu0
-                0x0000000040080760       0x35 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040080764       0x35 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x3c (size before relaxing)
-                0x0000000040080760                call_start_cpu0
- *fill*         0x0000000040080795        0x3 
+                0x0000000040080764                call_start_cpu0
+ *fill*         0x0000000040080799        0x3 
  .text.wdt_reset_cpu0_info_enable
-                0x0000000040080798       0x27 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- *fill*         0x00000000400807bf        0x1 
+                0x000000004008079c       0x27 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ *fill*         0x00000000400807c3        0x1 
  .text.wdt_reset_info_dump
-                0x00000000400807c0       0xe6 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- *fill*         0x00000000400808a6        0x2 
+                0x00000000400807c4       0xe6 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ *fill*         0x00000000400808aa        0x2 
  .text.print_flash_info
-                0x00000000400808a8       0xf6 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- *fill*         0x000000004008099e        0x2 
+                0x00000000400808ac       0xf6 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ *fill*         0x00000000400809a2        0x2 
  .text.vddsdio_configure
-                0x00000000400809a0       0x33 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x00000000400809a4       0x33 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
                                          0x37 (size before relaxing)
- *fill*         0x00000000400809d3        0x1 
+ *fill*         0x00000000400809d7        0x1 
  .text.uart_console_configure
-                0x00000000400809d4       0x36 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x00000000400809d8       0x36 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
                                          0x3a (size before relaxing)
- *fill*         0x0000000040080a0a        0x2 
+ *fill*         0x0000000040080a0e        0x2 
  .text.wdt_reset_check
-                0x0000000040080a0c       0xa2 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x0000000040080a10       0xa2 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
                                          0xae (size before relaxing)
- *fill*         0x0000000040080aae        0x2 
+ *fill*         0x0000000040080ab2        0x2 
  .text.update_flash_config
-                0x0000000040080ab0       0x68 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x0000000040080ab4       0x68 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
  .text.bootloader_main
-                0x0000000040080b18       0xe0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x0000000040080b1c       0xe0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
                                         0x128 (size before relaxing)
  .text.__assert_func
-                0x0000000040080bf8       0x1f /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x0000000040080bfc       0x1f /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
                                          0x23 (size before relaxing)
-                0x0000000040080bf8                __assert_func
- *fill*         0x0000000040080c17        0x1 
+                0x0000000040080bfc                __assert_func
+ *fill*         0x0000000040080c1b        0x1 
  .text.bootloader_init
-                0x0000000040080c18      0x12a /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x0000000040080c1c      0x12a /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
                                         0x13a (size before relaxing)
-                0x0000000040080c18                bootloader_init
- *fill*         0x0000000040080d42        0x2 
- .text.abort    0x0000000040080d44       0x2c /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x0000000040080c1c                bootloader_init
+ *fill*         0x0000000040080d46        0x2 
+ .text.abort    0x0000000040080d48       0x2c /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
                                          0x2f (size before relaxing)
-                0x0000000040080d44                abort
- *fill*         0x0000000040080d70        0x0 
+                0x0000000040080d48                abort
+ *fill*         0x0000000040080d74        0x0 
  .text.bootloader_clock_configure
-                0x0000000040080d70       0x8e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
+                0x0000000040080d74       0x8e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
                                          0x96 (size before relaxing)
-                0x0000000040080d70                bootloader_clock_configure
- *fill*         0x0000000040080dfe        0x2 
+                0x0000000040080d74                bootloader_clock_configure
+ *fill*         0x0000000040080e02        0x2 
  .text.execute_flash_command
-                0x0000000040080e00      0x190 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
+                0x0000000040080e04      0x190 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
  .text.bootloader_read_flash_id
-                0x0000000040080f90       0x27 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
+                0x0000000040080f94       0x27 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
                                          0x2b (size before relaxing)
-                0x0000000040080f90                bootloader_read_flash_id
- *fill*         0x0000000040080fb7        0x1 
+                0x0000000040080f94                bootloader_read_flash_id
+ *fill*         0x0000000040080fbb        0x1 
  .text.rtc_vddsdio_get_config
-                0x0000000040080fb8      0x104 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_init.o)
-                0x0000000040080fb8                rtc_vddsdio_get_config
+                0x0000000040080fbc      0x104 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_init.o)
+                0x0000000040080fbc                rtc_vddsdio_get_config
  .text.rtc_vddsdio_set_config
-                0x00000000400810bc       0x46 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_init.o)
-                0x00000000400810bc                rtc_vddsdio_set_config
- *fill*         0x0000000040081102        0x2 
+                0x00000000400810c0       0x46 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_init.o)
+                0x00000000400810c0                rtc_vddsdio_set_config
+ *fill*         0x0000000040081106        0x2 
  .text.rtc_clk_xtal_freq_estimate
-                0x0000000040081104       0xa6 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk_init.o)
+                0x0000000040081108       0xa6 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk_init.o)
                                          0xb2 (size before relaxing)
- *fill*         0x00000000400811aa        0x2 
+ *fill*         0x00000000400811ae        0x2 
  .text.rtc_clk_init
-                0x00000000400811ac      0x1da /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk_init.o)
+                0x00000000400811b0      0x1da /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk_init.o)
                                         0x20a (size before relaxing)
-                0x00000000400811ac                rtc_clk_init
- *fill*         0x0000000040081386        0x2 
+                0x00000000400811b0                rtc_clk_init
+ *fill*         0x000000004008138a        0x2 
  .text.rtc_clk_cal_internal
-                0x0000000040081388      0x1c0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x000000004008138c      0x1c0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_time.o)
                                         0x1cc (size before relaxing)
  .text.rtc_clk_cal_ratio
-                0x0000000040081548       0x20 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x000000004008154c       0x20 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_time.o)
                                          0x24 (size before relaxing)
-                0x0000000040081548                rtc_clk_cal_ratio
+                0x000000004008154c                rtc_clk_cal_ratio
  .text.rtc_clk_wait_for_slow_cycle
-                0x0000000040081568       0x79 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_time.o)
-                0x0000000040081568                rtc_clk_wait_for_slow_cycle
- *fill*         0x00000000400815e1        0x3 
+                0x000000004008156c       0x79 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x000000004008156c                rtc_clk_wait_for_slow_cycle
+ *fill*         0x00000000400815e5        0x3 
  .text.rtc_clk_32k_enable_common
-                0x00000000400815e4       0x81 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
- *fill*         0x0000000040081665        0x3 
+                0x00000000400815e8       0x81 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ *fill*         0x0000000040081669        0x3 
  .text.rtc_clk_bbpll_disable
-                0x0000000040081668       0x3e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
- *fill*         0x00000000400816a6        0x2 
+                0x000000004008166c       0x3e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ *fill*         0x00000000400816aa        0x2 
  .text.rtc_clk_bbpll_enable
-                0x00000000400816a8       0x66 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
- *fill*         0x000000004008170e        0x2 
+                0x00000000400816ac       0x66 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ *fill*         0x0000000040081712        0x2 
  .text.rtc_clk_32k_enable
-                0x0000000040081710       0x2d /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x0000000040081710                rtc_clk_32k_enable
- *fill*         0x000000004008173d        0x3 
+                0x0000000040081714       0x3d /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081714                rtc_clk_32k_enable
+ *fill*         0x0000000040081751        0x3 
  .text.rtc_clk_8m_enable
-                0x0000000040081740       0x9b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x0000000040081740                rtc_clk_8m_enable
- *fill*         0x00000000400817db        0x1 
+                0x0000000040081754       0x9b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081754                rtc_clk_8m_enable
+ *fill*         0x00000000400817ef        0x1 
  .text.rtc_clk_8m_enabled
-                0x00000000400817dc       0x19 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x00000000400817dc                rtc_clk_8m_enabled
- *fill*         0x00000000400817f5        0x3 
+                0x00000000400817f0       0x19 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400817f0                rtc_clk_8m_enabled
+ *fill*         0x0000000040081809        0x3 
  .text.rtc_clk_8md256_enabled
-                0x00000000400817f8       0x1a /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x00000000400817f8                rtc_clk_8md256_enabled
- *fill*         0x0000000040081812        0x2 
+                0x000000004008180c       0x1a /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004008180c                rtc_clk_8md256_enabled
+ *fill*         0x0000000040081826        0x2 
  .text.rtc_clk_slow_freq_set
-                0x0000000040081814       0x48 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x0000000040081814                rtc_clk_slow_freq_set
+                0x0000000040081828       0x48 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081828                rtc_clk_slow_freq_set
  .text.rtc_clk_slow_freq_get
-                0x000000004008185c       0x10 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x000000004008185c                rtc_clk_slow_freq_get
+                0x0000000040081870       0x10 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081870                rtc_clk_slow_freq_get
  .text.rtc_clk_slow_freq_get_hz
-                0x000000004008186c       0x29 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x000000004008186c                rtc_clk_slow_freq_get_hz
- *fill*         0x0000000040081895        0x3 
+                0x0000000040081880       0x29 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081880                rtc_clk_slow_freq_get_hz
+ *fill*         0x00000000400818a9        0x3 
  .text.rtc_clk_fast_freq_set
-                0x0000000040081898       0x2a /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x0000000040081898                rtc_clk_fast_freq_set
- *fill*         0x00000000400818c2        0x2 
+                0x00000000400818ac       0x2a /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400818ac                rtc_clk_fast_freq_set
+ *fill*         0x00000000400818d6        0x2 
  .text.rtc_clk_fast_freq_get
-                0x00000000400818c4       0x10 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x00000000400818c4                rtc_clk_fast_freq_get
+                0x00000000400818d8       0x10 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400818d8                rtc_clk_fast_freq_get
  .text.rtc_clk_bbpll_configure
-                0x00000000400818d4      0x1a1 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400818e8      0x1a1 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                         0x1a5 (size before relaxing)
-                0x00000000400818d4                rtc_clk_bbpll_configure
- *fill*         0x0000000040081a75        0x3 
+                0x00000000400818e8                rtc_clk_bbpll_configure
+ *fill*         0x0000000040081a89        0x3 
  .text.rtc_clk_xtal_freq_get
-                0x0000000040081a78       0x35 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x0000000040081a78                rtc_get_xtal
-                0x0000000040081a78                rtc_clk_xtal_freq_get
- *fill*         0x0000000040081aad        0x3 
+                0x0000000040081a8c       0x35 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081a8c                rtc_get_xtal
+                0x0000000040081a8c                rtc_clk_xtal_freq_get
+ *fill*         0x0000000040081ac1        0x3 
  .text.rtc_clk_cpu_freq_mhz_to_config
-                0x0000000040081ab0       0x61 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x0000000040081ab0                rtc_clk_cpu_freq_mhz_to_config
- *fill*         0x0000000040081b11        0x3 
+                0x0000000040081ac4       0x61 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081ac4                rtc_clk_cpu_freq_mhz_to_config
+ *fill*         0x0000000040081b25        0x3 
  .text.rtc_clk_cpu_freq_get_config
-                0x0000000040081b14       0xa9 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081b28       0xa9 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0xb5 (size before relaxing)
-                0x0000000040081b14                rtc_clk_cpu_freq_get_config
- *fill*         0x0000000040081bbd        0x3 
+                0x0000000040081b28                rtc_clk_cpu_freq_get_config
+ *fill*         0x0000000040081bd1        0x3 
  .text.rtc_clk_xtal_freq_update
-                0x0000000040081bc0       0x2c /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x0000000040081bc0                rtc_clk_xtal_freq_update
+                0x0000000040081bd4       0x2c /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081bd4                rtc_clk_xtal_freq_update
  .text.rtc_clk_apb_freq_update
-                0x0000000040081bec       0x19 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x0000000040081bec                rtc_clk_apb_freq_update
- *fill*         0x0000000040081c05        0x3 
+                0x0000000040081c00       0x19 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081c00                rtc_clk_apb_freq_update
+ *fill*         0x0000000040081c19        0x3 
  .text.rtc_clk_cpu_freq_to_xtal
-                0x0000000040081c08       0x97 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081c1c       0x97 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x9b (size before relaxing)
-                0x0000000040081c08                rtc_clk_cpu_freq_to_xtal
- *fill*         0x0000000040081c9f        0x1 
+                0x0000000040081c1c                rtc_clk_cpu_freq_to_xtal
+ *fill*         0x0000000040081cb3        0x1 
  .text.rtc_clk_cpu_freq_to_pll_mhz
-                0x0000000040081ca0       0x9c /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081cb4       0x9c /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0xa4 (size before relaxing)
  .text.rtc_clk_cpu_freq_to_8m
-                0x0000000040081d3c       0x58 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081d50       0x58 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x5c (size before relaxing)
  .text.rtc_clk_cpu_freq_set_config
-                0x0000000040081d94       0x5b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081da8       0x5b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x76 (size before relaxing)
-                0x0000000040081d94                rtc_clk_cpu_freq_set_config
- *fill*         0x0000000040081def        0x1 
+                0x0000000040081da8                rtc_clk_cpu_freq_set_config
+ *fill*         0x0000000040081e03        0x1 
  .text.rtc_clk_apb_freq_get
-                0x0000000040081df0       0x27 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x0000000040081df0                rtc_clk_apb_freq_get
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
- *fill*         0x0000000040081e17        0x0 
+                0x0000000040081e04       0x27 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081e04                rtc_clk_apb_freq_get
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
+ *fill*         0x0000000040081e2b        0x0 
  *(.iram .iram.*)
  *(.fini.literal)
  *(.fini)
  *(.gnu.version)
-                0x0000000040081e17                _text_end = ABSOLUTE (.)
-                0x0000000040081e17                _etext = .
+                0x0000000040081e2b                _text_end = ABSOLUTE (.)
+                0x0000000040081e2b                _etext = .
 
 .dram0.bss      0x000000003fff0000       0x18
                 0x000000003fff0000                . = ALIGN (0x8)
@@ -1322,18 +1322,18 @@ END GROUP
  *(.bss.*)
  .bss.ota_has_initial_contents
                 0x000000003fff0000        0x1 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .bss.mapped    0x000000003fff0001        0x1 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- *fill*         0x000000003fff0002        0x2 
+ *fill*         0x000000003fff0001        0x3 
  .bss.ram_obfs_value
                 0x000000003fff0004        0x8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
  .bss.words_hashed
                 0x000000003fff000c        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .bss.mapped    0x000000003fff0010        0x1 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x000000003fff0011        0x3 
  .bss.s_cur_pll_freq
-                0x000000003fff0010        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000003fff0014        0x4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
  *(.gnu.linkonce.b.*)
  *(COMMON)
                 0x000000003fff0018                . = ALIGN (0x8)
- *fill*         0x000000003fff0014        0x4 
                 0x000000003fff0018                _bss_end = ABSOLUTE (.)
 
 .dram0.data     0x000000003fff0018        0x4
@@ -1369,37 +1369,37 @@ END GROUP
  .rodata.__func__$4477
                 0x000000003fff0458       0x10 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
  .rodata.str1.4
-                0x000000003fff0468       0x5f /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- *fill*         0x000000003fff04c7        0x1 
- .rodata.__func__$2290
-                0x000000003fff04c8       0x17 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- *fill*         0x000000003fff04df        0x1 
- .rodata.str1.4
-                0x000000003fff04e0      0x639 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x000000003fff0468      0x639 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                         0x641 (size before relaxing)
- *fill*         0x000000003fff0b19        0x3 
+ *fill*         0x000000003fff0aa1        0x3 
  .rodata.bootloader_utility_load_partition_table
-                0x000000003fff0b1c       0x18 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x000000003fff0aa4       0x18 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
  .rodata.str1.4
-                0x000000003fff0b34      0x28e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- *fill*         0x000000003fff0dc2        0x2 
+                0x000000003fff0abc      0x163 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ *fill*         0x000000003fff0c1f        0x1 
  .rodata.str1.4
-                0x000000003fff0dc4      0x163 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- *fill*         0x000000003fff0f27        0x1 
- .rodata.str1.4
-                0x000000003fff0f28      0x4d6 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x000000003fff0c20      0x4d6 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                         0x516 (size before relaxing)
- *fill*         0x000000003fff13fe        0x2 
+ *fill*         0x000000003fff10f6        0x2 
  .rodata.str1.4
-                0x000000003fff1400       0xc8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                0x000000003fff10f8       0xc8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
  .rodata.padding$3889
-                0x000000003fff14c8       0x40 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                0x000000003fff11c0       0x40 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
  .rodata.__func__$3885
-                0x000000003fff1508       0x19 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- *fill*         0x000000003fff1521        0x3 
+                0x000000003fff1200       0x19 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ *fill*         0x000000003fff1219        0x3 
  .rodata.__func__$3865
-                0x000000003fff1524       0x17 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- *fill*         0x000000003fff153b        0x1 
+                0x000000003fff121c       0x17 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ *fill*         0x000000003fff1233        0x1 
+ .rodata.str1.4
+                0x000000003fff1234       0x5f /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ *fill*         0x000000003fff1293        0x1 
+ .rodata.__func__$2290
+                0x000000003fff1294       0x17 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ *fill*         0x000000003fff12ab        0x1 
+ .rodata.str1.4
+                0x000000003fff12ac      0x28e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x000000003fff153a        0x2 
  .rodata.str1.4
                 0x000000003fff153c      0x1cb /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk_init.o)
  *fill*         0x000000003fff1707        0x1 
@@ -1448,6 +1448,13 @@ END GROUP
                 0x000000003fff18d4                _lit4_end = ABSOLUTE (.)
                 0x000000003fff18d4                . = ALIGN (0x4)
                 0x000000003fff18d4                _heap_start = ABSOLUTE (.)
+                0x0000000040008550                PROVIDE (ets_update_cpu_frequency, 0x40008550)
+                0x000000004005db1c                PROVIDE (MD5Final, 0x4005db1c)
+                0x000000004005da7c                PROVIDE (MD5Init, 0x4005da7c)
+                0x000000004005da9c                PROVIDE (MD5Update, 0x4005da9c)
+                0x000000004000c050                xthal_get_ccount = 0x4000c050
+                0x000000004000c078                xthal_get_ccompare = 0x4000c078
+                0x000000004000c058                xthal_set_ccompare = 0x4000c058
                 [!provide]                        PROVIDE (Add2SelfBigHex256, 0x40015b7c)
                 [!provide]                        PROVIDE (AddBigHex256, 0x40015b28)
                 [!provide]                        PROVIDE (AddBigHexModP256, 0x40015c98)
@@ -1477,9 +1484,7 @@ END GROUP
                 [!provide]                        PROVIDE (Cache_Read_Init_rom, 0x40009950)
                 [!provide]                        PROVIDE (cache_sram_mmu_set_rom, 0x400097f4)
                 [!provide]                        PROVIDE (calc_rtc_memory_crc, 0x40008170)
-                [!provide]                        PROVIDE (calloc, 0x4000bee4)
                 [!provide]                        PROVIDE (__clear_cache, 0x40063860)
-                [!provide]                        PROVIDE (_close_r, 0x4000bd3c)
                 [!provide]                        PROVIDE (co_default_bdaddr, 0x3ffae704)
                 [!provide]                        PROVIDE (co_null_bdaddr, 0x3ffb80e0)
                 [!provide]                        PROVIDE (co_sca2ppm, 0x3ff971e8)
@@ -1489,8 +1494,6 @@ END GROUP
                 0x000000004005cfec                PROVIDE (crc32_le, 0x4005cfec)
                 [!provide]                        PROVIDE (crc8_be, 0x4005d114)
                 [!provide]                        PROVIDE (crc8_le, 0x4005d0e0)
-                [!provide]                        PROVIDE (_ctype_, 0x3ff96354)
-                0x000000003ff96350                PROVIDE (__ctype_ptr__, 0x3ff96350)
                 [!provide]                        PROVIDE (_data_end_rom, 0x4000d5c8)
                 [!provide]                        PROVIDE (_data_end_btdm_rom, 0x4000d4f8)
                 [!provide]                        PROVIDE (_data_start_rom, 0x4000d4f8)
@@ -1499,7 +1502,6 @@ END GROUP
                 [!provide]                        PROVIDE (_data_end_btdm, 0x3ffaff10)
                 [!provide]                        PROVIDE (_bss_start_btdm, 0x3ffb8000)
                 [!provide]                        PROVIDE (_bss_end_btdm, 0x3ffbff70)
-                [!provide]                        PROVIDE (_daylight, 0x3ffae0a4)
                 [!provide]                        PROVIDE (dbg_default_handler, 0x3ff97218)
                 [!provide]                        PROVIDE (dbg_default_state, 0x3ff97220)
                 [!provide]                        PROVIDE (dbg_state, 0x3ffb8d5d)
@@ -1528,7 +1530,6 @@ END GROUP
                 [!provide]                        PROVIDE (ecc_env, 0x3ffb8d60)
                 [!provide]                        PROVIDE (ecc_Jacobian_InfinityPoint256, 0x3ff972e8)
                 [!provide]                        PROVIDE (em_buf_env, 0x3ffb8d74)
-                [!provide]                        PROVIDE (environ, 0x3ffae0b4)
                 [!provide]                        PROVIDE (esp_crc8, 0x4005d144)
                 [!provide]                        PROVIDE (_etext, 0x4000d66c)
                 [!provide]                        PROVIDE (ets_readySet_, 0x3ffe01f0)
@@ -1536,14 +1537,9 @@ END GROUP
                 [!provide]                        PROVIDE (rwip_coex_cfg, 0x3ff9914c)
                 [!provide]                        PROVIDE (rwip_priority, 0x3ff99159)
                 [!provide]                        PROVIDE (exc_cause_table, 0x3ff991d0)
-                [!provide]                        PROVIDE (_exit_r, 0x4000bd28)
-                [!provide]                        PROVIDE (free, 0x4000beb8)
-                [!provide]                        PROVIDE (_fstat_r, 0x4000bccc)
-                [!provide]                        PROVIDE (__gcc_bcmp, 0x40064a70)
                 [!provide]                        PROVIDE (GF_Jacobian_Point_Addition256, 0x400163a4)
                 [!provide]                        PROVIDE (GF_Jacobian_Point_Double256, 0x40016260)
                 [!provide]                        PROVIDE (GF_Point_Jacobian_To_Affine256, 0x40016b0c)
-                [!provide]                        PROVIDE (_global_impure_ptr, 0x3ffae0b0)
                 [!provide]                        PROVIDE (g_phyFuns_instance, 0x3ffae0c4)
                 0x000000003ffae270                PROVIDE (g_rom_flashchip, 0x3ffae270)
                 [!provide]                        PROVIDE (gTxMsg, 0x3ffe0050)
@@ -1584,7 +1580,6 @@ END GROUP
                 [!provide]                        PROVIDE (ld_pcm_settings_dft, 0x3ff98a0c)
                 [!provide]                        PROVIDE (ld_sched_params, 0x3ffb96c0)
                 [!provide]                        PROVIDE (ld_sync_train_channels, 0x3ff98a3c)
-                [!provide]                        PROVIDE (_link_r, 0x4000bc9c)
                 [!provide]                        PROVIDE (llc_default_handler, 0x3ff98b3c)
                 [!provide]                        PROVIDE (llc_default_state_tab_p_get, 0x40046058)
                 [!provide]                        PROVIDE (llc_env, 0x3ffb96d0)
@@ -1628,12 +1623,8 @@ END GROUP
                 [!provide]                        PROVIDE (lmp_desc_tab, 0x3ff96e6c)
                 [!provide]                        PROVIDE (lmp_ext_desc_tab, 0x3ff96d9c)
                 [!provide]                        PROVIDE (lm_state, 0x3ffb9a1c)
-                [!provide]                        PROVIDE (_lseek_r, 0x4000bd8c)
-                [!provide]                        PROVIDE (malloc, 0x4000bea0)
                 [!provide]                        PROVIDE (maxSecretKey_256, 0x3ff97448)
-                [!provide]                        PROVIDE (__mb_cur_max, 0x3ff96530)
                 0x00000000400095a4                PROVIDE (mmu_init, 0x400095a4)
-                [!provide]                        PROVIDE (__month_lengths, 0x3ff9609c)
                 [!provide]                        PROVIDE (MultiplyBigHexByUint32_256, 0x40016214)
                 [!provide]                        PROVIDE (MultiplyBigHexModP256, 0x400160b8)
                 [!provide]                        PROVIDE (MultiplyByU32ModP256, 0x40015fdc)
@@ -1643,7 +1634,6 @@ END GROUP
                 [!provide]                        PROVIDE (mz_free, 0x4005eed4)
                 [!provide]                        PROVIDE (notEqual256, 0x40015b04)
                 [!provide]                        PROVIDE (one_bits, 0x3ff971f8)
-                [!provide]                        PROVIDE (_open_r, 0x4000bd54)
                 [!provide]                        PROVIDE (phy_get_romfuncs, 0x40004100)
                 [!provide]                        PROVIDE (_Pri_4_HandlerAddress, 0x3ffe0648)
                 [!provide]                        PROVIDE (_Pri_5_HandlerAddress, 0x3ffe064c)
@@ -1692,7 +1682,6 @@ END GROUP
                 [!provide]                        PROVIDE (lm_n192_mod_sub, 0x40011eec)
                 [!provide]                        PROVIDE (r_ea_alarm_clear, 0x40015ab4)
                 [!provide]                        PROVIDE (r_ea_alarm_set, 0x40015a10)
-                [!provide]                        PROVIDE (_read_r, 0x4000bda8)
                 [!provide]                        PROVIDE (r_ea_elt_cancel, 0x400150d0)
                 [!provide]                        PROVIDE (r_ea_elt_create, 0x40015264)
                 [!provide]                        PROVIDE (r_ea_elt_insert, 0x400152a8)
@@ -1706,7 +1695,6 @@ END GROUP
                 [!provide]                        PROVIDE (r_ea_interval_remove, 0x40015590)
                 [!provide]                        PROVIDE (ea_conflict_check, 0x40014e9c)
                 [!provide]                        PROVIDE (ea_prog_timer, 0x40014f88)
-                [!provide]                        PROVIDE (realloc, 0x4000becc)
                 [!provide]                        PROVIDE (r_ea_offset_req, 0x40015748)
                 [!provide]                        PROVIDE (r_ea_sleep_check, 0x40015928)
                 [!provide]                        PROVIDE (r_ea_sw_isr, 0x40015724)
@@ -1725,7 +1713,6 @@ END GROUP
                 [!provide]                        PROVIDE (r_em_buf_rx_free, 0x400173c4)
                 [!provide]                        PROVIDE (r_em_buf_tx_buff_addr_get, 0x40017404)
                 [!provide]                        PROVIDE (r_em_buf_tx_free, 0x4001741c)
-                [!provide]                        PROVIDE (_rename_r, 0x4000bc28)
                 [!provide]                        PROVIDE (r_F1_256, 0x400133e4)
                 [!provide]                        PROVIDE (r_F2_256, 0x40013568)
                 [!provide]                        PROVIDE (r_F3_256, 0x40013664)
@@ -2734,9 +2721,6 @@ END GROUP
                 [!provide]                        PROVIDE (rwip_rf, 0x3ffbdb28)
                 [!provide]                        PROVIDE (rwip_rf_p_get, 0x400558f4)
                 [!provide]                        PROVIDE (r_XorKey, 0x400112c0)
-                [!provide]                        PROVIDE (__sf_fake_stderr, 0x3ff96458)
-                [!provide]                        PROVIDE (__sf_fake_stdin, 0x3ff96498)
-                [!provide]                        PROVIDE (__sf_fake_stdout, 0x3ff96478)
                 [!provide]                        PROVIDE (sha_blk_bits, 0x3ff99290)
                 [!provide]                        PROVIDE (sha_blk_bits_bytes, 0x3ff99288)
                 [!provide]                        PROVIDE (sha_blk_hash_bytes, 0x3ff9928c)
@@ -2792,21 +2776,16 @@ END GROUP
                 [!provide]                        PROVIDE (tdefl_init, 0x40060810)
                 [!provide]                        PROVIDE (tdefl_write_image_to_png_file_in_memory, 0x4006091c)
                 [!provide]                        PROVIDE (tdefl_write_image_to_png_file_in_memory_ex, 0x40060910)
-                [!provide]                        PROVIDE (_timezone, 0x3ffae0a0)
                 [!provide]                        PROVIDE (tinfl_decompress, 0x4005ef30)
                 [!provide]                        PROVIDE (tinfl_decompress_mem_to_callback, 0x40060090)
                 [!provide]                        PROVIDE (tinfl_decompress_mem_to_mem, 0x40060050)
-                [!provide]                        PROVIDE (_tzname, 0x3ffae030)
                 [!provide]                        PROVIDE (UartDev, 0x3ffe019c)
-                [!provide]                        PROVIDE (_unlink_r, 0x4000bc84)
                 [!provide]                        PROVIDE (user_code_start, 0x3ffe0400)
                 [!provide]                        PROVIDE (veryBigHexP256, 0x3ff9736c)
-                [!provide]                        PROVIDE (__wctomb, 0x3ff96540)
-                [!provide]                        PROVIDE (_write_r, 0x4000bd70)
                 [!provide]                        PROVIDE (xthal_bcopy, 0x4000c098)
                 [!provide]                        PROVIDE (xthal_copy123, 0x4000c124)
                 [!provide]                        PROVIDE (xthal_get_ccompare, 0x4000c078)
-                0x000000004000c050                PROVIDE (xthal_get_ccount, 0x4000c050)
+                [!provide]                        PROVIDE (xthal_get_ccount, 0x4000c050)
                 [!provide]                        PROVIDE (xthal_get_interrupt, 0x4000c1e4)
                 [!provide]                        PROVIDE (xthal_get_intread, 0x4000c1e4)
                 [!provide]                        PROVIDE (Xthal_intlevel, 0x3ff9c2b4)
@@ -2971,165 +2950,146 @@ END GROUP
                 [!provide]                        PROVIDE (nvds_env, 0x3ffb8364)
                 [!provide]                        PROVIDE (nvds_magic_number, 0x3ff9912a)
                 [!provide]                        PROVIDE (TASK_DESC_LLD, 0x3ff98b58)
-                [!provide]                        PROVIDE (abs, 0x40056340)
-                [!provide]                        PROVIDE (__ascii_wctomb, 0x40058ef0)
-                [!provide]                        PROVIDE (asctime, 0x40059588)
-                [!provide]                        PROVIDE (asctime_r, 0x40000ec8)
-                [!provide]                        PROVIDE (atoi, 0x400566c4)
-                [!provide]                        PROVIDE (_atoi_r, 0x400566d4)
-                [!provide]                        PROVIDE (atol, 0x400566ec)
-                [!provide]                        PROVIDE (_atol_r, 0x400566fc)
-                [!provide]                        PROVIDE (bzero, 0x4000c1f4)
-                [!provide]                        PROVIDE (_cleanup, 0x40001df8)
-                [!provide]                        PROVIDE (_cleanup_r, 0x40001d48)
-                [!provide]                        PROVIDE (close, 0x40001778)
-                [!provide]                        PROVIDE (creat, 0x40000e8c)
-                [!provide]                        PROVIDE (ctime, 0x400595b0)
-                [!provide]                        PROVIDE (ctime_r, 0x400595c4)
-                [!provide]                        PROVIDE (div, 0x40056348)
-                [!provide]                        PROVIDE (__dummy_lock, 0x4000c728)
-                [!provide]                        PROVIDE (__dummy_lock_try, 0x4000c730)
-                [!provide]                        PROVIDE (__env_lock, 0x40001fd4)
-                [!provide]                        PROVIDE (__env_unlock, 0x40001fe0)
-                [!provide]                        PROVIDE (fclose, 0x400020ac)
-                [!provide]                        PROVIDE (_fclose_r, 0x40001fec)
-                [!provide]                        PROVIDE (fflush, 0x40059394)
-                [!provide]                        PROVIDE (_fflush_r, 0x40059320)
-                [!provide]                        PROVIDE (_findenv_r, 0x40001f44)
-                [!provide]                        PROVIDE (__fp_lock_all, 0x40001f1c)
-                [!provide]                        PROVIDE (__fp_unlock_all, 0x40001f30)
-                [!provide]                        PROVIDE (fputwc, 0x40058ea8)
-                [!provide]                        PROVIDE (__fputwc, 0x40058da0)
-                [!provide]                        PROVIDE (_fputwc_r, 0x40058e4c)
-                [!provide]                        PROVIDE (_fwalk, 0x4000c738)
-                [!provide]                        PROVIDE (_fwalk_reent, 0x4000c770)
-                [!provide]                        PROVIDE (__get_current_time_locale, 0x40001834)
-                [!provide]                        PROVIDE (_getenv_r, 0x40001fbc)
-                [!provide]                        PROVIDE (__gettzinfo, 0x40001fcc)
-                [!provide]                        PROVIDE (gmtime, 0x40059848)
-                [!provide]                        PROVIDE (gmtime_r, 0x40059868)
-                [!provide]                        PROVIDE (isalnum, 0x40000f04)
-                [!provide]                        PROVIDE (isalpha, 0x40000f18)
-                [!provide]                        PROVIDE (isascii, 0x4000c20c)
-                [!provide]                        PROVIDE (_isatty_r, 0x40000ea0)
-                [!provide]                        PROVIDE (isblank, 0x40000f2c)
-                [!provide]                        PROVIDE (iscntrl, 0x40000f50)
-                [!provide]                        PROVIDE (isdigit, 0x40000f64)
-                [!provide]                        PROVIDE (isgraph, 0x40000f94)
-                [!provide]                        PROVIDE (islower, 0x40000f78)
-                [!provide]                        PROVIDE (isprint, 0x40000fa8)
-                [!provide]                        PROVIDE (ispunct, 0x40000fc0)
-                [!provide]                        PROVIDE (isspace, 0x40000fd4)
-                [!provide]                        PROVIDE (isupper, 0x40000fe8)
-                [!provide]                        PROVIDE (itoa, 0x400566b4)
-                [!provide]                        PROVIDE (__itoa, 0x40056678)
-                [!provide]                        PROVIDE (labs, 0x40056370)
-                [!provide]                        PROVIDE (ldiv, 0x40056378)
-                [!provide]                        PROVIDE (__locale_charset, 0x40059540)
-                [!provide]                        PROVIDE (__locale_cjk_lang, 0x40059558)
-                [!provide]                        PROVIDE (localeconv, 0x4005957c)
-                [!provide]                        PROVIDE (_localeconv_r, 0x40059560)
-                [!provide]                        PROVIDE (__locale_mb_cur_max, 0x40059548)
-                [!provide]                        PROVIDE (__locale_msgcharset, 0x40059550)
-                [!provide]                        PROVIDE (localtime, 0x400595dc)
-                [!provide]                        PROVIDE (localtime_r, 0x400595fc)
-                [!provide]                        PROVIDE (longjmp, 0x400562cc)
-                [!provide]                        PROVIDE (memccpy, 0x4000c220)
-                [!provide]                        PROVIDE (memchr, 0x4000c244)
-                0x000000004000c260                PROVIDE (memcmp, 0x4000c260)
-                0x000000004000c2c8                PROVIDE (memcpy, 0x4000c2c8)
-                [!provide]                        PROVIDE (memmove, 0x4000c3c0)
-                [!provide]                        PROVIDE (memrchr, 0x4000c400)
-                0x000000004000c44c                PROVIDE (memset, 0x4000c44c)
-                [!provide]                        PROVIDE (mktime, 0x4005a5e8)
-                [!provide]                        PROVIDE (open, 0x4000178c)
-                [!provide]                        PROVIDE (qsort, 0x40056424)
-                [!provide]                        PROVIDE (rand, 0x40001058)
-                [!provide]                        PROVIDE (rand_r, 0x400010d4)
-                [!provide]                        PROVIDE (read, 0x400017dc)
-                [!provide]                        PROVIDE (sbrk, 0x400017f4)
-                [!provide]                        PROVIDE (__sccl, 0x4000c498)
-                [!provide]                        PROVIDE (__sclose, 0x400011b8)
-                [!provide]                        PROVIDE (__seofread, 0x40001148)
-                [!provide]                        PROVIDE (setjmp, 0x40056268)
-                [!provide]                        PROVIDE (setlocale, 0x40059568)
-                [!provide]                        PROVIDE (_setlocale_r, 0x4005950c)
-                [!provide]                        PROVIDE (__sflush_r, 0x400591e0)
-                [!provide]                        PROVIDE (__sfmoreglue, 0x40001dc8)
-                [!provide]                        PROVIDE (__sfp, 0x40001e90)
-                [!provide]                        PROVIDE (__sfp_lock_acquire, 0x40001e08)
-                [!provide]                        PROVIDE (__sfp_lock_release, 0x40001e14)
-                [!provide]                        PROVIDE (__sfputs_r, 0x40057790)
-                [!provide]                        PROVIDE (__sfvwrite_r, 0x4005893c)
-                [!provide]                        PROVIDE (__sinit, 0x40001e38)
-                [!provide]                        PROVIDE (__sinit_lock_acquire, 0x40001e20)
-                [!provide]                        PROVIDE (__sinit_lock_release, 0x40001e2c)
-                [!provide]                        PROVIDE (__smakebuf_r, 0x40059108)
-                [!provide]                        PROVIDE (srand, 0x40001004)
-                [!provide]                        PROVIDE (__sread, 0x40001118)
-                [!provide]                        PROVIDE (__srefill_r, 0x400593d4)
-                [!provide]                        PROVIDE (__sseek, 0x40001184)
-                [!provide]                        PROVIDE (__ssprint_r, 0x40056ff8)
-                [!provide]                        PROVIDE (__ssputs_r, 0x40056f2c)
-                [!provide]                        PROVIDE (__ssrefill_r, 0x40057fec)
-                [!provide]                        PROVIDE (strcasecmp, 0x400011cc)
-                [!provide]                        PROVIDE (strcasestr, 0x40001210)
-                [!provide]                        PROVIDE (strcat, 0x4000c518)
-                [!provide]                        PROVIDE (strchr, 0x4000c53c)
-                [!provide]                        PROVIDE (strcmp, 0x40001274)
-                [!provide]                        PROVIDE (strcoll, 0x40001398)
-                [!provide]                        PROVIDE (strcpy, 0x400013ac)
-                0x000000004000c558                PROVIDE (strcspn, 0x4000c558)
-                [!provide]                        PROVIDE (strdup, 0x4000143c)
-                [!provide]                        PROVIDE (_strdup_r, 0x40001450)
-                [!provide]                        PROVIDE (strftime, 0x40059ab4)
-                [!provide]                        PROVIDE (strlcat, 0x40001470)
-                [!provide]                        PROVIDE (strlcpy, 0x4000c584)
-                0x00000000400014c0                PROVIDE (strlen, 0x400014c0)
-                [!provide]                        PROVIDE (strlwr, 0x40001524)
-                [!provide]                        PROVIDE (strncasecmp, 0x40001550)
-                [!provide]                        PROVIDE (strncat, 0x4000c5c4)
-                [!provide]                        PROVIDE (strncmp, 0x4000c5f4)
-                0x00000000400015d4                PROVIDE (strncpy, 0x400015d4)
-                [!provide]                        PROVIDE (strndup, 0x400016b0)
-                [!provide]                        PROVIDE (_strndup_r, 0x400016c4)
-                [!provide]                        PROVIDE (strnlen, 0x4000c628)
-                [!provide]                        PROVIDE (strrchr, 0x40001708)
-                [!provide]                        PROVIDE (strsep, 0x40001734)
-                [!provide]                        PROVIDE (strspn, 0x4000c648)
-                0x000000004000c674                PROVIDE (strstr, 0x4000c674)
-                [!provide]                        PROVIDE (__strtok_r, 0x4000c6a8)
-                [!provide]                        PROVIDE (strtok_r, 0x4000c70c)
-                [!provide]                        PROVIDE (strtol, 0x4005681c)
-                [!provide]                        PROVIDE (_strtol_r, 0x40056714)
-                [!provide]                        PROVIDE (strtoul, 0x4005692c)
-                [!provide]                        PROVIDE (_strtoul_r, 0x40056834)
-                [!provide]                        PROVIDE (strupr, 0x4000174c)
-                [!provide]                        PROVIDE (__submore, 0x40058f3c)
-                [!provide]                        PROVIDE (_sungetc_r, 0x40057f6c)
-                [!provide]                        PROVIDE (__swbuf, 0x40058cb4)
-                [!provide]                        PROVIDE (__swbuf_r, 0x40058bec)
-                [!provide]                        PROVIDE (__swrite, 0x40001150)
-                [!provide]                        PROVIDE (__swsetup_r, 0x40058cc8)
-                [!provide]                        PROVIDE (time, 0x40001844)
-                [!provide]                        PROVIDE (__time_load_locale, 0x4000183c)
-                [!provide]                        PROVIDE (times, 0x40001808)
-                [!provide]                        PROVIDE (toascii, 0x4000c720)
-                [!provide]                        PROVIDE (tolower, 0x40001868)
-                [!provide]                        PROVIDE (toupper, 0x40001884)
-                [!provide]                        PROVIDE (__tzcalc_limits, 0x400018a0)
-                [!provide]                        PROVIDE (__tz_lock, 0x40001a04)
-                [!provide]                        PROVIDE (tzset, 0x40001a1c)
-                [!provide]                        PROVIDE (_tzset_r, 0x40001a28)
-                [!provide]                        PROVIDE (__tz_unlock, 0x40001a10)
-                [!provide]                        PROVIDE (ungetc, 0x400590f4)
-                [!provide]                        PROVIDE (_ungetc_r, 0x40058fa0)
-                [!provide]                        PROVIDE (utoa, 0x40056258)
-                [!provide]                        PROVIDE (__utoa, 0x400561f0)
-                [!provide]                        PROVIDE (wcrtomb, 0x40058920)
-                [!provide]                        PROVIDE (_wcrtomb_r, 0x400588d8)
-                [!provide]                        PROVIDE (_wctomb_r, 0x40058f14)
-                [!provide]                        PROVIDE (write, 0x4000181c)
+                0x0000000040056340                abs = 0x40056340
+                0x0000000040058ef0                __ascii_wctomb = 0x40058ef0
+                0x0000000040059588                asctime = 0x40059588
+                0x0000000040000ec8                asctime_r = 0x40000ec8
+                0x00000000400566c4                atoi = 0x400566c4
+                0x00000000400566d4                _atoi_r = 0x400566d4
+                0x00000000400566ec                atol = 0x400566ec
+                0x00000000400566fc                _atol_r = 0x400566fc
+                0x000000004000c1f4                bzero = 0x4000c1f4
+                0x0000000040001df8                _cleanup = 0x40001df8
+                0x0000000040001d48                _cleanup_r = 0x40001d48
+                0x0000000040000e8c                creat = 0x40000e8c
+                0x00000000400595b0                ctime = 0x400595b0
+                0x00000000400595c4                ctime_r = 0x400595c4
+                0x0000000040056348                div = 0x40056348
+                0x000000004000c728                __dummy_lock = 0x4000c728
+                0x000000004000c730                __dummy_lock_try = 0x4000c730
+                0x0000000040001fd4                __env_lock = 0x40001fd4
+                0x0000000040001fe0                __env_unlock = 0x40001fe0
+                0x00000000400020ac                fclose = 0x400020ac
+                0x0000000040001fec                _fclose_r = 0x40001fec
+                0x0000000040059394                fflush = 0x40059394
+                0x0000000040059320                _fflush_r = 0x40059320
+                0x0000000040001f44                _findenv_r = 0x40001f44
+                0x0000000040001f1c                __fp_lock_all = 0x40001f1c
+                0x0000000040001f30                __fp_unlock_all = 0x40001f30
+                0x0000000040058da0                __fputwc = 0x40058da0
+                0x0000000040058ea8                fputwc = 0x40058ea8
+                0x0000000040058e4c                _fputwc_r = 0x40058e4c
+                0x000000004000c738                _fwalk = 0x4000c738
+                0x000000004000c770                _fwalk_reent = 0x4000c770
+                0x0000000040001834                __get_current_time_locale = 0x40001834
+                0x0000000040001fbc                _getenv_r = 0x40001fbc
+                0x0000000040001fcc                __gettzinfo = 0x40001fcc
+                0x0000000040059848                gmtime = 0x40059848
+                0x0000000040059868                gmtime_r = 0x40059868
+                0x0000000040000f04                isalnum = 0x40000f04
+                0x0000000040000f18                isalpha = 0x40000f18
+                0x000000004000c20c                isascii = 0x4000c20c
+                0x0000000040000ea0                _isatty_r = 0x40000ea0
+                0x0000000040000f2c                isblank = 0x40000f2c
+                0x0000000040000f50                iscntrl = 0x40000f50
+                0x0000000040000f64                isdigit = 0x40000f64
+                0x0000000040000f94                isgraph = 0x40000f94
+                0x0000000040000f78                islower = 0x40000f78
+                0x0000000040000fa8                isprint = 0x40000fa8
+                0x0000000040000fc0                ispunct = 0x40000fc0
+                0x0000000040000fd4                isspace = 0x40000fd4
+                0x0000000040000fe8                isupper = 0x40000fe8
+                0x0000000040056678                __itoa = 0x40056678
+                0x00000000400566b4                itoa = 0x400566b4
+                0x0000000040056370                labs = 0x40056370
+                0x0000000040056378                ldiv = 0x40056378
+                0x00000000400595dc                localtime = 0x400595dc
+                0x00000000400595fc                localtime_r = 0x400595fc
+                0x00000000400562cc                longjmp = 0x400562cc
+                0x000000004000c220                memccpy = 0x4000c220
+                0x000000004000c244                memchr = 0x4000c244
+                0x000000004000c260                memcmp = 0x4000c260
+                0x000000004000c2c8                memcpy = 0x4000c2c8
+                0x000000004000c3c0                memmove = 0x4000c3c0
+                0x000000004000c400                memrchr = 0x4000c400
+                0x000000004000c44c                memset = 0x4000c44c
+                0x000000004005a5e8                mktime = 0x4005a5e8
+                0x0000000040056424                qsort = 0x40056424
+                0x0000000040001058                rand = 0x40001058
+                0x00000000400010d4                rand_r = 0x400010d4
+                0x000000004000c498                __sccl = 0x4000c498
+                0x00000000400011b8                __sclose = 0x400011b8
+                0x0000000040001148                __seofread = 0x40001148
+                0x0000000040056268                setjmp = 0x40056268
+                0x00000000400591e0                __sflush_r = 0x400591e0
+                0x0000000040001dc8                __sfmoreglue = 0x40001dc8
+                0x0000000040001e90                __sfp = 0x40001e90
+                0x0000000040001e08                __sfp_lock_acquire = 0x40001e08
+                0x0000000040001e14                __sfp_lock_release = 0x40001e14
+                0x000000004005893c                __sfvwrite_r = 0x4005893c
+                0x0000000040001e38                __sinit = 0x40001e38
+                0x0000000040001e20                __sinit_lock_acquire = 0x40001e20
+                0x0000000040001e2c                __sinit_lock_release = 0x40001e2c
+                0x0000000040059108                __smakebuf_r = 0x40059108
+                0x0000000040001004                srand = 0x40001004
+                0x0000000040001118                __sread = 0x40001118
+                0x00000000400593d4                __srefill_r = 0x400593d4
+                0x0000000040001184                __sseek = 0x40001184
+                0x00000000400011cc                strcasecmp = 0x400011cc
+                0x0000000040001210                strcasestr = 0x40001210
+                0x000000004000c518                strcat = 0x4000c518
+                0x000000004000c53c                strchr = 0x4000c53c
+                0x0000000040001274                strcmp = 0x40001274
+                0x0000000040001398                strcoll = 0x40001398
+                0x00000000400013ac                strcpy = 0x400013ac
+                0x000000004000c558                strcspn = 0x4000c558
+                0x000000004000143c                strdup = 0x4000143c
+                0x0000000040001450                _strdup_r = 0x40001450
+                0x0000000040059ab4                strftime = 0x40059ab4
+                0x0000000040001470                strlcat = 0x40001470
+                0x000000004000c584                strlcpy = 0x4000c584
+                0x00000000400014c0                strlen = 0x400014c0
+                0x0000000040001524                strlwr = 0x40001524
+                0x0000000040001550                strncasecmp = 0x40001550
+                0x000000004000c5c4                strncat = 0x4000c5c4
+                0x000000004000c5f4                strncmp = 0x4000c5f4
+                0x00000000400015d4                strncpy = 0x400015d4
+                0x00000000400016b0                strndup = 0x400016b0
+                0x00000000400016c4                _strndup_r = 0x400016c4
+                0x000000004000c628                strnlen = 0x4000c628
+                0x0000000040001708                strrchr = 0x40001708
+                0x0000000040001734                strsep = 0x40001734
+                0x000000004000c648                strspn = 0x4000c648
+                0x000000004000c674                strstr = 0x4000c674
+                0x000000004000c6a8                __strtok_r = 0x4000c6a8
+                0x000000004000c70c                strtok_r = 0x4000c70c
+                0x000000004005681c                strtol = 0x4005681c
+                0x0000000040056714                _strtol_r = 0x40056714
+                0x000000004005692c                strtoul = 0x4005692c
+                0x0000000040056834                _strtoul_r = 0x40056834
+                0x000000004000174c                strupr = 0x4000174c
+                0x0000000040058f3c                __submore = 0x40058f3c
+                0x0000000040058cb4                __swbuf = 0x40058cb4
+                0x0000000040058bec                __swbuf_r = 0x40058bec
+                0x0000000040001150                __swrite = 0x40001150
+                0x0000000040058cc8                __swsetup_r = 0x40058cc8
+                0x0000000040001844                time = 0x40001844
+                0x000000004000183c                __time_load_locale = 0x4000183c
+                0x000000004000c720                toascii = 0x4000c720
+                0x0000000040001868                tolower = 0x40001868
+                0x0000000040001884                toupper = 0x40001884
+                0x00000000400018a0                __tzcalc_limits = 0x400018a0
+                0x0000000040001a04                __tz_lock = 0x40001a04
+                0x0000000040001a1c                tzset = 0x40001a1c
+                0x0000000040001a28                _tzset_r = 0x40001a28
+                0x0000000040001a10                __tz_unlock = 0x40001a10
+                0x00000000400590f4                ungetc = 0x400590f4
+                0x0000000040058fa0                _ungetc_r = 0x40058fa0
+                0x00000000400561f0                __utoa = 0x400561f0
+                0x0000000040056258                utoa = 0x40056258
+                0x0000000040058920                wcrtomb = 0x40058920
+                0x00000000400588d8                _wcrtomb_r = 0x400588d8
+                0x0000000040058f14                _wctomb_r = 0x40058f14
                 [!provide]                        PROVIDE (UART0, 0x3ff40000)
                 0x000000003ff42000                PROVIDE (SPI1, 0x3ff42000)
                 [!provide]                        PROVIDE (SPI0, 0x3ff43000)
@@ -3162,24 +3122,20 @@ END GROUP
                 [!provide]                        PROVIDE (MCPWM1, 0x3ff6c000)
                 [!provide]                        PROVIDE (I2S1, 0x3ff6d000)
                 [!provide]                        PROVIDE (UART2, 0x3ff6e000)
-                0x0000000040008550                PROVIDE (ets_update_cpu_frequency, 0x40008550)
-                0x000000004005db1c                PROVIDE (MD5Final, 0x4005db1c)
-                0x000000004005da7c                PROVIDE (MD5Init, 0x4005da7c)
-                0x000000004005da9c                PROVIDE (MD5Update, 0x4005da9c)
 OUTPUT(/home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader.elf elf32-xtensa-le)
 
 .debug_frame    0x0000000000000000     0x11a0
  .debug_frame   0x0000000000000000       0x58 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o)
  .debug_frame   0x0000000000000058      0x130 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .debug_frame   0x0000000000000188       0x28 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
- .debug_frame   0x00000000000001b0       0x58 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .debug_frame   0x0000000000000208      0x160 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .debug_frame   0x0000000000000368       0xe8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_frame   0x0000000000000450      0x130 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
- .debug_frame   0x0000000000000580      0x100 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .debug_frame   0x0000000000000680       0x28 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_frame   0x00000000000006a8      0x160 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_frame   0x0000000000000808       0x70 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_frame   0x0000000000000188      0x160 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .debug_frame   0x00000000000002e8      0x100 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .debug_frame   0x00000000000003e8       0x28 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
+ .debug_frame   0x0000000000000410       0x28 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_frame   0x0000000000000438      0x160 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_frame   0x0000000000000598       0x70 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_frame   0x0000000000000608       0x58 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .debug_frame   0x0000000000000660       0xe8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_frame   0x0000000000000748      0x130 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
  .debug_frame   0x0000000000000878       0x70 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/log/liblog.a(log.o)
  .debug_frame   0x00000000000008e8      0x208 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .debug_frame   0x0000000000000af0       0x70 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(cpu_util.o)
@@ -3191,66 +3147,66 @@ OUTPUT(/home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader.elf e
  .debug_frame   0x0000000000001150       0x28 /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
  .debug_frame   0x0000000000001178       0x28 /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
 
-.debug_info     0x0000000000000000     0xe0ab
+.debug_info     0x0000000000000000     0xe0cd
  .debug_info    0x0000000000000000      0x337 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o)
- .debug_info    0x0000000000000337     0x16ec /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .debug_info    0x0000000000001a23      0x2d7 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
- .debug_info    0x0000000000001cfa      0x25e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .debug_info    0x0000000000001f58     0x1771 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .debug_info    0x00000000000036c9      0xd14 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_info    0x00000000000043dd     0x2add /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
- .debug_info    0x0000000000006eba      0xe11 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .debug_info    0x0000000000007ccb      0x526 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_info    0x00000000000081f1     0x1521 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_info    0x0000000000009712      0x507 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .debug_info    0x0000000000009c19      0x900 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/log/liblog.a(log.o)
- .debug_info    0x000000000000a519      0xaf5 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .debug_info    0x000000000000b00e      0x118 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(cpu_util.o)
- .debug_info    0x000000000000b126      0x408 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_wdt.o)
- .debug_info    0x000000000000b52e      0x339 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_init.o)
- .debug_info    0x000000000000b867      0x7ce /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk_init.o)
- .debug_info    0x000000000000c035       0x95 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(gpio_periph.o)
- .debug_info    0x000000000000c0ca      0x4d8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_time.o)
- .debug_info    0x000000000000c5a2     0x1474 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .debug_info    0x000000000000da16       0xcd /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
- .debug_info    0x000000000000dae3      0x5c8 /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .debug_info    0x0000000000000337     0x16f0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .debug_info    0x0000000000001a27     0x1771 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .debug_info    0x0000000000003198      0xe11 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .debug_info    0x0000000000003fa9      0x2db /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
+ .debug_info    0x0000000000004284      0x526 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_info    0x00000000000047aa     0x1521 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_info    0x0000000000005ccb      0x507 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_info    0x00000000000061d2      0x25e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .debug_info    0x0000000000006430      0xd14 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_info    0x0000000000007144     0x2ae1 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
+ .debug_info    0x0000000000009c25      0x900 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/log/liblog.a(log.o)
+ .debug_info    0x000000000000a525      0xaf5 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .debug_info    0x000000000000b01a      0x118 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(cpu_util.o)
+ .debug_info    0x000000000000b132      0x408 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_wdt.o)
+ .debug_info    0x000000000000b53a      0x341 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_init.o)
+ .debug_info    0x000000000000b87b      0x7d6 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk_init.o)
+ .debug_info    0x000000000000c051       0x95 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(gpio_periph.o)
+ .debug_info    0x000000000000c0e6      0x4d8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .debug_info    0x000000000000c5be     0x147a /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .debug_info    0x000000000000da38       0xcd /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .debug_info    0x000000000000db05      0x5c8 /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
 
-.debug_abbrev   0x0000000000000000     0x2a36
+.debug_abbrev   0x0000000000000000     0x2a42
  .debug_abbrev  0x0000000000000000      0x15a /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o)
- .debug_abbrev  0x000000000000015a      0x420 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .debug_abbrev  0x000000000000057a      0x150 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
- .debug_abbrev  0x00000000000006ca      0x13d /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .debug_abbrev  0x0000000000000807      0x3ea /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .debug_abbrev  0x0000000000000bf1      0x26e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_abbrev  0x0000000000000e5f      0x38e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
- .debug_abbrev  0x00000000000011ed      0x1f4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .debug_abbrev  0x00000000000013e1      0x17b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_abbrev  0x000000000000155c      0x2e1 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_abbrev  0x000000000000183d      0x1b1 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .debug_abbrev  0x00000000000019ee      0x1f3 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/log/liblog.a(log.o)
- .debug_abbrev  0x0000000000001be1      0x22e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .debug_abbrev  0x0000000000001e0f       0x96 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(cpu_util.o)
- .debug_abbrev  0x0000000000001ea5      0x147 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_wdt.o)
- .debug_abbrev  0x0000000000001fec      0x135 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_init.o)
- .debug_abbrev  0x0000000000002121      0x203 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk_init.o)
- .debug_abbrev  0x0000000000002324       0x5b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(gpio_periph.o)
- .debug_abbrev  0x000000000000237f      0x1ba /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_time.o)
- .debug_abbrev  0x0000000000002539      0x33e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .debug_abbrev  0x0000000000002877       0x60 /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
- .debug_abbrev  0x00000000000028d7      0x15f /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x000000000000015a      0x422 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .debug_abbrev  0x000000000000057c      0x3ea /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .debug_abbrev  0x0000000000000966      0x1f4 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .debug_abbrev  0x0000000000000b5a      0x152 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
+ .debug_abbrev  0x0000000000000cac      0x17b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_abbrev  0x0000000000000e27      0x2e1 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_abbrev  0x0000000000001108      0x1b1 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_abbrev  0x00000000000012b9      0x13d /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .debug_abbrev  0x00000000000013f6      0x26e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_abbrev  0x0000000000001664      0x390 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
+ .debug_abbrev  0x00000000000019f4      0x1f3 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/log/liblog.a(log.o)
+ .debug_abbrev  0x0000000000001be7      0x22e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .debug_abbrev  0x0000000000001e15       0x96 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(cpu_util.o)
+ .debug_abbrev  0x0000000000001eab      0x147 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_wdt.o)
+ .debug_abbrev  0x0000000000001ff2      0x137 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_init.o)
+ .debug_abbrev  0x0000000000002129      0x205 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk_init.o)
+ .debug_abbrev  0x000000000000232e       0x5b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(gpio_periph.o)
+ .debug_abbrev  0x0000000000002389      0x1ba /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .debug_abbrev  0x0000000000002543      0x340 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .debug_abbrev  0x0000000000002883       0x60 /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .debug_abbrev  0x00000000000028e3      0x15f /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
 
 .debug_loc      0x0000000000000000     0x6043
  .debug_loc     0x0000000000000000       0x84 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o)
  .debug_loc     0x0000000000000084      0x774 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .debug_loc     0x00000000000007f8       0x79 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
- .debug_loc     0x0000000000000871       0x62 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .debug_loc     0x00000000000008d3      0xa5f /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .debug_loc     0x0000000000001332      0x708 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_loc     0x0000000000001a3a      0x232 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
- .debug_loc     0x0000000000001c6c      0x651 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .debug_loc     0x00000000000022bd      0x1b6 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_loc     0x0000000000002473      0xbd1 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_loc     0x0000000000003044      0x1f2 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_loc     0x00000000000007f8      0xa5f /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .debug_loc     0x0000000000001257      0x651 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .debug_loc     0x00000000000018a8       0x79 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
+ .debug_loc     0x0000000000001921      0x1b6 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_loc     0x0000000000001ad7      0xbd1 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_loc     0x00000000000026a8      0x1f2 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_loc     0x000000000000289a       0x62 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .debug_loc     0x00000000000028fc      0x708 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_loc     0x0000000000003004      0x232 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
  .debug_loc     0x0000000000003236      0x4ad /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/log/liblog.a(log.o)
  .debug_loc     0x00000000000036e3      0xa20 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .debug_loc     0x0000000000004103       0x13 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(cpu_util.o)
@@ -3268,23 +3224,23 @@ OUTPUT(/home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader.elf e
  .debug_aranges
                 0x0000000000000030       0x78 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
  .debug_aranges
-                0x00000000000000a8       0x20 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
+                0x00000000000000a8       0x88 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
  .debug_aranges
-                0x00000000000000c8       0x30 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+                0x0000000000000130       0x68 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
  .debug_aranges
-                0x00000000000000f8       0x88 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x0000000000000198       0x20 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
  .debug_aranges
-                0x0000000000000180       0x60 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x00000000000001b8       0x20 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
  .debug_aranges
-                0x00000000000001e0       0x78 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
+                0x00000000000001d8       0x88 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
  .debug_aranges
-                0x0000000000000258       0x68 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+                0x0000000000000260       0x38 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
  .debug_aranges
-                0x00000000000002c0       0x20 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                0x0000000000000298       0x30 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
  .debug_aranges
-                0x00000000000002e0       0x88 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x00000000000002c8       0x60 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .debug_aranges
-                0x0000000000000368       0x38 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                0x0000000000000328       0x78 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
  .debug_aranges
                 0x00000000000003a0       0x38 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/log/liblog.a(log.o)
  .debug_aranges
@@ -3311,15 +3267,15 @@ OUTPUT(/home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader.elf e
 .debug_ranges   0x0000000000000000      0x7c0
  .debug_ranges  0x0000000000000000       0x20 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o)
  .debug_ranges  0x0000000000000020       0x68 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .debug_ranges  0x0000000000000088       0x10 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
- .debug_ranges  0x0000000000000098       0x38 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .debug_ranges  0x00000000000000d0       0x90 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .debug_ranges  0x0000000000000160       0x50 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_ranges  0x00000000000001b0       0x68 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
- .debug_ranges  0x0000000000000218       0xd0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .debug_ranges  0x00000000000002e8       0x58 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_ranges  0x0000000000000340       0xa8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_ranges  0x00000000000003e8       0x58 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_ranges  0x0000000000000088       0x90 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .debug_ranges  0x0000000000000118       0xd0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .debug_ranges  0x00000000000001e8       0x10 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
+ .debug_ranges  0x00000000000001f8       0x58 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_ranges  0x0000000000000250       0xa8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_ranges  0x00000000000002f8       0x58 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_ranges  0x0000000000000350       0x38 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .debug_ranges  0x0000000000000388       0x50 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_ranges  0x00000000000003d8       0x68 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
  .debug_ranges  0x0000000000000440       0x28 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/log/liblog.a(log.o)
  .debug_ranges  0x0000000000000468       0xb0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .debug_ranges  0x0000000000000518       0x28 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(cpu_util.o)
@@ -3330,18 +3286,18 @@ OUTPUT(/home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader.elf e
  .debug_ranges  0x0000000000000620      0x140 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .debug_ranges  0x0000000000000760       0x60 /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
 
-.debug_line     0x0000000000000000     0x7595
+.debug_line     0x0000000000000000     0x759b
  .debug_line    0x0000000000000000      0x30c /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o)
  .debug_line    0x000000000000030c      0x9d8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .debug_line    0x0000000000000ce4      0x21d /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
- .debug_line    0x0000000000000f01      0x39d /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .debug_line    0x000000000000129e      0xa79 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .debug_line    0x0000000000001d17      0x657 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_line    0x000000000000236e      0x544 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
- .debug_line    0x00000000000028b2      0x7ad /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .debug_line    0x000000000000305f      0x382 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_line    0x00000000000033e1      0xb44 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_line    0x0000000000003f25      0x494 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_line    0x0000000000000ce4      0xa79 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .debug_line    0x000000000000175d      0x7ad /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .debug_line    0x0000000000001f0a      0x21d /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
+ .debug_line    0x0000000000002127      0x382 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_line    0x00000000000024a9      0xb44 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_line    0x0000000000002fed      0x494 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_line    0x0000000000003481      0x39d /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .debug_line    0x000000000000381e      0x657 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_line    0x0000000000003e75      0x544 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
  .debug_line    0x00000000000043b9      0x4d5 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/log/liblog.a(log.o)
  .debug_line    0x000000000000488e      0xace /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .debug_line    0x000000000000535c      0x1a8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(cpu_util.o)
@@ -3350,69 +3306,69 @@ OUTPUT(/home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader.elf e
  .debug_line    0x0000000000005d2c      0x3c1 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk_init.o)
  .debug_line    0x00000000000060ed       0xfa /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(gpio_periph.o)
  .debug_line    0x00000000000061e7      0x424 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_time.o)
- .debug_line    0x000000000000660b      0xd73 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .debug_line    0x000000000000737e       0x89 /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
- .debug_line    0x0000000000007407      0x18e /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .debug_line    0x000000000000660b      0xd79 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .debug_line    0x0000000000007384       0x89 /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .debug_line    0x000000000000740d      0x18e /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
 
-.debug_str      0x0000000000000000     0x4c46
+.debug_str      0x0000000000000000     0x4c99
  .debug_str     0x0000000000000000      0x308 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o)
                                         0x36c (size before relaxing)
- .debug_str     0x0000000000000308      0xae8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
-                                        0xce0 (size before relaxing)
- .debug_str     0x0000000000000df0      0x237 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
-                                        0x3a1 (size before relaxing)
- .debug_str     0x0000000000001027       0xa8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
-                                        0x254 (size before relaxing)
- .debug_str     0x00000000000010cf      0x4b9 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .debug_str     0x0000000000000308      0xafd /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                                        0xcf5 (size before relaxing)
+ .debug_str     0x0000000000000e05      0x4d3 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                         0x9c0 (size before relaxing)
- .debug_str     0x0000000000001588      0x238 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
-                                        0x5f8 (size before relaxing)
- .debug_str     0x00000000000017c0     0x187f /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
-                                       0x1bbf (size before relaxing)
- .debug_str     0x000000000000303f      0x415 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .debug_str     0x00000000000012d8      0x432 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
                                         0x968 (size before relaxing)
- .debug_str     0x0000000000003454       0xae /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_str     0x000000000000170a      0x248 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
+                                        0x3b2 (size before relaxing)
+ .debug_str     0x0000000000001952       0xae /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
                                         0x3ca (size before relaxing)
- .debug_str     0x0000000000003502      0x2cf /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_str     0x0000000000001a00      0x2f6 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                         0xa37 (size before relaxing)
- .debug_str     0x00000000000037d1      0x10a /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_str     0x0000000000001cf6      0x10a /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
                                         0x35f (size before relaxing)
- .debug_str     0x00000000000038db      0x193 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/log/liblog.a(log.o)
+ .debug_str     0x0000000000001e00       0x70 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+                                        0x254 (size before relaxing)
+ .debug_str     0x0000000000001e70      0x212 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                                        0x5f8 (size before relaxing)
+ .debug_str     0x0000000000002082     0x1889 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
+                                       0x1bc9 (size before relaxing)
+ .debug_str     0x000000000000390b      0x193 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/log/liblog.a(log.o)
                                         0x34f (size before relaxing)
- .debug_str     0x0000000000003a6e      0x367 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .debug_str     0x0000000000003a9e      0x367 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                         0x74d (size before relaxing)
- .debug_str     0x0000000000003dd5       0x6c /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(cpu_util.o)
+ .debug_str     0x0000000000003e05       0x6c /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(cpu_util.o)
                                         0x178 (size before relaxing)
- .debug_str     0x0000000000003e41      0x18e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_wdt.o)
+ .debug_str     0x0000000000003e71      0x18e /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_wdt.o)
                                         0x518 (size before relaxing)
- .debug_str     0x0000000000003fcf       0xbc /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_init.o)
-                                        0x241 (size before relaxing)
- .debug_str     0x000000000000408b      0x2b8 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk_init.o)
-                                        0x6b1 (size before relaxing)
- .debug_str     0x0000000000004343       0x3c /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(gpio_periph.o)
+ .debug_str     0x0000000000003fff       0xc9 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_init.o)
+                                        0x263 (size before relaxing)
+ .debug_str     0x00000000000040c8      0x2ce /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk_init.o)
+                                        0x6d8 (size before relaxing)
+ .debug_str     0x0000000000004396       0x3c /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(gpio_periph.o)
                                         0x142 (size before relaxing)
- .debug_str     0x000000000000437f      0x164 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .debug_str     0x00000000000043d2      0x164 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_time.o)
                                         0x45c (size before relaxing)
- .debug_str     0x00000000000044e3      0x54f /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                                        0xaf8 (size before relaxing)
- .debug_str     0x0000000000004a32      0x138 /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .debug_str     0x0000000000004536      0x54f /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                                        0xb0e (size before relaxing)
+ .debug_str     0x0000000000004a85      0x138 /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
                                         0x1de (size before relaxing)
- .debug_str     0x0000000000004b6a       0xdc /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .debug_str     0x0000000000004bbd       0xdc /home/ghaack/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
                                         0x258 (size before relaxing)
 
 .comment        0x0000000000000000       0x3a
  .comment       0x0000000000000000       0x3a /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x3b (size before relaxing)
  .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
- .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
  .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
  .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
  .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
  .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
  .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
  .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/log/liblog.a(log.o)
  .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .comment       0x000000000000003a       0x3b /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(cpu_util.o)
@@ -3428,15 +3384,15 @@ OUTPUT(/home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader.elf e
 .xtensa.info    0x0000000000000000       0x38
  .xtensa.info   0x0000000000000000       0x38 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/main/libmain.a(bootloader_start.o)
  .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
- .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
  .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
  .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
  .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
  .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
  .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/bootloader_support/libbootloader_support.a(flash_qio_mode.o)
  .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/log/liblog.a(log.o)
  .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .xtensa.info   0x0000000000000038        0x0 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/soc/libsoc.a(cpu_util.o)

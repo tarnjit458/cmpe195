@@ -172,27 +172,92 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA
  83 .debug_frame  00000280  00000000  00000000  00001668  2**2
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 84 .debug_info   000037f3  00000000  00000000  000018e8  2**0
+ 84 .debug_info   000037f7  00000000  00000000  000018e8  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 85 .debug_abbrev 00000488  00000000  00000000  000050db  2**0
+ 85 .debug_abbrev 00000488  00000000  00000000  000050df  2**0
                   CONTENTS, READONLY, DEBUGGING
- 86 .debug_loc    00000ed7  00000000  00000000  00005563  2**0
+ 86 .debug_loc    00000ed7  00000000  00000000  00005567  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 87 .debug_aranges 000000e8  00000000  00000000  0000643a  2**0
+ 87 .debug_aranges 000000e8  00000000  00000000  0000643e  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 88 .debug_ranges 00000190  00000000  00000000  00006522  2**0
+ 88 .debug_ranges 00000190  00000000  00000000  00006526  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 89 .debug_line   00001202  00000000  00000000  000066b2  2**0
+ 89 .debug_line   00001202  00000000  00000000  000066b6  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 90 .debug_str    000014c9  00000000  00000000  000078b4  2**0
+ 90 .debug_str    000014d4  00000000  00000000  000078b8  2**0
                   CONTENTS, READONLY, DEBUGGING
- 91 .comment      0000003b  00000000  00000000  00008d7d  2**0
+ 91 .comment      0000003b  00000000  00000000  00008d8c  2**0
                   CONTENTS, READONLY
- 92 .xtensa.info  00000038  00000000  00000000  00008db8  2**0
+ 92 .xtensa.info  00000038  00000000  00000000  00008dc7  2**0
                   CONTENTS, READONLY
- 93 .xt.lit       000000d0  00000000  00000000  00008df0  2**0
+ 93 .xt.lit       000000d0  00000000  00000000  00008dff  2**0
                   CONTENTS, RELOC, READONLY
- 94 .xt.prop      0000159c  00000000  00000000  00008ec0  2**0
+ 94 .xt.prop      0000159c  00000000  00000000  00008ecf  2**0
+                  CONTENTS, RELOC, READONLY
+
+vfs_semihost.o:     file format elf32-xtensa-le
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .literal.vfs_semihost_close 00000008  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .literal.vfs_semihost_read 00000008  00000000  00000000  0000003c  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  2 .literal.vfs_semihost_lseek 00000008  00000000  00000000  00000044  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  3 .literal.vfs_semihost_write 00000008  00000000  00000000  0000004c  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  4 .literal.vfs_semihost_open 0000002c  00000000  00000000  00000054  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  5 .literal.esp_vfs_semihost_register 00000030  00000000  00000000  00000080  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  6 .literal.esp_vfs_semihost_unregister 0000000c  00000000  00000000  000000b0  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  7 .text         00000000  00000000  00000000  000000bc  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  8 .data         00000000  00000000  00000000  000000bc  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  9 .bss          00000000  00000000  00000000  000000bc  2**0
+                  ALLOC
+ 10 .text.vfs_semihost_close 0000003a  00000000  00000000  000000bc  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 11 .text.vfs_semihost_read 00000042  00000000  00000000  000000f8  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 12 .text.vfs_semihost_lseek 00000042  00000000  00000000  0000013c  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 13 .text.vfs_semihost_write 00000042  00000000  00000000  00000180  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 14 .text.vfs_semihost_open 000000b2  00000000  00000000  000001c4  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 15 .text.esp_vfs_semihost_register 000000ce  00000000  00000000  00000278  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 16 .text.esp_vfs_semihost_unregister 0000006d  00000000  00000000  00000348  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 17 .bss.s_semhost_ctx 00000091  00000000  00000000  000003b8  2**2
+                  ALLOC
+ 18 .debug_frame  000000b8  00000000  00000000  000003b8  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 19 .debug_info   00001939  00000000  00000000  00000470  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 20 .debug_abbrev 000002b7  00000000  00000000  00001da9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 21 .debug_loc    000009ff  00000000  00000000  00002060  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 22 .debug_aranges 00000050  00000000  00000000  00002a5f  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 23 .debug_ranges 00000040  00000000  00000000  00002aaf  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 24 .debug_line   00000668  00000000  00000000  00002aef  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 25 .debug_str    000008a1  00000000  00000000  00003157  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 26 .comment      0000003b  00000000  00000000  000039f8  2**0
+                  CONTENTS, READONLY
+ 27 .xtensa.info  00000038  00000000  00000000  00003a33  2**0
+                  CONTENTS, READONLY
+ 28 .xt.lit       00000038  00000000  00000000  00003a6b  2**0
+                  CONTENTS, RELOC, READONLY
+ 29 .xt.prop      000002dc  00000000  00000000  00003aa3  2**0
                   CONTENTS, RELOC, READONLY
 
 vfs.o:     file format elf32-xtensa-le
@@ -438,69 +503,4 @@ Idx Name          Size      VMA       LMA       File off  Algn
 118 .xt.lit       00000188  00000000  00000000  0000ccb9  2**0
                   CONTENTS, RELOC, READONLY
 119 .xt.prop      00002028  00000000  00000000  0000ce41  2**0
-                  CONTENTS, RELOC, READONLY
-
-vfs_semihost.o:     file format elf32-xtensa-le
-
-Sections:
-Idx Name          Size      VMA       LMA       File off  Algn
-  0 .literal.vfs_semihost_close 00000008  00000000  00000000  00000034  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  1 .literal.vfs_semihost_read 00000008  00000000  00000000  0000003c  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  2 .literal.vfs_semihost_lseek 00000008  00000000  00000000  00000044  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  3 .literal.vfs_semihost_write 00000008  00000000  00000000  0000004c  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  4 .literal.vfs_semihost_open 0000002c  00000000  00000000  00000054  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  5 .literal.esp_vfs_semihost_register 00000030  00000000  00000000  00000080  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  6 .literal.esp_vfs_semihost_unregister 0000000c  00000000  00000000  000000b0  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
-  7 .text         00000000  00000000  00000000  000000bc  2**0
-                  CONTENTS, ALLOC, LOAD, READONLY, CODE
-  8 .data         00000000  00000000  00000000  000000bc  2**0
-                  CONTENTS, ALLOC, LOAD, DATA
-  9 .bss          00000000  00000000  00000000  000000bc  2**0
-                  ALLOC
- 10 .text.vfs_semihost_close 0000003a  00000000  00000000  000000bc  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 11 .text.vfs_semihost_read 00000042  00000000  00000000  000000f8  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 12 .text.vfs_semihost_lseek 00000042  00000000  00000000  0000013c  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 13 .text.vfs_semihost_write 00000042  00000000  00000000  00000180  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 14 .text.vfs_semihost_open 000000b2  00000000  00000000  000001c4  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 15 .text.esp_vfs_semihost_register 000000ce  00000000  00000000  00000278  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 16 .text.esp_vfs_semihost_unregister 0000006d  00000000  00000000  00000348  2**2
-                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 17 .bss.s_semhost_ctx 00000091  00000000  00000000  000003b8  2**2
-                  ALLOC
- 18 .debug_frame  000000b8  00000000  00000000  000003b8  2**2
-                  CONTENTS, RELOC, READONLY, DEBUGGING
- 19 .debug_info   00001939  00000000  00000000  00000470  2**0
-                  CONTENTS, RELOC, READONLY, DEBUGGING
- 20 .debug_abbrev 000002b7  00000000  00000000  00001da9  2**0
-                  CONTENTS, READONLY, DEBUGGING
- 21 .debug_loc    000009ff  00000000  00000000  00002060  2**0
-                  CONTENTS, RELOC, READONLY, DEBUGGING
- 22 .debug_aranges 00000050  00000000  00000000  00002a5f  2**0
-                  CONTENTS, RELOC, READONLY, DEBUGGING
- 23 .debug_ranges 00000040  00000000  00000000  00002aaf  2**0
-                  CONTENTS, RELOC, READONLY, DEBUGGING
- 24 .debug_line   00000668  00000000  00000000  00002aef  2**0
-                  CONTENTS, RELOC, READONLY, DEBUGGING
- 25 .debug_str    000008a1  00000000  00000000  00003157  2**0
-                  CONTENTS, READONLY, DEBUGGING
- 26 .comment      0000003b  00000000  00000000  000039f8  2**0
-                  CONTENTS, READONLY
- 27 .xtensa.info  00000038  00000000  00000000  00003a33  2**0
-                  CONTENTS, READONLY
- 28 .xt.lit       00000038  00000000  00000000  00003a6b  2**0
-                  CONTENTS, RELOC, READONLY
- 29 .xt.prop      000002dc  00000000  00000000  00003aa3  2**0
                   CONTENTS, RELOC, READONLY

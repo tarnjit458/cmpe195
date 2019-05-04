@@ -46,7 +46,7 @@ src/crypto/dh_groups.o: \
  /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wpa/wpabuf.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_crypto_types.h
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h
 
 /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/crypto/includes.h:
 
@@ -140,5 +140,5 @@ src/crypto/dh_groups.o: \
 
 /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_crypto_types.h:
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h:
 /home/ghaack/esp/esp-idf/components/wpa_supplicant/src/crypto/dh_groups.c:
