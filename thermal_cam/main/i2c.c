@@ -5,13 +5,13 @@ esp_err_t i2c_read_reg(uint8_t slave_addr, uint8_t slave_reg, uint8_t* dest){
   i2c_cmd_handle_t cmd = i2c_cmd_link_create();
   //Queue the START command
   i2c_master_start(cmd);
-  //Queue the device address shifted to the left, indicate we want to write, enable the ACK check
+  //Queue the device address shifted to the left, indicate we want to write (0), enable the ACK check
   i2c_master_write_byte(cmd, (slave_addr << 1) | I2C_MASTER_WRITE, ACK_CHECK_EN);
   //Queue the register address we want, with an ACK check enabled
   i2c_master_write_byte(cmd, slave_reg, ACK_CHECK_EN);
   //Queue the repeated START command
   i2c_master_start(cmd);
-  //Queue the device address shifted to the left, indicate we want to read, enable the ACK check
+  //Queue the device address shifted to the left, indicate we want to read (1), enable the ACK check
   i2c_master_write_byte(cmd, (slave_addr << 1) | I2C_MASTER_READ, ACK_CHECK_EN);
   //Queue reading the data off the bus into our buffer, enable ACK check
   i2c_master_read_byte(cmd, dest, ACK_CHECK_EN);
