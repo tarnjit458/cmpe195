@@ -24,10 +24,8 @@ i2c.o: /home/ghaack/esp/esp-idf/components/driver/i2c.c \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/_intsup.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/ghaack/school/cmpe195/thermal_cam/build/include/sdkconfig.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
- /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
- /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
+ /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/ghaack/esp/esp-idf/components/newlib/platform_include/assert.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/stdlib.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/machine/stdlib.h \
@@ -44,6 +42,9 @@ i2c.o: /home/ghaack/esp/esp-idf/components/driver/i2c.c \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log.h \
+ /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/malloc.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/machine/malloc.h \
@@ -59,7 +60,6 @@ i2c.o: /home/ghaack/esp/esp-idf/components/driver/i2c.c \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_private/crosscore_int.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_timer.h \
- /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/ghaack/esp/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/ghaack/esp/esp-idf/components/heap/include/multi_heap.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h \
@@ -76,7 +76,6 @@ i2c.o: /home/ghaack/esp/esp-idf/components/driver/i2c.c \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
@@ -150,13 +149,9 @@ i2c.o: /home/ghaack/esp/esp-idf/components/driver/i2c.c \
 
 /home/ghaack/school/cmpe195/thermal_cam/build/include/sdkconfig.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
-/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
-
-/home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h:
+/home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h:
 
 /home/ghaack/esp/esp-idf/components/newlib/platform_include/assert.h:
 
@@ -190,6 +185,12 @@ i2c.o: /home/ghaack/esp/esp-idf/components/driver/i2c.c \
 
 /home/ghaack/esp/esp-idf/components/log/include/esp_log.h:
 
+/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
+
+/home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h:
+
 /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h:
 
 /home/ghaack/esp/esp-idf/components/newlib/include/malloc.h:
@@ -219,8 +220,6 @@ i2c.o: /home/ghaack/esp/esp-idf/components/driver/i2c.c \
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_private/crosscore_int.h:
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_timer.h:
-
-/home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h:
 
 /home/ghaack/esp/esp-idf/components/heap/include/esp_heap_caps.h:
 
@@ -253,8 +252,6 @@ i2c.o: /home/ghaack/esp/esp-idf/components/driver/i2c.c \
 /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h:
-
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
 

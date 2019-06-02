@@ -15,10 +15,10 @@
 #define THERM_THRMST_HI_ADDR      0x0f
 
 //Read a frame from the thermal sensor into a buffer of 64 signed 16 bit ints
-//This gets RAW data, not temperature values in Celsius.
 //Pixel conversion factor = 0.25
 //Divide the raw data by 4 to get the temperature in Celsius
 void therm_read_frame(int16_t* buf);
+void therm_read_frame_float(float* buf);
 
 //Get the value of the thermistor in the thermal sensor
 //This gets RAW data, not temperature values in Celsius. Divide the raw data

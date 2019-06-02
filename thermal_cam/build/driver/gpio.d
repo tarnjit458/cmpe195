@@ -27,10 +27,7 @@ gpio.o: /home/ghaack/esp/esp-idf/components/driver/gpio.c \
  /home/ghaack/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/alloca.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/assert.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
- /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
- /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
@@ -41,10 +38,12 @@ gpio.o: /home/ghaack/esp/esp-idf/components/driver/gpio.c \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
+ /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/projdefs.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/portable.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/deprecated_definitions.h \
@@ -137,13 +136,7 @@ gpio.o: /home/ghaack/esp/esp-idf/components/driver/gpio.c \
 
 /home/ghaack/esp/esp-idf/components/newlib/include/assert.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
-
-/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
-
-/home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
 
@@ -165,13 +158,17 @@ gpio.o: /home/ghaack/esp/esp-idf/components/driver/gpio.c \
 
 /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
-
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
+
+/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
+
+/home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/projdefs.h:
 

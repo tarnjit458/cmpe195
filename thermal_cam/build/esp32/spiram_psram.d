@@ -65,6 +65,9 @@ spiram_psram.o: /home/ghaack/esp/esp-idf/components/esp32/spiram_psram.c \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_struct.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_reg.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_common.h \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h \
@@ -206,6 +209,12 @@ spiram_psram.o: /home/ghaack/esp/esp-idf/components/esp32/spiram_psram.c \
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_reg.h:
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h:
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
 

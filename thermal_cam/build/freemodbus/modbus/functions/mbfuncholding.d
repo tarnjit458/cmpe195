@@ -36,6 +36,16 @@ modbus/functions/mbfuncholding.o: \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/sched.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/corebits.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/periph_ctrl.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
@@ -44,21 +54,12 @@ modbus/functions/mbfuncholding.o: \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp32/dport_access.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
- /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
- /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
- /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
- /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
- /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/specreg.h \
- /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/corebits.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
- /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
- /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/projdefs.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/portable.h \
@@ -84,8 +85,6 @@ modbus/functions/mbfuncholding.o: \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h \
@@ -180,6 +179,26 @@ modbus/functions/mbfuncholding.o: \
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/corebits.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h:
+
 /home/ghaack/esp/esp-idf/components/driver/include/driver/periph_ctrl.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
@@ -196,23 +215,9 @@ modbus/functions/mbfuncholding.o: \
 
 /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h:
 
-/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h:
-
 /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/specreg.h:
 
-/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/corebits.h:
-
 /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
 
@@ -221,10 +226,6 @@ modbus/functions/mbfuncholding.o: \
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h:
-
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h:
 
 /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
@@ -275,10 +276,6 @@ modbus/functions/mbfuncholding.o: \
 /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
 
 /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h:
-
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
-
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 

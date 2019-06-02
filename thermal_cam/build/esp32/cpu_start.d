@@ -70,14 +70,15 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/rtc_periph.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
- /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/projdefs.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/portable.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/deprecated_definitions.h \
@@ -92,8 +93,6 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_sleep.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/task.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/limits.h \
@@ -111,7 +110,7 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
  /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event.h \
  /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event_base.h \
  /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event_legacy.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_types.h \
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/queue.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_interface.h \
  /home/ghaack/esp/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h \
@@ -148,7 +147,7 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip6_addr.h \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
  /home/ghaack/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_ipc.h \
+ /home/ghaack/esp/esp-idf/components/esp_common/include/esp_ipc.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/ghaack/esp/esp-idf/components/vfs/include/esp_vfs_dev.h \
@@ -163,11 +162,11 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp32/brownout.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_int_wdt.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_task_wdt.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_phy_init.h \
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_phy_init.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp32/cache_err_int.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_coexist_internal.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_coexist_adapter.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_panic.h \
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_coexist_internal.h \
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_coexist_adapter.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/include/esp_debug_helpers.h \
  /home/ghaack/esp/esp-idf/components/espcoredump/include/esp_core_dump.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  /home/ghaack/esp/esp-idf/components/app_trace/include/esp_app_trace.h \
@@ -328,6 +327,12 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h:
+
 /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h:
@@ -339,10 +344,6 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h:
-
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/projdefs.h:
 
@@ -371,10 +372,6 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_sleep.h:
 
 /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h:
-
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
-
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
@@ -410,7 +407,7 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
 
 /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event_legacy.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_types.h:
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:
 
 /home/ghaack/esp/esp-idf/components/newlib/include/sys/queue.h:
 
@@ -484,7 +481,7 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
 
 /home/ghaack/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_ipc.h:
+/home/ghaack/esp/esp-idf/components/esp_common/include/esp_ipc.h:
 
 /home/ghaack/esp/esp-idf/components/log/include/esp_log.h:
 
@@ -514,15 +511,15 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_task_wdt.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_phy_init.h:
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_phy_init.h:
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp32/cache_err_int.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_coexist_internal.h:
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_coexist_internal.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_coexist_adapter.h:
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_coexist_adapter.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_panic.h:
+/home/ghaack/esp/esp-idf/components/xtensa/include/esp_debug_helpers.h:
 
 /home/ghaack/esp/esp-idf/components/espcoredump/include/esp_core_dump.h:
 
