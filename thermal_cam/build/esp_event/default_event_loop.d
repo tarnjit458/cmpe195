@@ -71,9 +71,10 @@ default_event_loop.o: \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/task.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/limits.h \
@@ -83,7 +84,7 @@ default_event_loop.o: \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event_base.h \
  /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event_legacy.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_types.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/queue.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_interface.h \
  /home/ghaack/esp/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h \
@@ -120,8 +121,7 @@ default_event_loop.o: \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip6_addr.h \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
  /home/ghaack/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h \
- /home/ghaack/esp/esp-idf/components/esp_event/private_include/esp_event_internal.h \
- /home/ghaack/esp/esp-idf/components/newlib/include/stdatomic.h
+ /home/ghaack/esp/esp-idf/components/esp_event/private_include/esp_event_internal.h
 
 /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event.h:
 
@@ -265,11 +265,13 @@ default_event_loop.o: \
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
-
 /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
 
 /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h:
+
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
@@ -289,7 +291,7 @@ default_event_loop.o: \
 
 /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event_legacy.h:
 
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_types.h:
 
 /home/ghaack/esp/esp-idf/components/newlib/include/sys/queue.h:
 
@@ -364,6 +366,4 @@ default_event_loop.o: \
 /home/ghaack/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h:
 
 /home/ghaack/esp/esp-idf/components/esp_event/private_include/esp_event_internal.h:
-
-/home/ghaack/esp/esp-idf/components/newlib/include/stdatomic.h:
 /home/ghaack/esp/esp-idf/components/esp_event/./default_event_loop.c:

@@ -55,8 +55,8 @@ src/wpa2/eap_peer/eap_peap.o: \
  /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wpa2/eap_peer/eap_defs.h \
  /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wpa2/eap_peer/eap_common.h \
  /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wpa2/eap_peer/eap_config.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wpa2.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_wpa2.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_crypto_types.h \
  /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wpa2/eap_peer/eap_tls_common.h \
  /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wpa2/eap_peer/eap_config.h \
  /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wpa2/eap_peer/eap_methods.h \
@@ -172,9 +172,9 @@ src/wpa2/eap_peer/eap_peap.o: \
 
 /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wpa2/eap_peer/eap_config.h:
 
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wpa2.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_wpa2.h:
 
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_crypto_types.h:
 
 /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wpa2/eap_peer/eap_tls_common.h:
 

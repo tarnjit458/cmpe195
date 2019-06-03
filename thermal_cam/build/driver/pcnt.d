@@ -32,6 +32,9 @@ pcnt.o: /home/ghaack/esp/esp-idf/components/driver/pcnt.c \
  /home/ghaack/esp/esp-idf/components/newlib/include/machine/types.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/sched.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/stdio.h \
+ /home/ghaack/esp/esp-idf/components/driver/include/driver/pcnt.h \
+ /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
@@ -42,8 +45,6 @@ pcnt.o: /home/ghaack/esp/esp-idf/components/driver/pcnt.c \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
- /home/ghaack/esp/esp-idf/components/driver/include/driver/pcnt.h \
- /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -153,6 +154,12 @@ pcnt.o: /home/ghaack/esp/esp-idf/components/driver/pcnt.c \
 
 /home/ghaack/esp/esp-idf/components/newlib/include/sys/stdio.h:
 
+/home/ghaack/esp/esp-idf/components/driver/include/driver/pcnt.h:
+
+/home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h:
+
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
+
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
 
 /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h:
@@ -172,10 +179,6 @@ pcnt.o: /home/ghaack/esp/esp-idf/components/driver/pcnt.c \
 /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h:
 
 /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h:
-
-/home/ghaack/esp/esp-idf/components/driver/include/driver/pcnt.h:
-
-/home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

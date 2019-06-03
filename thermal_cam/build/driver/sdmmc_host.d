@@ -36,16 +36,6 @@ sdmmc_host.o: /home/ghaack/esp/esp-idf/components/driver/sdmmc_host.c \
  /home/ghaack/esp/esp-idf/components/newlib/include/machine/types.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/sched.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/stdio.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
- /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
- /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
- /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/corebits.h \
- /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
- /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
- /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
- /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
- /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
@@ -63,6 +53,15 @@ sdmmc_host.o: /home/ghaack/esp/esp-idf/components/driver/sdmmc_host.c \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/corebits.h \
+ /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/projdefs.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/portable.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/deprecated_definitions.h \
@@ -80,6 +79,8 @@ sdmmc_host.o: /home/ghaack/esp/esp-idf/components/driver/sdmmc_host.c \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_sleep.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/periph_ctrl.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
@@ -170,26 +171,6 @@ sdmmc_host.o: /home/ghaack/esp/esp-idf/components/driver/sdmmc_host.c \
 
 /home/ghaack/esp/esp-idf/components/newlib/include/sys/stdio.h:
 
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h:
-
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/corebits.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h:
-
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
@@ -224,6 +205,24 @@ sdmmc_host.o: /home/ghaack/esp/esp-idf/components/driver/sdmmc_host.c \
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
+/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/corebits.h:
+
+/home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h:
+
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/projdefs.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/portable.h:
@@ -257,6 +256,10 @@ sdmmc_host.o: /home/ghaack/esp/esp-idf/components/driver/sdmmc_host.c \
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_sleep.h:
 
 /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h:
+
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 

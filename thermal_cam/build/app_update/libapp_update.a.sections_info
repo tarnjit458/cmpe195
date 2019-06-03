@@ -124,27 +124,27 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  59 .debug_frame  00000268  00000000  00000000  00001254  2**2
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 60 .debug_info   00001e06  00000000  00000000  000014bc  2**0
+ 60 .debug_info   00001e09  00000000  00000000  000014bc  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 61 .debug_abbrev 0000034b  00000000  00000000  000032c2  2**0
+ 61 .debug_abbrev 0000035a  00000000  00000000  000032c5  2**0
                   CONTENTS, READONLY, DEBUGGING
- 62 .debug_loc    00000ebe  00000000  00000000  0000360d  2**0
+ 62 .debug_loc    00000ebe  00000000  00000000  0000361f  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 63 .debug_aranges 000000e0  00000000  00000000  000044cb  2**0
+ 63 .debug_aranges 000000e0  00000000  00000000  000044dd  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 64 .debug_ranges 00000178  00000000  00000000  000045ab  2**0
+ 64 .debug_ranges 00000178  00000000  00000000  000045bd  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 65 .debug_line   00000ee1  00000000  00000000  00004723  2**0
+ 65 .debug_line   00000ee1  00000000  00000000  00004735  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
- 66 .debug_str    00001147  00000000  00000000  00005604  2**0
+ 66 .debug_str    00001147  00000000  00000000  00005616  2**0
                   CONTENTS, READONLY, DEBUGGING
- 67 .comment      0000003b  00000000  00000000  0000674b  2**0
+ 67 .comment      0000003b  00000000  00000000  0000675d  2**0
                   CONTENTS, READONLY
- 68 .xtensa.info  00000038  00000000  00000000  00006786  2**0
+ 68 .xtensa.info  00000038  00000000  00000000  00006798  2**0
                   CONTENTS, READONLY
- 69 .xt.lit       000000b8  00000000  00000000  000067be  2**0
+ 69 .xt.lit       000000b8  00000000  00000000  000067d0  2**0
                   CONTENTS, RELOC, READONLY
- 70 .xt.prop      00000e1c  00000000  00000000  00006876  2**0
+ 70 .xt.prop      00000e1c  00000000  00000000  00006888  2**0
                   CONTENTS, RELOC, READONLY
 
 esp_app_desc.o:     file format elf32-xtensa-le

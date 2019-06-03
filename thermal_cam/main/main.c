@@ -3,13 +3,16 @@
 #include "freertos/task.h"
 #include "freertos/queue.h"
 #include "sdkconfig.h"
-#include "esp_log.h"
 #include "esp_timer.h"
+#include "driver/gpio.h"
+#include "driver/i2c.h"
 
 #include "i2c.h"
 #include "screen.h"
 #include "therm.h"
 #include "interp.h"
+#include "MLX90640_I2C_Driver.h"
+
 
 #define SCALE_FACTOR  10
 #define THERM_RES     8
@@ -17,63 +20,14 @@
 
 static float* therm_buf;
 
-//Note: Thermal sensor register addresses and data are 16 bits!
-//      This seems pretty nonstandard but it should work fine
-
-//Multibyte I2C read.
-int MLX90640_I2CRead( //The address of the sensor
-                      uint8_t slaveAddr,
-                      //The starting address of the read
-                      uint16_t startAddress,
-                      //The amount of bytes to read from the start
-                      uint16_t nMemAddressRead,
-                      //An array to store the data
-                      uint16_t *data);
-
-//Single Byte I2C Write
-int MLX90640_I2CWrite(
-                      //The address of the sensor
-                      uint8_t slaveAddr,
-                      //The address of the write
-                      uint16_t writeAddress,
-                      //The data to write
-                      uint16_t data);
-
 void app_main(){
   init_i2c();
-}
-//TODO: Rework this to use the wierd 16 bit format for the sensor. See if we can use i2c_master_read instead of i2c_master_read_byte
-//Multibyte I2C read.
-int MLX90640_I2CRead(uint8_t slaveAddr, uint16_t startAddress, uint16_t nMemAddressRead, uint16_t *data){
-  //Init the i2c handle
-  i2c_cmd_handle_t cmd = i2c_cmd_link_create();
-  //Queue the START command
-  i2c_master_start(cmd);
-  //Queue the device address shifted to the left, indicate we want to write (0), enable the ACK check
-  i2c_master_write_byte(cmd, (slave_addr << 1) | I2C_MASTER_WRITE, ACK_CHECK_EN);
-  //Queue the register address we want, with an ACK check enabled
-  i2c_master_write_byte(cmd, slave_reg, ACK_CHECK_EN);
-  //Queue the repeated START command
-  i2c_master_start(cmd);
-  //Queue the device address shifted to the left, indicate we want to read (1), enable the ACK check
-  i2c_master_write_byte(cmd, (slave_addr << 1) | I2C_MASTER_READ, ACK_CHECK_EN);
-  //Begin repeated reads. Only go through this loop if reading more than twice
-  uint16_t i = 1;
-  while(i < nMemAddressRead){
-    //Queue reading the data off the bus into our buffer, Send an ack
-    i2c_master_read_byte(cmd, dest + i - 1, I2C_MASTER_ACK);
-    i++
+  uint16_t dat[3] ={0, 0, 0};
+  //Read back the Device ID
+  MLX90640_I2CRead(0x33, 0x2407, 3, dat);
+  for(uint8_t i = 0; i < 3; i++){
+    printf("dat[%i]: 0x%x\n", i, dat[i]);
   }
-  //Read out the last (or only) byte, send a NACK to stop the transaction
-  i2c_master_read_byte(cmd, nMemAddressRead - 1, I2C_MASTER_NACK);
-  //Queue the STOP command
-  i2c_master_stop(cmd);
-  //Perform the queued i2c command
-  esp_err_t ret = i2c_master_cmd_begin(I2C_MASTER_NUM, cmd, 1000 / portTICK_RATE_MS);
-  //Delete the i2c link
-  i2c_cmd_link_delete(cmd);
-  //Return the result of the transaction
-  return ret;
 }
 
 /*
@@ -90,22 +44,7 @@ void app_main(){
   while(1){
 
     therm_read_frame_float(therm_buf);
-    /*
-    for(uint8_t i = 0; i < THERM_RES; i++){
-      printf("\n");
-      for(uint8_t j = 0; j < THERM_RES; j++){
-        printf("%f ", therm_buf[i*THERM_RES + j]);
-      }
-    }*/
     interpolate_image(therm_buf, THERM_RES, THERM_RES, ibuf, INTERP_RES, INTERP_RES);
-    /*
-    for(uint8_t i = 0; i < INTERP_RES; i++){
-      printf("\n");
-      for(uint8_t j = 0; j < INTERP_RES; j++){
-        printf("%f ", ibuf[i*INTERP_RES + j]);
-      }
-    }
-    */
     for(uint16_t y = 0; y < SCREEN_HEIGHT; y++){
       for(uint16_t x = 0; x < SCALE_FACTOR*INTERP_RES; x++){
         fbuf[(y * SCREEN_WIDTH) + x] = therm_colors[(uint16_t)(ibuf[((y/SCALE_FACTOR)*INTERP_RES + (x/SCALE_FACTOR))])];

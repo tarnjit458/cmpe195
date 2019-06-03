@@ -36,7 +36,7 @@ mdns_console.o: /home/ghaack/esp/esp-idf/components/mdns/mdns_console.c \
  /home/ghaack/esp/esp-idf/components/mdns/include/mdns.h \
  /home/ghaack/esp/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/queue.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_types.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_interface.h \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h \
@@ -80,9 +80,10 @@ mdns_console.o: /home/ghaack/esp/esp-idf/components/mdns/mdns_console.c \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /home/ghaack/esp/esp-idf/components/lwip/port/esp32/include/netif/dhcp_state.h \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/debug.h \
@@ -199,7 +200,7 @@ mdns_console.o: /home/ghaack/esp/esp-idf/components/mdns/mdns_console.c \
 
 /home/ghaack/esp/esp-idf/components/newlib/include/sys/queue.h:
 
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_types.h:
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_interface.h:
 
@@ -287,11 +288,13 @@ mdns_console.o: /home/ghaack/esp/esp-idf/components/mdns/mdns_console.c \
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
-
 /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
 
 /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h:
+
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 

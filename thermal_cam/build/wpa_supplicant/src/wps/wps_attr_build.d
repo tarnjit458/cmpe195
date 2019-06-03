@@ -56,12 +56,12 @@ src/wps/wps_attr_build.o: \
  /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wps/wps_i.h \
  /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wps/wps.h \
  /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wps/wps_defs.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_types.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/queue.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_interface.h \
  /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wps/wps_attr_parse.h \
  /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wps/wps.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_crypto_types.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
@@ -191,7 +191,7 @@ src/wps/wps_attr_build.o: \
 
 /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wps/wps_defs.h:
 
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_types.h:
 
 /home/ghaack/esp/esp-idf/components/newlib/include/sys/queue.h:
 
@@ -201,7 +201,7 @@ src/wps/wps_attr_build.o: \
 
 /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/wps/wps.h:
 
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_crypto_types.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h:
 

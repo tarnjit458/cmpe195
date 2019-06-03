@@ -39,7 +39,7 @@ gdbstub.o: /home/ghaack/esp/esp-idf/components/esp32/gdbstub.c \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/corebits.h \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
- /home/ghaack/esp/esp-idf/components/xtensa/include/esp_debug_helpers.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_panic.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/stdio.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/types.h \
@@ -77,6 +77,7 @@ gdbstub.o: /home/ghaack/esp/esp-idf/components/esp32/gdbstub.c \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_sleep.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/task.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/limits.h \
@@ -162,7 +163,7 @@ gdbstub.o: /home/ghaack/esp/esp-idf/components/esp32/gdbstub.c \
 
 /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h:
 
-/home/ghaack/esp/esp-idf/components/xtensa/include/esp_debug_helpers.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_panic.h:
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h:
 
@@ -237,6 +238,8 @@ gdbstub.o: /home/ghaack/esp/esp-idf/components/esp32/gdbstub.c \
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_sleep.h:
 
 /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h:
+
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 

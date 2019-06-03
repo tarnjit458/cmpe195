@@ -17,13 +17,10 @@ ledc.o: /home/ghaack/esp/esp-idf/components/driver/ledc.c \
  /home/ghaack/esp/esp-idf/components/newlib/include/machine/_types.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/lock.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/string.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
- /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h \
- /home/ghaack/esp/esp-idf/components/newlib/include/stdio.h \
- /home/ghaack/esp/esp-idf/components/newlib/include/sys/types.h \
- /home/ghaack/esp/esp-idf/components/newlib/include/machine/types.h \
- /home/ghaack/esp/esp-idf/components/newlib/include/sys/sched.h \
- /home/ghaack/esp/esp-idf/components/newlib/include/sys/stdio.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
+ /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/ghaack/esp/esp-idf/components/newlib/platform_include/assert.h \
  /home/ghaack/school/cmpe195/thermal_cam/build/include/sdkconfig.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/stdlib.h \
@@ -40,12 +37,16 @@ ledc.o: /home/ghaack/esp/esp-idf/components/driver/ledc.c \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
+ /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h \
+ /home/ghaack/esp/esp-idf/components/newlib/include/stdio.h \
+ /home/ghaack/esp/esp-idf/components/newlib/include/sys/types.h \
+ /home/ghaack/esp/esp-idf/components/newlib/include/machine/types.h \
+ /home/ghaack/esp/esp-idf/components/newlib/include/sys/sched.h \
+ /home/ghaack/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
- /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
- /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/projdefs.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/portable.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/deprecated_definitions.h \
@@ -125,19 +126,13 @@ ledc.o: /home/ghaack/esp/esp-idf/components/driver/ledc.c \
 
 /home/ghaack/esp/esp-idf/components/newlib/include/sys/string.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
 
-/home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h:
+/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
-/home/ghaack/esp/esp-idf/components/newlib/include/stdio.h:
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 
-/home/ghaack/esp/esp-idf/components/newlib/include/sys/types.h:
-
-/home/ghaack/esp/esp-idf/components/newlib/include/machine/types.h:
-
-/home/ghaack/esp/esp-idf/components/newlib/include/sys/sched.h:
-
-/home/ghaack/esp/esp-idf/components/newlib/include/sys/stdio.h:
+/home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h:
 
 /home/ghaack/esp/esp-idf/components/newlib/platform_include/assert.h:
 
@@ -171,17 +166,25 @@ ledc.o: /home/ghaack/esp/esp-idf/components/driver/ledc.c \
 
 /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h:
 
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
+
+/home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h:
+
+/home/ghaack/esp/esp-idf/components/newlib/include/stdio.h:
+
+/home/ghaack/esp/esp-idf/components/newlib/include/sys/types.h:
+
+/home/ghaack/esp/esp-idf/components/newlib/include/machine/types.h:
+
+/home/ghaack/esp/esp-idf/components/newlib/include/sys/sched.h:
+
+/home/ghaack/esp/esp-idf/components/newlib/include/sys/stdio.h:
+
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
-
-/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
-
-/home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/projdefs.h:
 

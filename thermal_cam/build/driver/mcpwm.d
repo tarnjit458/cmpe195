@@ -31,7 +31,7 @@ mcpwm.o: /home/ghaack/esp/esp-idf/components/driver/mcpwm.c \
  /home/ghaack/esp/esp-idf/components/newlib/include/assert.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
@@ -42,6 +42,7 @@ mcpwm.o: /home/ghaack/esp/esp-idf/components/driver/mcpwm.c \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -154,7 +155,7 @@ mcpwm.o: /home/ghaack/esp/esp-idf/components/driver/mcpwm.c \
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
 
@@ -175,6 +176,8 @@ mcpwm.o: /home/ghaack/esp/esp-idf/components/driver/mcpwm.c \
 /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h:
 
 /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h:
+
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

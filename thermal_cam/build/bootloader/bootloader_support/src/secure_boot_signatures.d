@@ -16,8 +16,8 @@ src/secure_boot_signatures.o: \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_secure_boot.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/efuse_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
- /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/sha.h \
- /home/ghaack/esp/esp-idf/components/bootloader/subproject/components/micro-ecc/micro-ecc/uECC.h
+ /home/ghaack/esp/esp-idf/components/micro-ecc/micro-ecc/uECC.h \
+ /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/sha.h
 
 /home/ghaack/school/cmpe195/thermal_cam/build/bootloader/../include/sdkconfig.h:
 
@@ -51,7 +51,7 @@ src/secure_boot_signatures.o: \
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 
-/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/sha.h:
+/home/ghaack/esp/esp-idf/components/micro-ecc/micro-ecc/uECC.h:
 
-/home/ghaack/esp/esp-idf/components/bootloader/subproject/components/micro-ecc/micro-ecc/uECC.h:
+/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/sha.h:
 /home/ghaack/esp/esp-idf/components/bootloader_support/src/secure_boot_signatures.c:

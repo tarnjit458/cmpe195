@@ -65,6 +65,9 @@ src/crypto/crypto_mbedtls.o: \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
+ /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
@@ -75,8 +78,6 @@ src/crypto/crypto_mbedtls.o: \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
- /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
- /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/port/include/mbedtls/bignum.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/bignum.h
@@ -211,6 +212,12 @@ src/crypto/crypto_mbedtls.o: \
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
+/home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
+
+/home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h:
+
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
+
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
 
 /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h:
@@ -230,10 +237,6 @@ src/crypto/crypto_mbedtls.o: \
 /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h:
 
 /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h:
-
-/home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
-
-/home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 

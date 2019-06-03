@@ -29,7 +29,10 @@ dport_access.o: /home/ghaack/esp/esp-idf/components/esp32/dport_access.c \
  /home/ghaack/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/alloca.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/assert.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
+ /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
@@ -40,9 +43,6 @@ dport_access.o: /home/ghaack/esp/esp-idf/components/esp32/dport_access.c \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
- /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
- /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/uart.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
@@ -81,6 +81,7 @@ dport_access.o: /home/ghaack/esp/esp-idf/components/esp32/dport_access.c \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
@@ -153,7 +154,13 @@ dport_access.o: /home/ghaack/esp/esp-idf/components/esp32/dport_access.c \
 
 /home/ghaack/esp/esp-idf/components/newlib/include/assert.h:
 
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
+
+/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
+
+/home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
 
@@ -174,12 +181,6 @@ dport_access.o: /home/ghaack/esp/esp-idf/components/esp32/dport_access.c \
 /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h:
 
 /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h:
-
-/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
-
-/home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h:
 
 /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/uart.h:
 
@@ -256,6 +257,8 @@ dport_access.o: /home/ghaack/esp/esp-idf/components/esp32/dport_access.c \
 /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h:
+
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
 

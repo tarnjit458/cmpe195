@@ -69,21 +69,22 @@ main.o: /home/ghaack/school/cmpe195/thermal_cam/main/main.c \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/task.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/limits.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/list.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h \
- /home/ghaack/esp/esp-idf/components/log/include/esp_log.h \
- /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h \
- /home/ghaack/school/cmpe195/thermal_cam/main/i2c.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/i2c.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /home/ghaack/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
+ /home/ghaack/school/cmpe195/thermal_cam/main/i2c.h \
+ /home/ghaack/esp/esp-idf/components/log/include/esp_log.h \
+ /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/ghaack/school/cmpe195/thermal_cam/main/screen.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/string.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/string.h \
@@ -97,7 +98,8 @@ main.o: /home/ghaack/school/cmpe195/thermal_cam/main/main.c \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
  /home/ghaack/school/cmpe195/thermal_cam/main/therm.h \
- /home/ghaack/school/cmpe195/thermal_cam/main/interp.h
+ /home/ghaack/school/cmpe195/thermal_cam/main/interp.h \
+ /home/ghaack/school/cmpe195/thermal_cam/main/MLX90640_I2C_Driver.h
 
 /home/ghaack/esp/esp-idf/components/newlib/include/stdio.h:
 
@@ -239,11 +241,13 @@ main.o: /home/ghaack/school/cmpe195/thermal_cam/main/main.c \
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
-
 /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
 
 /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h:
+
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
@@ -255,12 +259,6 @@ main.o: /home/ghaack/school/cmpe195/thermal_cam/main/main.c \
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
-/home/ghaack/esp/esp-idf/components/log/include/esp_log.h:
-
-/home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h:
-
-/home/ghaack/school/cmpe195/thermal_cam/main/i2c.h:
-
 /home/ghaack/esp/esp-idf/components/driver/include/driver/i2c.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h:
@@ -268,6 +266,12 @@ main.o: /home/ghaack/school/cmpe195/thermal_cam/main/main.c \
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
 /home/ghaack/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
+
+/home/ghaack/school/cmpe195/thermal_cam/main/i2c.h:
+
+/home/ghaack/esp/esp-idf/components/log/include/esp_log.h:
+
+/home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h:
 
 /home/ghaack/school/cmpe195/thermal_cam/main/screen.h:
 
@@ -296,4 +300,6 @@ main.o: /home/ghaack/school/cmpe195/thermal_cam/main/main.c \
 /home/ghaack/school/cmpe195/thermal_cam/main/therm.h:
 
 /home/ghaack/school/cmpe195/thermal_cam/main/interp.h:
+
+/home/ghaack/school/cmpe195/thermal_cam/main/MLX90640_I2C_Driver.h:
 /home/ghaack/school/cmpe195/thermal_cam/main/./main.c:

@@ -25,7 +25,7 @@ tcpip_adapter_lwip.o: \
  /home/ghaack/esp/esp-idf/components/newlib/include/stdint.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/_intsup.h \
  /home/ghaack/esp/esp-idf/components/newlib/include/sys/queue.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_types.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/ghaack/esp/esp-idf/components/newlib/platform_include/assert.h \
  /home/ghaack/school/cmpe195/thermal_cam/build/include/sdkconfig.h \
@@ -79,9 +79,10 @@ tcpip_adapter_lwip.o: \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /home/ghaack/esp/esp-idf/components/lwip/port/esp32/include/netif/dhcp_state.h \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/debug.h \
@@ -145,15 +146,16 @@ tcpip_adapter_lwip.o: \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/priv/tcpip_priv.h \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/dns.h \
  /home/ghaack/esp/esp-idf/components/lwip/port/esp32/include/netif/wlanif.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_types.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_crypto_types.h \
  /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event.h \
  /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event_base.h \
  /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event_legacy.h \
  /home/ghaack/esp/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_os_adapter.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_internal.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi.h \
  /home/ghaack/esp/esp-idf/components/lwip/port/esp32/include/netif/ethernetif.h \
  /home/ghaack/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver_options.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log.h \
@@ -209,7 +211,7 @@ tcpip_adapter_lwip.o: \
 
 /home/ghaack/esp/esp-idf/components/newlib/include/sys/queue.h:
 
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_types.h:
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h:
 
@@ -317,11 +319,13 @@ tcpip_adapter_lwip.o: \
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
-
 /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
 
 /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h:
+
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
@@ -449,11 +453,11 @@ tcpip_adapter_lwip.o: \
 
 /home/ghaack/esp/esp-idf/components/lwip/port/esp32/include/netif/wlanif.h:
 
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi.h:
 
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_types.h:
 
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_crypto_types.h:
 
 /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event.h:
 
@@ -463,9 +467,11 @@ tcpip_adapter_lwip.o: \
 
 /home/ghaack/esp/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h:
 
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_os_adapter.h:
 
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi.h:
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi_internal.h:
+
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_wifi.h:
 
 /home/ghaack/esp/esp-idf/components/lwip/port/esp32/include/netif/ethernetif.h:
 

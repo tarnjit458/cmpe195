@@ -53,6 +53,11 @@ rtc_module.o: /home/ghaack/esp/esp-idf/components/driver/rtc_module.c \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/soc/rtc_periph.h \
+ /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
@@ -63,10 +68,6 @@ rtc_module.o: /home/ghaack/esp/esp-idf/components/driver/rtc_module.c \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
  /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
- /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h \
- /home/ghaack/esp/esp-idf/components/soc/include/soc/rtc_periph.h \
- /home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/adc.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/adc_channel.h \
@@ -210,6 +211,16 @@ rtc_module.o: /home/ghaack/esp/esp-idf/components/driver/rtc_module.c \
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
+/home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/soc/rtc_periph.h:
+
+/home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h:
+
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr.h:
+
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
 
 /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/hal.h:
@@ -229,14 +240,6 @@ rtc_module.o: /home/ghaack/esp/esp-idf/components/driver/rtc_module.c \
 /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h:
 
 /home/ghaack/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h:
-
-/home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h:
-
-/home/ghaack/esp/esp-idf/components/soc/include/soc/rtc_periph.h:
-
-/home/ghaack/esp/esp-idf/components/driver/include/driver/touch_pad.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
