@@ -12,6 +12,7 @@
 #include "therm.h"
 #include "interp.h"
 #include "MLX90640_I2C_Driver.h"
+#include "MLX90640_API.h"
 
 
 #define SCALE_FACTOR  10
@@ -22,12 +23,34 @@ static float* therm_buf;
 
 void app_main(){
   init_i2c();
-  uint16_t dat[3] ={0, 0, 0};
-  //Read back the Device ID
-  MLX90640_I2CRead(0x33, 0x2407, 3, dat);
-  for(uint8_t i = 0; i < 3; i++){
+  uint16_t dat[4] ={0, 0, 0, 0};
+  //Read back known data
+  //Should get:
+  //0x240C = 0x1901
+  //0x240D = 0x0000
+  //0x240E = 0x0000
+  //0x240F = 0xBE33
+  MLX90640_I2CRead(0x33, 0x240C, 4, dat);
+  for(uint8_t i = 0; i < 4; i++){
     printf("dat[%i]: 0x%x\n", i, dat[i]);
   }
+  //Extract the device eeprom
+  uint16_t eeMLX90640[832];
+  paramsMLX90640 mlx90640;
+  printf("DumpEE Status: %i\n", MLX90640_DumpEE(0x33, eeMLX90640));
+  //Set the framerate
+  uint8_t slave_addr = 0x33;
+  uint8_t refresh_rate = 0x06;
+  printf("Setting refresh rate to %i...\n", refresh_rate);
+  MLX90640_SetRefreshRate(slave_addr, refresh_rate);
+  printf("Refresh rate is now %i.\n", MLX90640_GetRefreshRate(slave_addr));
+  printf("EEPROM check returns %i\n", CheckEEPROMValid(eeMLX90640));
+  // printf("Dumping EEPROM Data...\n");
+  // for(uint16_t i = 0; i < 832; i++){
+  //  printf("%i: 0x%x\n", i, eeMLX90640[i]);
+  // }
+  //TODO: Put this in its own task, give it a fuckload of RAM
+  ExtractVDDParameters(eeMLX90640, &mlx90640);
 }
 
 /*

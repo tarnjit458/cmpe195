@@ -62,4 +62,21 @@
     int MLX90640_SetChessMode(uint8_t slaveAddr);
     void MLX90640_BadPixelsCorrection(uint16_t *pixels, float *to, int mode, paramsMLX90640 *params);
 
+    //Made these public for debug purposes
+    void ExtractVDDParameters(uint16_t *eeData, paramsMLX90640 *mlx90640);
+    void ExtractPTATParameters(uint16_t *eeData, paramsMLX90640 *mlx90640);
+    void ExtractGainParameters(uint16_t *eeData, paramsMLX90640 *mlx90640);
+    void ExtractTgcParameters(uint16_t *eeData, paramsMLX90640 *mlx90640);
+    void ExtractResolutionParameters(uint16_t *eeData, paramsMLX90640 *mlx90640);
+    void ExtractKsTaParameters(uint16_t *eeData, paramsMLX90640 *mlx90640);
+    void ExtractKsToParameters(uint16_t *eeData, paramsMLX90640 *mlx90640);
+    void ExtractAlphaParameters(uint16_t *eeData, paramsMLX90640 *mlx90640);
+    void ExtractOffsetParameters(uint16_t *eeData, paramsMLX90640 *mlx90640);
+    void ExtractKtaPixelParameters(uint16_t *eeData, paramsMLX90640 *mlx90640);
+    void ExtractKvPixelParameters(uint16_t *eeData, paramsMLX90640 *mlx90640);
+    void ExtractCPParameters(uint16_t *eeData, paramsMLX90640 *mlx90640);
+    void ExtractCILCParameters(uint16_t *eeData, paramsMLX90640 *mlx90640);
+    int ExtractDeviatingPixels(uint16_t *eeData, paramsMLX90640 *mlx90640);
+    int CheckEEPROMValid(uint16_t *eeData);
+
 #endif

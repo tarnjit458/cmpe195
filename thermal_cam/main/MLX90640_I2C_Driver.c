@@ -4,7 +4,7 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 static const char* TAG = "Therm I2C";
-#define LOG_LOCAL_LEVEL ESP_LOG_DEBUG
+#define LOG_LOCAL_LEVEL ESP_LOG_ERROR
 #include "esp_log.h"
 //Note: Thermal sensor register addresses and data are 16 bits!
 //      This seems pretty nonstandard but it should work fine
