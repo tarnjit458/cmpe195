@@ -31,6 +31,7 @@ src/bootloader_utility.o: \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/uart.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h \
@@ -60,6 +61,7 @@ src/bootloader_utility.o: \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
+ /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_app_format.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_secure_boot.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_encrypt.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h \
@@ -134,6 +136,8 @@ src/bootloader_utility.o: \
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h:
 
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h:
+
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h:
@@ -191,6 +195,8 @@ src/bootloader_utility.o: \
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h:
 
 /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h:
+
+/home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_app_format.h:
 
 /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_secure_boot.h:
 

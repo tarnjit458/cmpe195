@@ -7,6 +7,7 @@ src/esp32/flash_encrypt.o: \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
+ /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_app_format.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_encrypt.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/efuse_periph.h \
@@ -57,6 +58,8 @@ src/esp32/flash_encrypt.o: \
 /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h:
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h:
+
+/home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_app_format.h:
 
 /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_encrypt.h:
 

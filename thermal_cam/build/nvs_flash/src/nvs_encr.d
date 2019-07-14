@@ -17,6 +17,9 @@ src/nvs_encr.o: \
  /home/ghaack/esp/esp-idf/components/nvs_flash/include/nvs.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_partition.h \
+ /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_flash.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_flash_types.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/esp_flash_err.h \
  /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /home/ghaack/esp/esp-idf/components/nvs_flash/src/nvs_types.hpp \
  /home/ghaack/esp/esp-idf/components/nvs_flash/include/nvs.h \
@@ -55,6 +58,12 @@ src/nvs_encr.o: \
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_attr.h:
 
 /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_partition.h:
+
+/home/ghaack/esp/esp-idf/components/spi_flash/include/esp_flash.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/spi_flash_types.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/esp_flash_err.h:
 
 /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 

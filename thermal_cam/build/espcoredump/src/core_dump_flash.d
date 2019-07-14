@@ -5,6 +5,10 @@ src/core_dump_flash.o: \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/ghaack/esp/esp-idf/components/newlib/platform_include/assert.h \
  /home/ghaack/projects/cmpe195/thermal_cam/build/include/sdkconfig.h \
+ /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_flash.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_flash_types.h \
+ /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/esp_flash_err.h \
  /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /home/ghaack/esp/esp-idf/components/espcoredump/include_core_dump/esp_core_dump_priv.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
@@ -51,6 +55,14 @@ src/core_dump_flash.o: \
 /home/ghaack/esp/esp-idf/components/newlib/platform_include/assert.h:
 
 /home/ghaack/projects/cmpe195/thermal_cam/build/include/sdkconfig.h:
+
+/home/ghaack/esp/esp-idf/components/spi_flash/include/esp_flash.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/spi_flash_types.h:
+
+/home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/esp_flash_err.h:
 
 /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 

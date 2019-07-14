@@ -5,6 +5,7 @@ src/hal/spi_slave_hal.o: \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_ll.h \
  /home/ghaack/esp/esp-idf/components/soc/include/hal/hal_defs.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log.h \
@@ -16,7 +17,6 @@ src/hal/spi_slave_hal.o: \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h
@@ -30,6 +30,8 @@ src/hal/spi_slave_hal.o: \
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h:
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h:
 
 /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_ll.h:
 
@@ -52,8 +54,6 @@ src/hal/spi_slave_hal.o: \
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
 

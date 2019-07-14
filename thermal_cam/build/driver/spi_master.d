@@ -9,11 +9,12 @@ spi_master.o: /home/ghaack/esp/esp-idf/components/driver/spi_master.c \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_types.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_master.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
@@ -44,8 +45,6 @@ spi_master.o: /home/ghaack/esp/esp-idf/components/driver/spi_master.c \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
@@ -61,6 +60,8 @@ spi_master.o: /home/ghaack/esp/esp-idf/components/driver/spi_master.c \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_struct.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/task.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/list.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h \
@@ -95,7 +96,7 @@ spi_master.o: /home/ghaack/esp/esp-idf/components/driver/spi_master.c \
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
 
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h:
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
 
@@ -104,6 +105,8 @@ spi_master.o: /home/ghaack/esp/esp-idf/components/driver/spi_master.c \
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/spi_types.h:
 
 /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_master.h:
 
@@ -165,10 +168,6 @@ spi_master.o: /home/ghaack/esp/esp-idf/components/driver/spi_master.c \
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_idf_version.h:
 
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h:
-
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h:
-
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h:
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
@@ -198,6 +197,10 @@ spi_master.o: /home/ghaack/esp/esp-idf/components/driver/spi_master.c \
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/task.h:
 

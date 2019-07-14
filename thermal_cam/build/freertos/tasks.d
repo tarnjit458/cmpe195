@@ -2,9 +2,6 @@ tasks.o: /home/ghaack/esp/esp-idf/components/freertos/tasks.c \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/ghaack/projects/cmpe195/thermal_cam/build/include/sdkconfig.h \
  /home/ghaack/esp/esp-idf/components/newlib/platform_include/esp_newlib.h \
- /home/ghaack/esp/esp-idf/components/xtensa/include/esp_debug_helpers.h \
- /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h \
- /home/ghaack/esp/esp-idf/components/newlib/platform_include/assert.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -26,6 +23,8 @@ tasks.o: /home/ghaack/esp/esp-idf/components/freertos/tasks.c \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_private/crosscore_int.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_timer.h \
+ /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h \
+ /home/ghaack/esp/esp-idf/components/newlib/platform_include/assert.h \
  /home/ghaack/esp/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/ghaack/esp/esp-idf/components/heap/include/multi_heap.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h \
@@ -56,12 +55,6 @@ tasks.o: /home/ghaack/esp/esp-idf/components/freertos/tasks.c \
 /home/ghaack/projects/cmpe195/thermal_cam/build/include/sdkconfig.h:
 
 /home/ghaack/esp/esp-idf/components/newlib/platform_include/esp_newlib.h:
-
-/home/ghaack/esp/esp-idf/components/xtensa/include/esp_debug_helpers.h:
-
-/home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h:
-
-/home/ghaack/esp/esp-idf/components/newlib/platform_include/assert.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
@@ -104,6 +97,10 @@ tasks.o: /home/ghaack/esp/esp-idf/components/freertos/tasks.c \
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_private/crosscore_int.h:
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_timer.h:
+
+/home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h:
+
+/home/ghaack/esp/esp-idf/components/newlib/platform_include/assert.h:
 
 /home/ghaack/esp/esp-idf/components/heap/include/esp_heap_caps.h:
 

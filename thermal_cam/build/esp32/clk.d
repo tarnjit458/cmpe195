@@ -15,6 +15,7 @@ clk.o: /home/ghaack/esp/esp-idf/components/esp32/clk.c \
  /home/ghaack/esp/esp-idf/components/newlib/platform_include/assert.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h \
@@ -54,10 +55,11 @@ clk.o: /home/ghaack/esp/esp-idf/components/esp32/clk.c \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_common.h \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/spi_periph.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_types.h
 
 /home/ghaack/esp/esp-idf/components/newlib/platform_include/sys/time.h:
 
@@ -90,6 +92,8 @@ clk.o: /home/ghaack/esp/esp-idf/components/esp32/clk.c \
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
 
@@ -169,11 +173,13 @@ clk.o: /home/ghaack/esp/esp-idf/components/esp32/clk.c \
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/spi_periph.h:
 
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h:
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/spi_types.h:
 /home/ghaack/esp/esp-idf/components/esp32/./clk.c:

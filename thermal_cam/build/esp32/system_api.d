@@ -70,6 +70,7 @@ system_api.o: /home/ghaack/esp/esp-idf/components/esp32/system_api.c \
  /home/ghaack/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi.h \
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/efuse.h \
@@ -84,6 +85,7 @@ system_api.o: /home/ghaack/esp/esp-idf/components/esp32/system_api.c \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h \
@@ -256,6 +258,8 @@ system_api.o: /home/ghaack/esp/esp-idf/components/esp32/system_api.c \
 
 /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi.h:
 
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h:
+
 /home/ghaack/esp/esp-idf/components/log/include/esp_log.h:
 
 /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h:
@@ -283,6 +287,8 @@ system_api.o: /home/ghaack/esp/esp-idf/components/esp32/system_api.c \
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
 

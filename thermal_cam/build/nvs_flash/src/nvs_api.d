@@ -17,6 +17,10 @@ src/nvs_api.o: \
  /home/ghaack/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
  /home/ghaack/esp/esp-idf/components/nvs_flash/include/nvs.h \
  /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_partition.h \
+ /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_flash.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_flash_types.h \
+ /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/esp_flash_err.h \
  /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /home/ghaack/esp/esp-idf/components/nvs_flash/src/nvs_platform.hpp \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
@@ -87,6 +91,14 @@ src/nvs_api.o: \
 /home/ghaack/esp/esp-idf/components/nvs_flash/include/nvs.h:
 
 /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_partition.h:
+
+/home/ghaack/esp/esp-idf/components/spi_flash/include/esp_flash.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/spi_flash_types.h:
+
+/home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/esp_flash_err.h:
 
 /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 

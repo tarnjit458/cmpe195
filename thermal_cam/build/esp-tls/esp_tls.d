@@ -81,6 +81,7 @@ esp_tls.o: /home/ghaack/esp/esp-idf/components/esp-tls/esp_tls.c \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/rsa.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/asn1.h \
@@ -265,6 +266,8 @@ esp_tls.o: /home/ghaack/esp/esp-idf/components/esp-tls/esp_tls.c \
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h:
+
+/home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h:
 

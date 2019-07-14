@@ -5,6 +5,7 @@ mbedtls/library/cipher.o: \
  /home/ghaack/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher_internal.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
@@ -23,6 +24,8 @@ mbedtls/library/cipher.o: \
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h:
+
+/home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher_internal.h:
 

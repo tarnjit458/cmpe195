@@ -7,6 +7,7 @@ mbedtls/library/ccm.o: \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ccm.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
  /home/ghaack/esp/esp-idf/components/newlib/platform_include/time.h
@@ -22,6 +23,8 @@ mbedtls/library/ccm.o: \
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ccm.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h:
+
+/home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h:
 

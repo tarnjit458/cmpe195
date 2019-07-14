@@ -10,7 +10,11 @@ mbedtls/library/ecdsa.o: \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/asn1write.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/asn1.h \
- /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/hmac_drbg.h
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/hmac_drbg.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
+ /home/ghaack/esp/esp-idf/components/newlib/platform_include/time.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h
 
 /home/ghaack/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
 
@@ -33,4 +37,12 @@ mbedtls/library/ecdsa.o: \
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/asn1.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/hmac_drbg.h:
+
+/home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform.h:
+
+/home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h:
+
+/home/ghaack/esp/esp-idf/components/newlib/platform_include/time.h:
+
+/home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h:
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/library/ecdsa.c:

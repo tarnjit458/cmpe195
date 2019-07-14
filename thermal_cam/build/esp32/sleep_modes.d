@@ -49,6 +49,7 @@ sleep_modes.o: /home/ghaack/esp/esp-idf/components/esp32/sleep_modes.c \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/uart.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h \
@@ -62,7 +63,7 @@ sleep_modes.o: /home/ghaack/esp/esp-idf/components/esp32/sleep_modes.c \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/spi_periph.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
@@ -194,6 +195,8 @@ sleep_modes.o: /home/ghaack/esp/esp-idf/components/esp32/sleep_modes.c \
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h:
 
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h:
+
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h:
@@ -220,7 +223,7 @@ sleep_modes.o: /home/ghaack/esp/esp-idf/components/esp32/sleep_modes.c \
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
 
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h:
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
 

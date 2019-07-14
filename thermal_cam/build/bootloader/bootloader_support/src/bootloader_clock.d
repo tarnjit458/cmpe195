@@ -9,6 +9,7 @@ src/bootloader_clock.o: \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h \
@@ -56,6 +57,8 @@ src/bootloader_clock.o: \
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
 

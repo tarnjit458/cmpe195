@@ -17,6 +17,7 @@ mbedtls/library/x509_crt.o: \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/oid.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pem.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
@@ -53,6 +54,8 @@ mbedtls/library/x509_crt.o: \
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/oid.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h:
+
+/home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h:
 

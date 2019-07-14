@@ -18,6 +18,7 @@ mbedtls/library/error.o: \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ccm.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h \
@@ -90,6 +91,8 @@ mbedtls/library/error.o: \
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ccm.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h:
+
+/home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h:
 

@@ -28,6 +28,10 @@ src/phy_init.o: \
  /home/ghaack/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
  /home/ghaack/esp/esp-idf/components/nvs_flash/include/nvs.h \
  /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_partition.h \
+ /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_flash.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_flash_types.h \
+ /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/esp_flash_err.h \
  /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
@@ -56,7 +60,7 @@ src/phy_init.o: \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/portmacro.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/phy.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/phy_init_data.h \
+ /home/ghaack/esp/esp-idf/components/esp_wifi/esp32/include/phy_init_data.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_coexist_internal.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_coexist_adapter.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/periph_ctrl.h \
@@ -98,7 +102,8 @@ src/phy_init.o: \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h \
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h
 
 /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
@@ -156,6 +161,14 @@ src/phy_init.o: \
 
 /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_partition.h:
 
+/home/ghaack/esp/esp-idf/components/spi_flash/include/esp_flash.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/spi_flash_types.h:
+
+/home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/esp_flash_err.h:
+
 /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
@@ -212,7 +225,7 @@ src/phy_init.o: \
 
 /home/ghaack/esp/esp-idf/components/esp_wifi/include/phy.h:
 
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/phy_init_data.h:
+/home/ghaack/esp/esp-idf/components/esp_wifi/esp32/include/phy_init_data.h:
 
 /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_coexist_internal.h:
 
@@ -297,4 +310,6 @@ src/phy_init.o: \
 /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h:
 
 /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h:
+
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h:
 /home/ghaack/esp/esp-idf/components/esp_wifi/src/phy_init.c:

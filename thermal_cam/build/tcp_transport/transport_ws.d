@@ -15,10 +15,10 @@ transport_ws.o: \
  /home/ghaack/esp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/ghaack/esp/esp-idf/components/tcp_transport/transport_strcasestr.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/base64.h \
- /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha1.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
- /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha1.h
 
 /home/ghaack/esp/esp-idf/components/newlib/platform_include/sys/random.h:
 
@@ -50,11 +50,11 @@ transport_ws.o: \
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/base64.h:
 
-/home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha1.h:
-
 /home/ghaack/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/port/include/esp_mem.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+
+/home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha1.h:
 /home/ghaack/esp/esp-idf/components/tcp_transport/./transport_ws.c:

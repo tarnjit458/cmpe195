@@ -71,8 +71,34 @@ event_handlers.o: \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi.h \
- /home/ghaack/esp/esp-idf/components/ethernet/include/esp_eth.h \
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h \
+ /home/ghaack/esp/esp-idf/components/esp_eth/include/esp_eth.h \
+ /home/ghaack/esp/esp-idf/components/esp_eth/include/esp_eth_com.h \
+ /home/ghaack/esp/esp-idf/components/esp_eth/include/esp_eth_mac.h \
+ /home/ghaack/esp/esp-idf/components/driver/include/driver/gpio.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
+ /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
+ /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_struct.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
+ /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_master.h \
+ /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_common.h \
+ /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/soc/spi_periph.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_types.h \
+ /home/ghaack/esp/esp-idf/components/esp_eth/include/esp_eth_phy.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h
 
@@ -218,9 +244,61 @@ event_handlers.o: \
 
 /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi.h:
 
-/home/ghaack/esp/esp-idf/components/ethernet/include/esp_eth.h:
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h:
+
+/home/ghaack/esp/esp-idf/components/esp_eth/include/esp_eth.h:
+
+/home/ghaack/esp/esp-idf/components/esp_eth/include/esp_eth_com.h:
+
+/home/ghaack/esp/esp-idf/components/esp_eth/include/esp_eth_mac.h:
+
+/home/ghaack/esp/esp-idf/components/driver/include/driver/gpio.h:
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h:
+
+/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h:
+
+/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
+
+/home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_struct.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h:
+
+/home/ghaack/esp/esp-idf/components/driver/include/driver/spi_master.h:
+
+/home/ghaack/esp/esp-idf/components/driver/include/driver/spi_common.h:
+
+/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/soc/spi_periph.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/spi_types.h:
+
+/home/ghaack/esp/esp-idf/components/esp_eth/include/esp_eth_phy.h:
 
 /home/ghaack/esp/esp-idf/components/log/include/esp_log.h:
 

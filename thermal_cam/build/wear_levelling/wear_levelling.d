@@ -8,6 +8,10 @@ wear_levelling.o: \
  /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_partition.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/ghaack/esp/esp-idf/components/newlib/platform_include/assert.h \
+ /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_flash.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_flash_types.h \
+ /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/esp_flash_err.h \
  /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /home/ghaack/esp/esp-idf/components/wear_levelling/private_include/WL_Config.h \
  /home/ghaack/esp/esp-idf/components/wear_levelling/private_include/Flash_Access.h \
@@ -38,6 +42,14 @@ wear_levelling.o: \
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h:
 
 /home/ghaack/esp/esp-idf/components/newlib/platform_include/assert.h:
+
+/home/ghaack/esp/esp-idf/components/spi_flash/include/esp_flash.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/spi_flash_types.h:
+
+/home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/esp_flash_err.h:
 
 /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 

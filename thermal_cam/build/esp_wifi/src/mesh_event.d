@@ -65,15 +65,7 @@ src/mesh_event.o: \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip6_addr.h \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
- /home/ghaack/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_mesh.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_mesh_internal.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi.h
+ /home/ghaack/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h
 
 /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event.h:
 
@@ -206,20 +198,4 @@ src/mesh_event.o: \
 /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h:
 
 /home/ghaack/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h:
-
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_mesh.h:
-
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi.h:
-
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:
-
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h:
-
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h:
-
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_mesh_internal.h:
-
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi.h:
-
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi.h:
 /home/ghaack/esp/esp-idf/components/esp_wifi/src/mesh_event.c:

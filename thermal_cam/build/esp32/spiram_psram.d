@@ -13,7 +13,7 @@ spiram_psram.o: /home/ghaack/esp/esp-idf/components/esp32/spiram_psram.c \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
@@ -51,10 +51,12 @@ spiram_psram.o: /home/ghaack/esp/esp-idf/components/esp32/spiram_psram.c \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_common.h \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_types.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/periph_ctrl.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/bootloader_common.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
- /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_image_format.h
+ /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
+ /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_app_format.h
 
 /home/ghaack/projects/cmpe195/thermal_cam/build/include/sdkconfig.h:
 
@@ -84,7 +86,7 @@ spiram_psram.o: /home/ghaack/esp/esp-idf/components/esp32/spiram_psram.c \
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
 
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h:
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
 
@@ -160,6 +162,8 @@ spiram_psram.o: /home/ghaack/esp/esp-idf/components/esp32/spiram_psram.c \
 
 /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h:
 
+/home/ghaack/esp/esp-idf/components/soc/include/hal/spi_types.h:
+
 /home/ghaack/esp/esp-idf/components/driver/include/driver/periph_ctrl.h:
 
 /home/ghaack/esp/esp-idf/components/bootloader_support/include/bootloader_common.h:
@@ -167,4 +171,6 @@ spiram_psram.o: /home/ghaack/esp/esp-idf/components/esp32/spiram_psram.c \
 /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h:
 
 /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_image_format.h:
+
+/home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_app_format.h:
 /home/ghaack/esp/esp-idf/components/esp32/./spiram_psram.c:

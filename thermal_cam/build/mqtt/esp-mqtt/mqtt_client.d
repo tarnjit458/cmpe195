@@ -91,6 +91,7 @@ esp-mqtt/mqtt_client.o: \
  /home/ghaack/esp/esp-idf/components/tcp_transport/include/esp_transport_ws.h \
  /home/ghaack/esp/esp-idf/components/mqtt/esp-mqtt/lib/include/mqtt_outbox.h \
  /home/ghaack/esp/esp-idf/components/mqtt/esp-mqtt/lib/include/platform.h \
+ /home/ghaack/esp/esp-idf/components/mqtt/esp-mqtt/include/mqtt_supported_features.h \
  /home/ghaack/esp/esp-idf/components/nghttp/port/include/http_parser.h \
  /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event_loop.h
 
@@ -275,6 +276,8 @@ esp-mqtt/mqtt_client.o: \
 /home/ghaack/esp/esp-idf/components/mqtt/esp-mqtt/lib/include/mqtt_outbox.h:
 
 /home/ghaack/esp/esp-idf/components/mqtt/esp-mqtt/lib/include/platform.h:
+
+/home/ghaack/esp/esp-idf/components/mqtt/esp-mqtt/include/mqtt_supported_features.h:
 
 /home/ghaack/esp/esp-idf/components/nghttp/port/include/http_parser.h:
 

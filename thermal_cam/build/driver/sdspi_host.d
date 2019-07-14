@@ -51,20 +51,21 @@ sdspi_host.o: /home/ghaack/esp/esp-idf/components/driver/sdspi_host.c \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_master.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_common.h \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/spi_periph.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_types.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/sdmmc_host.h \
  /home/ghaack/esp/esp-idf/components/driver/sdspi_private.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h \
- /home/ghaack/esp/esp-idf/components/driver/sdspi_crc.h
+ /home/ghaack/esp/esp-idf/components/driver/sdspi_crc.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h
 
 /home/ghaack/esp/esp-idf/components/log/include/esp_log.h:
 
@@ -170,10 +171,6 @@ sdspi_host.o: /home/ghaack/esp/esp-idf/components/driver/sdspi_host.c \
 
 /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_master.h:
 
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h:
-
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h:
-
 /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_common.h:
 
 /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h:
@@ -184,11 +181,13 @@ sdspi_host.o: /home/ghaack/esp/esp-idf/components/driver/sdspi_host.c \
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
 
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h:
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/spi_types.h:
 
 /home/ghaack/esp/esp-idf/components/driver/include/driver/sdmmc_host.h:
 
@@ -197,4 +196,8 @@ sdspi_host.o: /home/ghaack/esp/esp-idf/components/driver/sdspi_host.c \
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
 /home/ghaack/esp/esp-idf/components/driver/sdspi_crc.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h:
 /home/ghaack/esp/esp-idf/components/driver/./sdspi_host.c:

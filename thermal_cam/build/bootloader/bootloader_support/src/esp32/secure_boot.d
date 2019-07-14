@@ -39,6 +39,7 @@ src/esp32/secure_boot.o: \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/bootloader_random.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
+ /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_app_format.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_secure_boot.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_encrypt.h \
  /home/ghaack/esp/esp-idf/components/efuse/include/esp_efuse.h
@@ -120,6 +121,8 @@ src/esp32/secure_boot.o: \
 /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_image_format.h:
 
 /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h:
+
+/home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_app_format.h:
 
 /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_secure_boot.h:
 

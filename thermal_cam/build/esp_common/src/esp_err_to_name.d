@@ -47,6 +47,7 @@ src/esp_err_to_name.o: \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
+ /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_app_format.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_mesh.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h \
@@ -86,13 +87,18 @@ src/esp_err_to_name.o: \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_mesh_internal.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi.h \
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_now.h \
  /home/ghaack/esp/esp-idf/components/app_update/include/esp_ota_ops.h \
  /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_partition.h \
+ /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_flash.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_flash_types.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/esp_flash_err.h \
  /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /home/ghaack/esp/esp-idf/components/lwip/include/apps/esp_ping.h \
  /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wps.h \
+ /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/esp_supplicant/esp_wps.h \
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h \
  /home/ghaack/esp/esp-idf/components/nvs_flash/include/nvs.h
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h:
@@ -189,6 +195,8 @@ src/esp_err_to_name.o: \
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h:
 
+/home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_app_format.h:
+
 /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_mesh.h:
 
 /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi.h:
@@ -267,11 +275,19 @@ src/esp_err_to_name.o: \
 
 /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi.h:
 
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h:
+
 /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_now.h:
 
 /home/ghaack/esp/esp-idf/components/app_update/include/esp_ota_ops.h:
 
 /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_partition.h:
+
+/home/ghaack/esp/esp-idf/components/spi_flash/include/esp_flash.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/spi_flash_types.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/esp_flash_err.h:
 
 /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
@@ -279,7 +295,9 @@ src/esp_err_to_name.o: \
 
 /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
-/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wps.h:
+/home/ghaack/esp/esp-idf/components/wpa_supplicant/include/esp_supplicant/esp_wps.h:
+
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h:
 
 /home/ghaack/esp/esp-idf/components/nvs_flash/include/nvs.h:
 /home/ghaack/esp/esp-idf/components/esp_common/src/esp_err_to_name.c:

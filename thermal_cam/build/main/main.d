@@ -34,12 +34,16 @@ main.o: /home/ghaack/projects/cmpe195/thermal_cam/main/main.c \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/task.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/list.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h \
- /home/ghaack/esp/esp-idf/components/driver/include/driver/gpio.h \
+ /home/ghaack/esp/esp-idf/components/driver/include/driver/i2c.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
- /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h \
+ /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h \
+ /home/ghaack/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
+ /home/ghaack/esp/esp-idf/components/driver/include/driver/gpio.h \
+ /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h \
@@ -48,25 +52,9 @@ main.o: /home/ghaack/projects/cmpe195/thermal_cam/main/main.c \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_struct.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
- /home/ghaack/esp/esp-idf/components/driver/include/driver/i2c.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h \
- /home/ghaack/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
  /home/ghaack/projects/cmpe195/thermal_cam/main/i2c.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h \
- /home/ghaack/projects/cmpe195/thermal_cam/main/screen.h \
- /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_master.h \
- /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_common.h \
- /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h \
- /home/ghaack/esp/esp-idf/components/soc/include/soc/spi_periph.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
- /home/ghaack/projects/cmpe195/thermal_cam/main/therm.h \
- /home/ghaack/projects/cmpe195/thermal_cam/main/interp.h \
  /home/ghaack/projects/cmpe195/thermal_cam/main/MLX90640_I2C_Driver.h \
  /home/ghaack/projects/cmpe195/thermal_cam/main/MLX90640_API.h
 
@@ -140,17 +128,25 @@ main.o: /home/ghaack/projects/cmpe195/thermal_cam/main/main.c \
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/list.h:
 
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h:
-
-/home/ghaack/esp/esp-idf/components/driver/include/driver/gpio.h:
+/home/ghaack/esp/esp-idf/components/driver/include/driver/i2c.h:
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h:
-
-/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h:
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h:
+
+/home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h:
+
+/home/ghaack/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
+
+/home/ghaack/esp/esp-idf/components/driver/include/driver/gpio.h:
+
+/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h:
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
 
@@ -168,43 +164,11 @@ main.o: /home/ghaack/projects/cmpe195/thermal_cam/main/main.c \
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h:
 
-/home/ghaack/esp/esp-idf/components/driver/include/driver/i2c.h:
-
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h:
-
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h:
-
-/home/ghaack/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
-
 /home/ghaack/projects/cmpe195/thermal_cam/main/i2c.h:
 
 /home/ghaack/esp/esp-idf/components/log/include/esp_log.h:
 
 /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h:
-
-/home/ghaack/projects/cmpe195/thermal_cam/main/screen.h:
-
-/home/ghaack/esp/esp-idf/components/driver/include/driver/spi_master.h:
-
-/home/ghaack/esp/esp-idf/components/driver/include/driver/spi_common.h:
-
-/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h:
-
-/home/ghaack/esp/esp-idf/components/soc/include/soc/spi_periph.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h:
-
-/home/ghaack/projects/cmpe195/thermal_cam/main/therm.h:
-
-/home/ghaack/projects/cmpe195/thermal_cam/main/interp.h:
 
 /home/ghaack/projects/cmpe195/thermal_cam/main/MLX90640_I2C_Driver.h:
 

@@ -55,6 +55,7 @@ port/portevent_m.o: \
  /home/ghaack/esp/esp-idf/components/freemodbus/serial_master/port/port_serial_master.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/uart.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
@@ -181,6 +182,8 @@ port/portevent_m.o: \
 /home/ghaack/esp/esp-idf/components/driver/include/driver/uart.h:
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
 

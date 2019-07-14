@@ -1,6 +1,7 @@
 src/core_dump_uart.o: \
  /home/ghaack/esp/esp-idf/components/espcoredump/src/core_dump_uart.c \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
@@ -58,6 +59,8 @@ src/core_dump_uart.o: \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
 

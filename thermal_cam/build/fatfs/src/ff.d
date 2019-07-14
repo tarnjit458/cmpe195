@@ -1,6 +1,5 @@
 src/ff.o: /home/ghaack/esp/esp-idf/components/fatfs/src/ff.c \
  /home/ghaack/esp/esp-idf/components/fatfs/src/ff.h \
- /home/ghaack/esp/esp-idf/components/fatfs/src/integer.h \
  /home/ghaack/esp/esp-idf/components/fatfs/src/ffconf.h \
  /home/ghaack/projects/cmpe195/thermal_cam/build/include/sdkconfig.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
@@ -37,28 +36,9 @@ src/ff.o: /home/ghaack/esp/esp-idf/components/fatfs/src/ff.c \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/semphr.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h \
- /home/ghaack/esp/esp-idf/components/fatfs/src/diskio.h \
- /home/ghaack/esp/esp-idf/components/sdmmc/include/sdmmc_cmd.h \
- /home/ghaack/esp/esp-idf/components/driver/include/driver/sdmmc_types.h \
- /home/ghaack/esp/esp-idf/components/driver/include/driver/sdmmc_host.h \
- /home/ghaack/esp/esp-idf/components/driver/include/driver/sdmmc_types.h \
- /home/ghaack/esp/esp-idf/components/driver/include/driver/gpio.h \
- /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
- /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
- /home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
- /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
- /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
- /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_struct.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h
+ /home/ghaack/esp/esp-idf/components/fatfs/src/diskio.h
 
 /home/ghaack/esp/esp-idf/components/fatfs/src/ff.h:
-
-/home/ghaack/esp/esp-idf/components/fatfs/src/integer.h:
 
 /home/ghaack/esp/esp-idf/components/fatfs/src/ffconf.h:
 
@@ -133,38 +113,4 @@ src/ff.o: /home/ghaack/esp/esp-idf/components/fatfs/src/ff.c \
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
 /home/ghaack/esp/esp-idf/components/fatfs/src/diskio.h:
-
-/home/ghaack/esp/esp-idf/components/sdmmc/include/sdmmc_cmd.h:
-
-/home/ghaack/esp/esp-idf/components/driver/include/driver/sdmmc_types.h:
-
-/home/ghaack/esp/esp-idf/components/driver/include/driver/sdmmc_host.h:
-
-/home/ghaack/esp/esp-idf/components/driver/include/driver/sdmmc_types.h:
-
-/home/ghaack/esp/esp-idf/components/driver/include/driver/gpio.h:
-
-/home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h:
-
-/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h:
-
-/home/ghaack/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
-
-/home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
-
-/home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
-
-/home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_struct.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h:
-
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h:
 /home/ghaack/esp/esp-idf/components/fatfs/src/ff.c:

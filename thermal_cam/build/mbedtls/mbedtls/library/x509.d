@@ -15,6 +15,7 @@ mbedtls/library/x509.o: \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/asn1.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/oid.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pem.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform.h \
@@ -54,6 +55,8 @@ mbedtls/library/x509.o: \
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/oid.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h:
+
+/home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509.h:
 

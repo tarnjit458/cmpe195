@@ -11,6 +11,7 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h \
@@ -83,6 +84,9 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
  /home/ghaack/esp/esp-idf/components/heap/include/esp_heap_caps_init.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h \
  /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
+ /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_flash.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_flash_types.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/esp_flash_err.h \
  /home/ghaack/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
  /home/ghaack/esp/esp-idf/components/nvs_flash/include/nvs.h \
  /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_partition.h \
@@ -130,13 +134,12 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp32/cache_err_int.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_coexist_internal.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_coexist_adapter.h \
- /home/ghaack/esp/esp-idf/components/xtensa/include/esp_debug_helpers.h \
  /home/ghaack/esp/esp-idf/components/espcoredump/include/esp_core_dump.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  /home/ghaack/esp/esp-idf/components/app_trace/include/esp_app_trace.h \
  /home/ghaack/esp/esp-idf/components/app_trace/include/esp_app_trace_util.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_private/dbg_stubs.h \
- /home/ghaack/esp/esp-idf/components/efuse/include/esp_efuse.h \
+ /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_encrypt.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp32/spiram.h \
  /home/ghaack/esp/esp-idf/components/esp32/esp_clk_internal.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_pm.h \
@@ -147,7 +150,9 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
  /home/ghaack/esp/esp-idf/components/xtensa/include/xtensa-debug-module.h \
  /home/ghaack/esp/esp-idf/components/app_update/include/esp_ota_ops.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
- /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h
+ /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
+ /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_app_format.h \
+ /home/ghaack/esp/esp-idf/components/efuse/include/esp_efuse.h
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_attr.h:
 
@@ -172,6 +177,8 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
 
@@ -317,6 +324,12 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
 
 /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
+/home/ghaack/esp/esp-idf/components/spi_flash/include/esp_flash.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/spi_flash_types.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/esp_flash_err.h:
+
 /home/ghaack/esp/esp-idf/components/nvs_flash/include/nvs_flash.h:
 
 /home/ghaack/esp/esp-idf/components/nvs_flash/include/nvs.h:
@@ -411,8 +424,6 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
 
 /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_coexist_adapter.h:
 
-/home/ghaack/esp/esp-idf/components/xtensa/include/esp_debug_helpers.h:
-
 /home/ghaack/esp/esp-idf/components/espcoredump/include/esp_core_dump.h:
 
 /home/ghaack/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h:
@@ -423,7 +434,7 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_private/dbg_stubs.h:
 
-/home/ghaack/esp/esp-idf/components/efuse/include/esp_efuse.h:
+/home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_encrypt.h:
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp32/spiram.h:
 
@@ -446,4 +457,8 @@ cpu_start.o: /home/ghaack/esp/esp-idf/components/esp32/cpu_start.c \
 /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_image_format.h:
 
 /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h:
+
+/home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_app_format.h:
+
+/home/ghaack/esp/esp-idf/components/efuse/include/esp_efuse.h:
 /home/ghaack/esp/esp-idf/components/esp32/./cpu_start.c:

@@ -11,7 +11,7 @@ spi_slave.o: /home/ghaack/esp/esp-idf/components/driver/spi_slave.c \
  /home/ghaack/esp/esp-idf/components/newlib/platform_include/assert.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
@@ -22,6 +22,7 @@ spi_slave.o: /home/ghaack/esp/esp-idf/components/driver/spi_slave.c \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/lldesc.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_common.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_types.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_slave.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
@@ -99,7 +100,7 @@ spi_slave.o: /home/ghaack/esp/esp-idf/components/driver/spi_slave.c \
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
 
-/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h:
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
 
@@ -120,6 +121,8 @@ spi_slave.o: /home/ghaack/esp/esp-idf/components/driver/spi_slave.c \
 /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_common.h:
 
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_err.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/spi_types.h:
 
 /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_slave.h:
 

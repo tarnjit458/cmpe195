@@ -74,6 +74,7 @@ src/handlers.o: \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h \
  /home/ghaack/esp/esp-idf/components/wifi_provisioning/include/wifi_provisioning/wifi_config.h \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
+ /home/ghaack/esp/esp-idf/components/wifi_provisioning/include/wifi_provisioning/wifi_scan.h \
  /home/ghaack/esp/esp-idf/components/wifi_provisioning/include/wifi_provisioning/manager.h \
  /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event_loop.h \
  /home/ghaack/esp/esp-idf/components/protocomm/include/common/protocomm.h \
@@ -227,6 +228,8 @@ src/handlers.o: \
 /home/ghaack/esp/esp-idf/components/wifi_provisioning/include/wifi_provisioning/wifi_config.h:
 
 /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h:
+
+/home/ghaack/esp/esp-idf/components/wifi_provisioning/include/wifi_provisioning/wifi_scan.h:
 
 /home/ghaack/esp/esp-idf/components/wifi_provisioning/include/wifi_provisioning/manager.h:
 

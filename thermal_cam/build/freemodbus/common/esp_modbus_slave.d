@@ -6,6 +6,7 @@ common/esp_modbus_slave.o: \
  /home/ghaack/esp/esp-idf/components/freemodbus/common/mbc_slave.h \
  /home/ghaack/esp/esp-idf/components/driver/include/driver/uart.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_assert.h \
@@ -83,6 +84,8 @@ common/esp_modbus_slave.o: \
 /home/ghaack/esp/esp-idf/components/driver/include/driver/uart.h:
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
 

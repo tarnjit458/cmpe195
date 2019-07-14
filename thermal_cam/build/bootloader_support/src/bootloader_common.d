@@ -21,6 +21,7 @@ src/bootloader_common.o: \
  /home/ghaack/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/bootloader_common.h \
  /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
+ /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_app_format.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h \
@@ -78,6 +79,8 @@ src/bootloader_common.o: \
 /home/ghaack/esp/esp-idf/components/bootloader_support/include/bootloader_common.h:
 
 /home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_image_format.h:
+
+/home/ghaack/esp/esp-idf/components/bootloader_support/include/esp_app_format.h:
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
 

@@ -81,7 +81,8 @@ src/scheme_softap.o: \
  /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event_loop.h \
  /home/ghaack/esp/esp-idf/components/wifi_provisioning/include/wifi_provisioning/wifi_config.h \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
- /home/ghaack/esp/esp-idf/components/wifi_provisioning/src/wifi_provisioning_priv.h
+ /home/ghaack/esp/esp-idf/components/wifi_provisioning/src/wifi_provisioning_priv.h \
+ /home/ghaack/esp/esp-idf/components/wifi_provisioning/include/wifi_provisioning/wifi_scan.h
 
 /home/ghaack/esp/esp-idf/components/log/include/esp_log.h:
 
@@ -246,4 +247,6 @@ src/scheme_softap.o: \
 /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h:
 
 /home/ghaack/esp/esp-idf/components/wifi_provisioning/src/wifi_provisioning_priv.h:
+
+/home/ghaack/esp/esp-idf/components/wifi_provisioning/include/wifi_provisioning/wifi_scan.h:
 /home/ghaack/esp/esp-idf/components/wifi_provisioning/src/scheme_softap.c:

@@ -1,7 +1,6 @@
 src/ffunicode.o: \
  /home/ghaack/esp/esp-idf/components/fatfs/src/ffunicode.c \
  /home/ghaack/esp/esp-idf/components/fatfs/src/ff.h \
- /home/ghaack/esp/esp-idf/components/fatfs/src/integer.h \
  /home/ghaack/esp/esp-idf/components/fatfs/src/ffconf.h \
  /home/ghaack/projects/cmpe195/thermal_cam/build/include/sdkconfig.h \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
@@ -40,8 +39,6 @@ src/ffunicode.o: \
  /home/ghaack/esp/esp-idf/components/freertos/include/freertos/queue.h
 
 /home/ghaack/esp/esp-idf/components/fatfs/src/ff.h:
-
-/home/ghaack/esp/esp-idf/components/fatfs/src/integer.h:
 
 /home/ghaack/esp/esp-idf/components/fatfs/src/ffconf.h:
 

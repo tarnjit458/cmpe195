@@ -90,7 +90,8 @@ port/esp32/netif/wlanif.o: \
  /home/ghaack/esp/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h \
  /home/ghaack/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h \
- /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi.h
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi.h \
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h
 
 /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h:
 
@@ -273,4 +274,6 @@ port/esp32/netif/wlanif.o: \
 /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h:
 
 /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi.h:
+
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h:
 /home/ghaack/esp/esp-idf/components/lwip/port/esp32/netif/wlanif.c:

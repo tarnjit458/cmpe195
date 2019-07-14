@@ -73,6 +73,7 @@ src/wifi_init.o: \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi.h \
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_pm.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp32/pm.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc.h \
@@ -85,7 +86,9 @@ src/wifi_init.o: \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_struct.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h \
- /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
+ /home/ghaack/esp/esp-idf/components/wpa_supplicant/include/esp_supplicant/esp_wpa.h \
+ /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h
 
 /home/ghaack/esp/esp-idf/components/esp_event/include/esp_event.h:
 
@@ -233,6 +236,8 @@ src/wifi_init.o: \
 
 /home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_private/wifi.h:
 
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h:
+
 /home/ghaack/esp/esp-idf/components/esp_common/include/esp_pm.h:
 
 /home/ghaack/esp/esp-idf/components/esp32/include/esp32/pm.h:
@@ -258,4 +263,8 @@ src/wifi_init.o: \
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h:
+
+/home/ghaack/esp/esp-idf/components/wpa_supplicant/include/esp_supplicant/esp_wpa.h:
+
+/home/ghaack/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h:
 /home/ghaack/esp/esp-idf/components/esp_wifi/src/wifi_init.c:

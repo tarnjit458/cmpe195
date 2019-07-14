@@ -69,6 +69,9 @@ lib/http_auth.o: \
  /home/ghaack/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
  /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/md5_hash.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/base64.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/ghaack/esp/esp-idf/components/esp_http_client/lib/include/http_utils.h \
@@ -212,6 +215,12 @@ lib/http_auth.o: \
 /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/md5_hash.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/base64.h:
+
+/home/ghaack/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
+
+/home/ghaack/esp/esp-idf/components/mbedtls/port/include/esp_mem.h:
+
+/home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
 /home/ghaack/esp/esp-idf/components/log/include/esp_log.h:
 

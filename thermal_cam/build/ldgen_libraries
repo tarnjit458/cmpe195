@@ -12,16 +12,18 @@
  /home/ghaack/projects/cmpe195/thermal_cam/build/esp32/libesp32.a
  /home/ghaack/projects/cmpe195/thermal_cam/build/esp_adc_cal/libesp_adc_cal.a
  /home/ghaack/projects/cmpe195/thermal_cam/build/esp_common/libesp_common.a
+ /home/ghaack/projects/cmpe195/thermal_cam/build/esp_eth/libesp_eth.a
  /home/ghaack/projects/cmpe195/thermal_cam/build/esp_event/libesp_event.a
+ /home/ghaack/projects/cmpe195/thermal_cam/build/esp_gdbstub/libesp_gdbstub.a
  /home/ghaack/projects/cmpe195/thermal_cam/build/esp_http_client/libesp_http_client.a
  /home/ghaack/projects/cmpe195/thermal_cam/build/esp_http_server/libesp_http_server.a
  /home/ghaack/projects/cmpe195/thermal_cam/build/esp_https_ota/libesp_https_ota.a
- /home/ghaack/projects/cmpe195/thermal_cam/build/esp_https_server/libesp_https_server.a
+ /home/ghaack/projects/cmpe195/thermal_cam/build/esp_local_ctrl/libesp_local_ctrl.a
  /home/ghaack/projects/cmpe195/thermal_cam/build/esp_ringbuf/libesp_ringbuf.a
  /home/ghaack/projects/cmpe195/thermal_cam/build/esp_rom/libesp_rom.a
+ /home/ghaack/projects/cmpe195/thermal_cam/build/esp_websocket_client/libesp_websocket_client.a
  /home/ghaack/projects/cmpe195/thermal_cam/build/esp_wifi/libesp_wifi.a
  /home/ghaack/projects/cmpe195/thermal_cam/build/espcoredump/libespcoredump.a
- /home/ghaack/projects/cmpe195/thermal_cam/build/ethernet/libethernet.a
  /home/ghaack/projects/cmpe195/thermal_cam/build/expat/libexpat.a
  /home/ghaack/projects/cmpe195/thermal_cam/build/fatfs/libfatfs.a
  /home/ghaack/projects/cmpe195/thermal_cam/build/freemodbus/libfreemodbus.a

@@ -15,7 +15,9 @@ mbedtls/library/pkwrite.o: \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/oid.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pk.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/rsa.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecp.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h \
@@ -54,7 +56,11 @@ mbedtls/library/pkwrite.o: \
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h:
 
+/home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h:
+
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509.h:
+
+/home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/rsa.h:
 

@@ -15,6 +15,7 @@ mbedtls/library/ssl_ciphersuites.o: \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecp.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
+ /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h \
  /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h \
@@ -53,6 +54,8 @@ mbedtls/library/ssl_ciphersuites.o: \
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h:
+
+/home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h:
 
 /home/ghaack/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl.h:
 

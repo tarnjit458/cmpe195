@@ -12,6 +12,7 @@ esp32/rtc_clk_init.o: \
  /home/ghaack/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/ghaack/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h \
@@ -68,6 +69,8 @@ esp32/rtc_clk_init.o: \
 /home/ghaack/esp/esp-idf/components/esp32/include/esp_attr.h:
 
 /home/ghaack/esp/esp-idf/components/soc/include/soc/uart_periph.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h:
 
 /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
 
