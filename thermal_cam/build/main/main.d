@@ -55,6 +55,17 @@ main.o: /home/ghaack/projects/cmpe195/thermal_cam/main/main.c \
  /home/ghaack/projects/cmpe195/thermal_cam/main/i2c.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log.h \
  /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h \
+ /home/ghaack/projects/cmpe195/thermal_cam/main/screen.h \
+ /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_master.h \
+ /home/ghaack/esp/esp-idf/components/driver/include/driver/spi_common.h \
+ /home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/soc/spi_periph.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
+ /home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
+ /home/ghaack/esp/esp-idf/components/soc/include/hal/spi_types.h \
  /home/ghaack/projects/cmpe195/thermal_cam/main/MLX90640_I2C_Driver.h \
  /home/ghaack/projects/cmpe195/thermal_cam/main/MLX90640_API.h
 
@@ -169,6 +180,28 @@ main.o: /home/ghaack/projects/cmpe195/thermal_cam/main/main.c \
 /home/ghaack/esp/esp-idf/components/log/include/esp_log.h:
 
 /home/ghaack/esp/esp-idf/components/log/include/esp_log_internal.h:
+
+/home/ghaack/projects/cmpe195/thermal_cam/main/screen.h:
+
+/home/ghaack/esp/esp-idf/components/driver/include/driver/spi_master.h:
+
+/home/ghaack/esp/esp-idf/components/driver/include/driver/spi_common.h:
+
+/home/ghaack/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/soc/spi_periph.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_caps.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
+
+/home/ghaack/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h:
+
+/home/ghaack/esp/esp-idf/components/soc/include/hal/spi_types.h:
 
 /home/ghaack/projects/cmpe195/thermal_cam/main/MLX90640_I2C_Driver.h:
 

@@ -8,19 +8,23 @@
 #include "driver/i2c.h"
 
 #include "i2c.h"
-//#include "screen.h"
+#include "screen.h"
 //#include "therm.h"
 //#include "interp.h"
 #include "MLX90640_I2C_Driver.h"
 #include "MLX90640_API.h"
 
 
-#define SCALE_FACTOR  10
-#define THERM_RES     8
-#define INTERP_RES    24
+#define SCALE_FACTOR  2
+#define THERM_RES_X   32
+#define THERM_RES_Y   24
+#define INTERP_RES_X  96
+#define INTERP_RES_Y  128
+#define SLAVE_ADDR    0x33
 
 static float* therm_buf;
 void xThermal(void* p);
+void xExtractParameters(void* p);
 
 void app_main(){
   printf("In main\n");
@@ -30,45 +34,17 @@ void app_main(){
 }
 
 void xThermal(void* p){
+  uint16_t *fbuf = heap_caps_malloc(SCREEN_WIDTH*SCREEN_HEIGHT*sizeof(uint16_t), MALLOC_CAP_DMA);
   printf("In xThermal\n");
   init_i2c();
-  //uint16_t dat[4] ={0, 0, 0, 0};
-  //Read back known data
-  //Should get:
-  //0x240C = 0x1901
-  //0x240D = 0x0000
-  //0x240E = 0x0000
-  //0x240F = 0xBE33
-  //MLX90640_I2CRead(0x33, 0x240C, 4, dat);
-  //for(uint8_t i = 0; i < 4; i++){
-  //  printf("dat[%i]: 0x%x\n", i, dat[i]);
-  //}
-  //Extract the device eeprom
-  //uint16_t eeMLX90640[832];
-  //paramsMLX90640 mlx90640;
-  //printf("DumpEE Status: %i\n", MLX90640_DumpEE(0x33, eeMLX90640));
-  //Set the framerate
-  //uint8_t slave_addr = 0x33;
-  //uint8_t refresh_rate = 0x06;
-  //printf("Setting refresh rate to %i...\n", refresh_rate);
-  //MLX90640_SetRefreshRate(slave_addr, refresh_rate);
-  //printf("Refresh rate is now %i.\n", MLX90640_GetRefreshRate(slave_addr));
-  //printf("EEPROM check returns %i\n", CheckEEPROMValid(eeMLX90640));
-  // printf("Dumping EEPROM Data...\n");
-  // for(uint16_t i = 0; i < 832; i++){
-  //   printf("%i: 0x%x\n", i, eeMLX90640[i]);
-  // }
-  //MLX90640_ExtractParameters(eeMLX90640, &mlx90640);
   unsigned char slaveAddress = 0x33;
-  static uint16_t eeMLX90640[832];
+  uint16_t* eeMLX90640 = malloc(sizeof(uint16_t)*832);
   static uint16_t mlx90640Frame[834];
   paramsMLX90640 mlx90640;
   static float mlx90640Image[768];
-  int status;
-  status = MLX90640_DumpEE (slaveAddress, eeMLX90640);
-  printf("DumpEE status: %i\n", status);
-  status = MLX90640_ExtractParameters(eeMLX90640, &mlx90640);
-  printf("ExtractParameters status: %i\n", status);
+  printf("DumpEE status: %i\n", MLX90640_DumpEE(slaveAddress, eeMLX90640));
+  printf("ExtractParameters status: %i\n", MLX90640_ExtractParameters(eeMLX90640, &mlx90640));
+  free(eeMLX90640);
   uint8_t mode = MLX90640_GetCurMode(0x33);
   if(mode){
     printf("Mode: Chess Pattern\n");
@@ -77,11 +53,11 @@ void xThermal(void* p){
     printf("Mode: Interleaved");
   }
   while(1){
-    status = MLX90640_GetFrameData (0x33, mlx90640Frame );
+    MLX90640_GetFrameData (0x33, mlx90640Frame);
     MLX90640_GetImage(mlx90640Frame, &mlx90640, mlx90640Image);
     for(uint8_t i = 0; i < 24; i++){
       for(uint8_t j = 0; j < 32; j++){
-        printf("%.0f ", mlx90640Image[i*j]/10000000);
+        printf("%.0f ", (mlx90640Image[i*j]/10000000+ 100));
       }
       printf("\n");
     }
