@@ -11,6 +11,7 @@
 #include "screen.h"
 #include "therm.h"
 #include "interp.h"
+#include "piezo.c"
 
 #define SCALE_FACTOR  10
 #define THERM_RES     8
@@ -20,41 +21,22 @@
 
 static float* therm_buf;
 
-#define LEDC_HS_TIMER          LEDC_TIMER_0
-#define LEDC_HS_MODE           LEDC_HIGH_SPEED_MODE
-#define LEDC_HS_CH0_CHANNEL    LEDC_CHANNEL_0
-#define LEDC_HS_CH0_GPIO       (2)
-#define LEDC_TEST_DUTY         (4000)
-#define LEDC_TEST_FADE_TIME    (3000)
-
-ledc_timer_config_t ledc_timer = {
-    .duty_resolution = LEDC_TIMER_13_BIT, // resolution of PWM duty
-    .freq_hz = 5000,                      // frequency of PWM signal
-    .speed_mode = LEDC_HS_MODE,           // timer mode
-    .timer_num = LEDC_HS_TIMER            // timer index
-};
-
-ledc_channel_config_t ledc_channel = {
-    .channel    = LEDC_HS_CH0_CHANNEL,
-    .duty       = 0,
-    .gpio_num   = LEDC_HS_CH0_GPIO,
-    .speed_mode = LEDC_HS_MODE,
-    .hpoint     = 0,
-    .timer_sel  = LEDC_HS_TIMER
-};
-
 void app_main(){
+  //Initialize all the GPIO for the LEDs
   gpio_pad_select_gpio(LED0);
   gpio_pad_select_gpio(LED1);
   gpio_set_direction(LED0, GPIO_MODE_OUTPUT);
   gpio_set_direction(LED1, GPIO_MODE_OUTPUT);
   gpio_set_level(LED0, 1);
   gpio_set_level(LED1, 1);
-  ledc_timer_config(&ledc_timer);
-  ledc_channel_config(&ledc_channel);
-  //ledc_fade_func_install(0);
-  //ledc_set_fade_with_time(ledc_channel.speed_mode, ledc_channel.channel, LEDC_TEST_DUTY, LEDC_TEST_FADE_TIME);
-  //ledc_fade_start(ledc_channel.speed_mode, ledc_channel.channel, LEDC_FADE_NO_WAIT);
+  //Init the piezo and play a startup sound
+  piezo_init();
+  piezo_play_frequency(1000);
+  vTaskDelay(150 / portTICK_PERIOD_MS);
+  piezo_play_frequency(2600);
+  vTaskDelay(100 / portTICK_PERIOD_MS);
+  piezo_set_mute(true);
+  //Init the thermal camera
   init_i2c();
   therm_buf = malloc(sizeof(float)* THERM_RES*THERM_RES);
   //Init the SPI screen
