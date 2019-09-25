@@ -52,9 +52,9 @@ void app_main(){
   gpio_set_level(LED1, 1);
   ledc_timer_config(&ledc_timer);
   ledc_channel_config(&ledc_channel);
-  ledc_fade_func_install(0);
-  ledc_set_fade_with_time(ledc_channel.speed_mode, ledc_channel.channel, LEDC_TEST_DUTY, LEDC_TEST_FADE_TIME);
-  ledc_fade_start(ledc_channel.speed_mode, ledc_channel.channel, LEDC_FADE_NO_WAIT);
+  //ledc_fade_func_install(0);
+  //ledc_set_fade_with_time(ledc_channel.speed_mode, ledc_channel.channel, LEDC_TEST_DUTY, LEDC_TEST_FADE_TIME);
+  //ledc_fade_start(ledc_channel.speed_mode, ledc_channel.channel, LEDC_FADE_NO_WAIT);
   init_i2c();
   therm_buf = malloc(sizeof(float)* THERM_RES*THERM_RES);
   //Init the SPI screen

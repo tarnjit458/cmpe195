@@ -20,6 +20,7 @@ void therm_read_frame(int16_t* buf){
 }
 
 void therm_read_frame_float(float* buf){
+  uint32_t x = 0;
   for(uint8_t i = 0; i < 127; i+=2) {
     //Low and high bytes of the pixel
     uint8_t temp_lo = 0, temp_hi = 0;
@@ -27,12 +28,18 @@ void therm_read_frame_float(float* buf){
     i2c_read_reg(THERM_I2C_ADDR, THERM_START_PIXEL_ADDR + i, &temp_lo);
     //Read the second byte of the pixel
     i2c_read_reg(THERM_I2C_ADDR, THERM_START_PIXEL_ADDR + i + 1, &temp_hi);
+    //The thermal sensor is mounted sizeways, calculate an offset to rotate the
+    //image
+    x = i/2;
+    x = (x * (8%(x + 8)))-((x/8)*63);
     //Convert the two bytes into an 11 bit pixel value in celsius
-    buf[i/2] = (((temp_hi & 0b111) << 8) | temp_lo);
+    buf[x] = (((temp_hi & 0b111) << 8) | temp_lo);
     //If the sign bit is set, the pixel value is negative
     if((temp_hi & (1 << 4))){
-      buf[i/2] = -buf[i/2];
+      buf[x] = -buf[x];
     }
+
+    //printf("x is %i", x);
   }
 }
 
